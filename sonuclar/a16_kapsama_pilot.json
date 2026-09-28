@@ -1,0 +1,780 @@
+{
+ "geceler": 59,
+ "granul_cifti": 156,
+ "hucre": {
+  "Irak (güney)": 227,
+  "Irak (kuzey)": 105,
+  "Katar": 56,
+  "Kuveyt": 45,
+  "Bahreyn": 10,
+  "Batı İran (çoğu Huzistan)": 493
+ },
+ "bolge_donem": {
+  "Bahreyn": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.437,
+    "bulutlu": 0.494,
+    "belirsiz": 0.046,
+    "kapsanmadı": 0.023
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.992,
+    "bulutlu": 0.0,
+    "belirsiz": 0.0,
+    "kapsanmadı": 0.008
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.883,
+    "bulutlu": 0.075,
+    "belirsiz": 0.017,
+    "kapsanmadı": 0.025
+   }
+  },
+  "Batı İran (çoğu Huzistan)": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.724,
+    "bulutlu": 0.228,
+    "belirsiz": 0.032,
+    "kapsanmadı": 0.016
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.924,
+    "bulutlu": 0.029,
+    "belirsiz": 0.021,
+    "kapsanmadı": 0.026
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.894,
+    "bulutlu": 0.071,
+    "belirsiz": 0.022,
+    "kapsanmadı": 0.013
+   }
+  },
+  "Irak (güney)": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.787,
+    "bulutlu": 0.164,
+    "belirsiz": 0.027,
+    "kapsanmadı": 0.022
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.96,
+    "bulutlu": 0.005,
+    "belirsiz": 0.018,
+    "kapsanmadı": 0.018
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.914,
+    "bulutlu": 0.051,
+    "belirsiz": 0.021,
+    "kapsanmadı": 0.015
+   }
+  },
+  "Irak (kuzey)": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.821,
+    "bulutlu": 0.142,
+    "belirsiz": 0.015,
+    "kapsanmadı": 0.022
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.96,
+    "bulutlu": 0.004,
+    "belirsiz": 0.013,
+    "kapsanmadı": 0.023
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.863,
+    "bulutlu": 0.089,
+    "belirsiz": 0.021,
+    "kapsanmadı": 0.027
+   }
+  },
+  "Katar": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.494,
+    "bulutlu": 0.441,
+    "belirsiz": 0.051,
+    "kapsanmadı": 0.014
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.97,
+    "bulutlu": 0.003,
+    "belirsiz": 0.019,
+    "kapsanmadı": 0.007
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.905,
+    "bulutlu": 0.077,
+    "belirsiz": 0.015,
+    "kapsanmadı": 0.003
+   }
+  },
+  "Kuveyt": {
+   "1. kapanma": {
+    "gece": 35,
+    "geçerli": 0.778,
+    "bulutlu": 0.177,
+    "belirsiz": 0.033,
+    "kapsanmadı": 0.013
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "geçerli": 0.957,
+    "bulutlu": 0.019,
+    "belirsiz": 0.024,
+    "kapsanmadı": 0.0
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "geçerli": 0.97,
+    "bulutlu": 0.002,
+    "belirsiz": 0.024,
+    "kapsanmadı": 0.004
+   }
+  }
+ },
+ "sifir_geceler": {
+  "Katar": {
+   "gece": 13,
+   "gecerli_pay_medyan": 0.071,
+   "gecerli_en_az_yuzde80": 0,
+   "bulutlu_en_az_yuzde50": 13,
+   "geceler": [
+    {
+     "tarih": "2026-03-03",
+     "geçerli": 0.0,
+     "bulutlu": 0.89,
+     "belirsiz": 0.09,
+     "kapsanmadı": 0.02
+    },
+    {
+     "tarih": "2026-03-10",
+     "geçerli": 0.12,
+     "bulutlu": 0.75,
+     "belirsiz": 0.04,
+     "kapsanmadı": 0.09
+    },
+    {
+     "tarih": "2026-03-17",
+     "geçerli": 0.25,
+     "bulutlu": 0.75,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-19",
+     "geçerli": 0.0,
+     "bulutlu": 0.89,
+     "belirsiz": 0.11,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-20",
+     "geçerli": 0.11,
+     "bulutlu": 0.71,
+     "belirsiz": 0.16,
+     "kapsanmadı": 0.02
+    },
+    {
+     "tarih": "2026-03-22",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-24",
+     "geçerli": 0.18,
+     "bulutlu": 0.79,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.04
+    },
+    {
+     "tarih": "2026-04-05",
+     "geçerli": 0.07,
+     "bulutlu": 0.71,
+     "belirsiz": 0.21,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-10",
+     "geçerli": 0.07,
+     "bulutlu": 0.79,
+     "belirsiz": 0.12,
+     "kapsanmadı": 0.02
+    },
+    {
+     "tarih": "2026-04-11",
+     "geçerli": 0.0,
+     "bulutlu": 0.86,
+     "belirsiz": 0.11,
+     "kapsanmadı": 0.04
+    },
+    {
+     "tarih": "2026-04-22",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-23",
+     "geçerli": 0.23,
+     "bulutlu": 0.77,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-28",
+     "geçerli": 0.23,
+     "bulutlu": 0.77,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    }
+   ]
+  },
+  "Bahreyn": {
+   "gece": 34,
+   "gecerli_pay_medyan": 0.35,
+   "gecerli_en_az_yuzde80": 16,
+   "bulutlu_en_az_yuzde50": 16,
+   "geceler": [
+    {
+     "tarih": "2025-02-06",
+     "geçerli": 0.0,
+     "bulutlu": 0.9,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.1
+    },
+    {
+     "tarih": "2026-03-02",
+     "geçerli": 0.1,
+     "bulutlu": 0.9,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-03",
+     "geçerli": 0.0,
+     "bulutlu": 0.2,
+     "belirsiz": 0.7,
+     "kapsanmadı": 0.1
+    },
+    {
+     "tarih": "2026-03-10",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-16",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-17",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-19",
+     "geçerli": 0.0,
+     "bulutlu": 0.8,
+     "belirsiz": 0.2,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-20",
+     "geçerli": 0.0,
+     "bulutlu": 0.9,
+     "belirsiz": 0.1,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-22",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-24",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-03-30",
+     "geçerli": 0.0,
+     "bulutlu": 0.9,
+     "belirsiz": 0.1,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-05",
+     "geçerli": 0.0,
+     "bulutlu": 0.8,
+     "belirsiz": 0.2,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-10",
+     "geçerli": 0.5,
+     "bulutlu": 0.4,
+     "belirsiz": 0.1,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-11",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-13",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-19",
+     "geçerli": 0.8,
+     "bulutlu": 0.1,
+     "belirsiz": 0.1,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-21",
+     "geçerli": 0.8,
+     "bulutlu": 0.2,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-22",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-24",
+     "geçerli": 0.0,
+     "bulutlu": 1.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-04-28",
+     "geçerli": 0.2,
+     "bulutlu": 0.8,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-05-06",
+     "geçerli": 0.9,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.1
+    },
+    {
+     "tarih": "2026-05-08",
+     "geçerli": 0.9,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.1
+    },
+    {
+     "tarih": "2026-05-14",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-05-18",
+     "geçerli": 0.8,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.2
+    },
+    {
+     "tarih": "2026-05-20",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-05-24",
+     "geçerli": 0.9,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.1
+    },
+    {
+     "tarih": "2026-06-12",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-07-26",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-08-04",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-08-11",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-08-19",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-08-23",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-08-30",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    },
+    {
+     "tarih": "2026-09-21",
+     "geçerli": 1.0,
+     "bulutlu": 0.0,
+     "belirsiz": 0.0,
+     "kapsanmadı": 0.0
+    }
+   ]
+  }
+ },
+ "bowtie": {
+  "piksel": 21765,
+  "bowtie_piksel_payi": 0.0918,
+  "bowtie_frp_payi": 0.1235,
+  "bolge": {
+   "Bahreyn": 0.0471,
+   "Batı İran (çoğu Huzistan)": 0.0796,
+   "Irak (güney)": 0.0982,
+   "Irak (kuzey)": 0.1287,
+   "Katar": 0.083,
+   "Kuveyt": 0.0586
+  }
+ },
+ "firms_l2": {
+  "not": "FIRMS tarafı ana ölçü (geçiş içi toplam, en küçük track); L2 tarafı bütün geçişlerin toplamı: düzey değil, ilişki karşılaştırılır",
+  "bolge_korelasyon": {
+   "Bahreyn": 0.982,
+   "Batı İran (çoğu Huzistan)": 0.909,
+   "Irak (güney)": 0.932,
+   "Irak (kuzey)": 0.833,
+   "Katar": 0.974,
+   "Kuveyt": 0.929
+  }
+ },
+ "sorunlar": [
+  {
+   "tarih": "2026-04-24",
+   "gecis": "A2026113.2354",
+   "sorun": "FileNotFoundError(2, \"Unable to synchronously open file (unable to open file: name = '/private/tmp/claude-501/-Users-yus"
+  }
+ ],
+ "rastgele_geceler": {
+  "Bahreyn": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.717,
+    "bulutlu": 0.233
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.992,
+    "bulutlu": 0.0
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.883,
+    "bulutlu": 0.075
+   }
+  },
+  "Batı İran (çoğu Huzistan)": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.7,
+    "bulutlu": 0.263
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.924,
+    "bulutlu": 0.029
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.894,
+    "bulutlu": 0.071
+   }
+  },
+  "Irak (güney)": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.699,
+    "bulutlu": 0.255
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.96,
+    "bulutlu": 0.005
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.914,
+    "bulutlu": 0.051
+   }
+  },
+  "Irak (kuzey)": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.787,
+    "bulutlu": 0.181
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.96,
+    "bulutlu": 0.004
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.863,
+    "bulutlu": 0.089
+   }
+  },
+  "Katar": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.78,
+    "bulutlu": 0.18
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.97,
+    "bulutlu": 0.003
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.905,
+    "bulutlu": 0.077
+   }
+  },
+  "Kuveyt": {
+   "1. kapanma": {
+    "gece": 12,
+    "gecerli": 0.693,
+    "bulutlu": 0.261
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "gecerli": 0.957,
+    "bulutlu": 0.019
+   },
+   "Savaş öncesi": {
+    "gece": 12,
+    "gecerli": 0.97,
+    "bulutlu": 0.002
+   }
+  }
+ },
+ "acik_geceler": {
+  "Bahreyn": {
+   "1. kapanma": {
+    "gece": 14,
+    "firms_frp_ort": 1.6,
+    "firms_frp_medyan": 0.0
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "firms_frp_ort": 1.3,
+    "firms_frp_medyan": 0.0
+   },
+   "Savaş öncesi": {
+    "gece": 11,
+    "firms_frp_ort": 12.3,
+    "firms_frp_medyan": 12.6
+   }
+  },
+  "Batı İran (çoğu Huzistan)": {
+   "1. kapanma": {
+    "gece": 21,
+    "firms_frp_ort": 1161.7,
+    "firms_frp_medyan": 1168.0
+   },
+   "2. kapanma": {
+    "gece": 11,
+    "firms_frp_ort": 1017.1,
+    "firms_frp_medyan": 1023.8
+   },
+   "Savaş öncesi": {
+    "gece": 10,
+    "firms_frp_ort": 1125.2,
+    "firms_frp_medyan": 1080.0
+   }
+  },
+  "Irak (güney)": {
+   "1. kapanma": {
+    "gece": 25,
+    "firms_frp_ort": 194.5,
+    "firms_frp_medyan": 131.1
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "firms_frp_ort": 885.7,
+    "firms_frp_medyan": 926.9
+   },
+   "Savaş öncesi": {
+    "gece": 11,
+    "firms_frp_ort": 922.8,
+    "firms_frp_medyan": 896.0
+   }
+  },
+  "Irak (kuzey)": {
+   "1. kapanma": {
+    "gece": 28,
+    "firms_frp_ort": 337.8,
+    "firms_frp_medyan": 340.9
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "firms_frp_ort": 562.2,
+    "firms_frp_medyan": 558.4
+   },
+   "Savaş öncesi": {
+    "gece": 10,
+    "firms_frp_ort": 369.4,
+    "firms_frp_medyan": 369.3
+   }
+  },
+  "Katar": {
+   "1. kapanma": {
+    "gece": 12,
+    "firms_frp_ort": 82.2,
+    "firms_frp_medyan": 75.3
+   },
+   "2. kapanma": {
+    "gece": 12,
+    "firms_frp_ort": 78.6,
+    "firms_frp_medyan": 61.3
+   },
+   "Savaş öncesi": {
+    "gece": 11,
+    "firms_frp_ort": 73.7,
+    "firms_frp_medyan": 78.0
+   }
+  },
+  "Kuveyt": {
+   "1. kapanma": {
+    "gece": 25,
+    "firms_frp_ort": 45.5,
+    "firms_frp_medyan": 37.8
+   },
+   "2. kapanma": {
+    "gece": 11,
+    "firms_frp_ort": 58.1,
+    "firms_frp_medyan": 41.8
+   },
+   "Savaş öncesi": {
+    "gece": 11,
+    "firms_frp_ort": 30.7,
+    "firms_frp_medyan": 17.7
+   }
+  }
+ },
+ "bowtie_frp_payi_donem": {
+  "1. kapanma": 0.124,
+  "2. kapanma": 0.126,
+  "Savaş öncesi": 0.119
+ },
+ "bowtie_frp_payi_bolge_donem": {
+  "Bahreyn": {
+   "1. kapanma": 0.107,
+   "2. kapanma": 0.0,
+   "Savaş öncesi": 0.054
+  },
+  "Batı İran (çoğu Huzistan)": {
+   "1. kapanma": 0.119,
+   "2. kapanma": 0.088,
+   "Savaş öncesi": 0.105
+  },
+  "Irak (güney)": {
+   "1. kapanma": 0.172,
+   "2. kapanma": 0.122,
+   "Savaş öncesi": 0.105
+  },
+  "Irak (kuzey)": {
+   "1. kapanma": 0.119,
+   "2. kapanma": 0.189,
+   "Savaş öncesi": 0.186
+  },
+  "Katar": {
+   "1. kapanma": 0.135,
+   "2. kapanma": 0.143,
+   "Savaş öncesi": 0.078
+  },
+  "Kuveyt": {
+   "1. kapanma": 0.026,
+   "2. kapanma": 0.059,
+   "Savaş öncesi": 0.193
+  }
+ },
+ "gecis_kurali_bakis_acisi": {
+  "hucre_gece": 1637,
+  "track_en_kucuk_acili_gecisi_secti": 0.9988,
+  "scan_en_kucuk_acili_gecisi_secti": 0.9988
+ }
+}

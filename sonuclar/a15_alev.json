@@ -1,0 +1,9705 @@
+{
+ "meta": {
+  "kaynak": "NASA FIRMS, VIIRS 375 m aktif ateş, gece; NOAA-21 NRT (ana), Suomi NPP SP+NRT (ikinci uydu)",
+  "donem": {
+   "Savaş öncesi": [
+    "2024-09-01",
+    "2026-02-27"
+   ],
+   "1. kapanma": [
+    "2026-03-02",
+    "2026-06-13"
+   ],
+   "Açılış": [
+    "2026-06-18",
+    "2026-07-10"
+   ],
+   "2. kapanma": [
+    "2026-07-13",
+    "2026-09-22"
+   ]
+  },
+  "kalici_hucre_esigi": "savaş öncesi gecelerde tespit payı en az %5",
+  "hucre_derece": 0.01,
+  "olcu": "tespit edilen FRP: geçiş içindeki piksellerin toplamı; birden çok geçişte tespit edilen piksellerin ortalama track boyu en küçük geçiş (bakış açısının vekili; FRP'ye göre sıralamaz, yalnız tespitli geçişler arasından seçer); bölgede toplam (MW)",
+  "gecis_tanimi": "bir gecenin tespit zamanlarında 20 dakikadan uzun boşluk yeni geçiş",
+  "ana_model": "PPML, dönem + takvim ayı kuklaları, HAC (Bartlett) 14 gözlenen gece, küçük örneklem düzeltmesi yok",
+  "gece_sayisi": 751,
+  "son_tarih": "2026-09-24",
+  "gece_sayisi_snpp": 700,
+  "eksik_bloklar_noaa21": [
+   [
+    "2026-01-07",
+    "2026-01-07"
+   ],
+   [
+    "2026-03-29",
+    "2026-03-29"
+   ],
+   [
+    "2026-08-28",
+    "2026-08-28"
+   ]
+  ],
+  "eksik_bloklar_snpp": [
+   [
+    "2024-09-26",
+    "2024-09-26"
+   ],
+   [
+    "2024-11-03",
+    "2024-11-05"
+   ],
+   [
+    "2025-07-05",
+    "2025-07-07"
+   ],
+   [
+    "2026-03-09",
+    "2026-03-12"
+   ],
+   [
+    "2026-04-28",
+    "2026-06-02"
+   ],
+   [
+    "2026-07-10",
+    "2026-07-15"
+   ],
+   [
+    "2026-08-03",
+    "2026-08-03"
+   ]
+  ],
+  "ortak_gun": 697,
+  "cokluk": {
+   "ozet": {
+    "hucre_gece": 354252,
+    "coklu_kayit_payi": 0.3348,
+    "coklu_icinde_ayni_dakika_payi": 0.642,
+    "coklu_gecis_payi": 0.1196,
+    "acilim_60dk_ustu_payi": 0.1196,
+    "gece_basina_gecis_ort": {
+     "1. kapanma": 1.951,
+     "2. kapanma": 1.986,
+     "Açılış": 2.0,
+     "Savaş öncesi": 1.982,
+     "geçiş": 1.9
+    }
+   },
+   "bolge_donem": {
+    "BAE": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.298,
+      "coklu_gecis": 0.083,
+      "hucre_gece": 2206
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.279,
+      "coklu_gecis": 0.074,
+      "hucre_gece": 1277
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.273,
+      "coklu_gecis": 0.12,
+      "hucre_gece": 527
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.191,
+      "coklu_gecis": 0.057,
+      "hucre_gece": 9371
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.255,
+      "coklu_gecis": 0.045,
+      "hucre_gece": 220
+     }
+    },
+    "Bahreyn": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.122,
+      "coklu_gecis": 0.037,
+      "hucre_gece": 82
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.13,
+      "coklu_gecis": 0.043,
+      "hucre_gece": 46
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.286,
+      "coklu_gecis": 0.048,
+      "hucre_gece": 21
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.188,
+      "coklu_gecis": 0.07,
+      "hucre_gece": 1696
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.188,
+      "coklu_gecis": 0.0,
+      "hucre_gece": 16
+     }
+    },
+    "Batı İran (çoğu Huzistan)": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.24,
+      "coklu_gecis": 0.142,
+      "hucre_gece": 12491
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.198,
+      "coklu_gecis": 0.162,
+      "hucre_gece": 7643
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.203,
+      "coklu_gecis": 0.17,
+      "hucre_gece": 3067
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.197,
+      "coklu_gecis": 0.142,
+      "hucre_gece": 86989
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.239,
+      "coklu_gecis": 0.051,
+      "hucre_gece": 1250
+     }
+    },
+    "Irak (güney)": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.207,
+      "coklu_gecis": 0.148,
+      "hucre_gece": 3355
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.26,
+      "coklu_gecis": 0.164,
+      "hucre_gece": 5019
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.207,
+      "coklu_gecis": 0.172,
+      "hucre_gece": 1398
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.287,
+      "coklu_gecis": 0.167,
+      "hucre_gece": 47042
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.318,
+      "coklu_gecis": 0.058,
+      "hucre_gece": 620
+     }
+    },
+    "Irak (kuzey)": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.22,
+      "coklu_gecis": 0.159,
+      "hucre_gece": 3332
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.177,
+      "coklu_gecis": 0.207,
+      "hucre_gece": 2816
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.193,
+      "coklu_gecis": 0.181,
+      "hucre_gece": 971
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.179,
+      "coklu_gecis": 0.152,
+      "hucre_gece": 18864
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.205,
+      "coklu_gecis": 0.149,
+      "hucre_gece": 390
+     }
+    },
+    "Katar": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.258,
+      "coklu_gecis": 0.059,
+      "hucre_gece": 943
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.213,
+      "coklu_gecis": 0.078,
+      "hucre_gece": 811
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.208,
+      "coklu_gecis": 0.092,
+      "hucre_gece": 379
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.303,
+      "coklu_gecis": 0.074,
+      "hucre_gece": 8402
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.277,
+      "coklu_gecis": 0.0,
+      "hucre_gece": 148
+     }
+    },
+    "Kuveyt": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.225,
+      "coklu_gecis": 0.063,
+      "hucre_gece": 728
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.155,
+      "coklu_gecis": 0.105,
+      "hucre_gece": 485
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.167,
+      "coklu_gecis": 0.074,
+      "hucre_gece": 215
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.159,
+      "coklu_gecis": 0.076,
+      "hucre_gece": 4728
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.179,
+      "coklu_gecis": 0.019,
+      "hucre_gece": 106
+     }
+    },
+    "Suudi Arabistan": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.226,
+      "coklu_gecis": 0.063,
+      "hucre_gece": 3707
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.196,
+      "coklu_gecis": 0.071,
+      "hucre_gece": 2853
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.196,
+      "coklu_gecis": 0.088,
+      "hucre_gece": 1024
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.2,
+      "coklu_gecis": 0.067,
+      "hucre_gece": 23874
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.234,
+      "coklu_gecis": 0.005,
+      "hucre_gece": 444
+     }
+    },
+    "Umman": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.175,
+      "coklu_gecis": 0.061,
+      "hucre_gece": 2898
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.173,
+      "coklu_gecis": 0.046,
+      "hucre_gece": 1695
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.159,
+      "coklu_gecis": 0.066,
+      "hucre_gece": 605
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.175,
+      "coklu_gecis": 0.063,
+      "hucre_gece": 14829
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.212,
+      "coklu_gecis": 0.076,
+      "hucre_gece": 288
+     }
+    },
+    "İran (Asaluyeh)": {
+     "1. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.312,
+      "coklu_gecis": 0.139,
+      "hucre_gece": 2729
+     },
+     "2. kapanma": {
+      "ayni_geciste_coklu_piksel": 0.313,
+      "coklu_gecis": 0.115,
+      "hucre_gece": 1798
+     },
+     "Açılış": {
+      "ayni_geciste_coklu_piksel": 0.299,
+      "coklu_gecis": 0.178,
+      "hucre_gece": 738
+     },
+     "Savaş öncesi": {
+      "ayni_geciste_coklu_piksel": 0.322,
+      "coklu_gecis": 0.13,
+      "hucre_gece": 15271
+     },
+     "geçiş": {
+      "ayni_geciste_coklu_piksel": 0.363,
+      "coklu_gecis": 0.034,
+      "hucre_gece": 262
+     }
+    }
+   }
+  },
+  "geometri": {
+   "track_scan_medyan": {
+    "0.36": 0.39,
+    "0.37": 0.41,
+    "0.38": 0.43,
+    "0.39": 0.45,
+    "0.40": 0.48,
+    "0.41": 0.5,
+    "0.42": 0.53,
+    "0.43": 0.56,
+    "0.44": 0.39,
+    "0.45": 0.41,
+    "0.46": 0.44,
+    "0.47": 0.46,
+    "0.48": 0.48,
+    "0.49": 0.5,
+    "0.50": 0.52,
+    "0.51": 0.55,
+    "0.52": 0.57,
+    "0.53": 0.6,
+    "0.54": 0.62,
+    "0.55": 0.33,
+    "0.56": 0.34,
+    "0.57": 0.35,
+    "0.58": 0.37,
+    "0.59": 0.38,
+    "0.60": 0.4,
+    "0.61": 0.42,
+    "0.62": 0.43,
+    "0.63": 0.45,
+    "0.64": 0.47,
+    "0.65": 0.49,
+    "0.66": 0.51,
+    "0.67": 0.53,
+    "0.68": 0.55,
+    "0.69": 0.57,
+    "0.70": 0.59,
+    "0.71": 0.61,
+    "0.72": 0.63,
+    "0.73": 0.66,
+    "0.74": 0.68,
+    "0.75": 0.71,
+    "0.76": 0.73,
+    "0.77": 0.76,
+    "0.78": 0.78
+   },
+   "track_aralik": [
+    0.36,
+    0.78
+   ],
+   "cok_gecisli_hucre_gece": 42368,
+   "track_scan_farkli_secim": 75,
+   "track_scan_farkli_pay": 0.0018
+  },
+  "snpp_tur": {
+   "kalici": {
+    "0": 0.066,
+    "2": 0.881,
+    "3": 0.053
+   },
+   "diger": {
+    "0": 0.753,
+    "2": 0.199,
+    "3": 0.048
+   },
+   "bolge": {
+    "BAE": {
+     "0": 0.068,
+     "2": 0.643,
+     "3": 0.289
+    },
+    "Bahreyn": {
+     "0": 0.055,
+     "2": 0.933,
+     "3": 0.011
+    },
+    "Batı İran (çoğu Huzistan)": {
+     "0": 0.065,
+     "2": 0.913,
+     "3": 0.023
+    },
+    "Irak (güney)": {
+     "0": 0.061,
+     "2": 0.937,
+     "3": 0.002
+    },
+    "Irak (kuzey)": {
+     "0": 0.069,
+     "2": 0.931
+    },
+    "Katar": {
+     "0": 0.023,
+     "2": 0.82,
+     "3": 0.156
+    },
+    "Kuveyt": {
+     "0": 0.105,
+     "2": 0.894,
+     "3": 0.001
+    },
+    "Suudi Arabistan": {
+     "0": 0.137,
+     "2": 0.823,
+     "3": 0.039
+    },
+    "Umman": {
+     "0": 0.075,
+     "2": 0.923,
+     "3": 0.002
+    },
+    "İran (Asaluyeh)": {
+     "0": 0.011,
+     "2": 0.778,
+     "3": 0.211
+    }
+   }
+  }
+ },
+ "bolgeler": {
+  "BAE": {
+   "hucre": 80,
+   "once_medyan_frp": 62.06,
+   "once_ortalama_frp": 75.18,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": 303.704,
+     "alt": 206.948,
+     "ust": 430.961,
+     "p": 1.8214740445317093e-23,
+     "p_holm": 3.2786532801570766e-22
+    },
+    "Açılış": {
+     "etki_yuzde": 334.329,
+     "alt": 250.773,
+     "ust": 437.789,
+     "p": 2.2793705077396624e-41
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.32,
+     "alt": 151.571,
+     "ust": 260.907,
+     "p": 4.483540662788898e-33,
+     "p_holm": 8.518727259298906e-32
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": 204.689,
+     "alt": 101.889,
+     "ust": 359.835,
+     "p": 1.1225923968074588e-07
+    },
+    "Açılış": {
+     "etki_yuzde": 370.649,
+     "alt": 262.53,
+     "ust": 511.015,
+     "p": 2.847732812376483e-31
+    },
+    "2. kapanma": {
+     "etki_yuzde": 202.762,
+     "alt": 144.061,
+     "ust": 275.582,
+     "p": 7.20075519718744e-24
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": 303.648,
+     "alt": 206.922,
+     "ust": 430.856,
+     "p": 1.8018713171745417e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 334.083,
+     "alt": 250.566,
+     "ust": 437.496,
+     "p": 2.493624726853758e-41
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.382,
+     "alt": 151.627,
+     "ust": 260.976,
+     "p": 4.309775091830968e-33
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": 303.648,
+     "alt": 206.922,
+     "ust": 430.856,
+     "p": 1.8018713171745417e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 334.083,
+     "alt": 250.566,
+     "ust": 437.496,
+     "p": 2.493624726853758e-41
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.382,
+     "alt": 151.627,
+     "ust": 260.976,
+     "p": 4.309775091830968e-33
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 313.982,
+     "alt": 211.993,
+     "ust": 449.311,
+     "p": 7.227933612147343e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 332.386,
+     "alt": 244.066,
+     "ust": 443.378,
+     "p": 3.514683578046343e-36
+    },
+    "2. kapanma": {
+     "etki_yuzde": 213.497,
+     "alt": 160.267,
+     "ust": 277.614,
+     "p": 2.321121114685622e-33
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": 303.749,
+     "alt": 206.193,
+     "ust": 432.386,
+     "p": 4.5859402284698116e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 327.331,
+     "alt": 244.241,
+     "ust": 430.477,
+     "p": 1.3804028116232422e-39
+    },
+    "2. kapanma": {
+     "etki_yuzde": 205.213,
+     "alt": 155.035,
+     "ust": 265.262,
+     "p": 4.128754339654878e-34
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 238.259,
+     "alt": 153.71,
+     "ust": 350.984,
+     "p": 1.0023121810744192e-16
+    },
+    "Açılış": {
+     "etki_yuzde": 274.982,
+     "alt": 192.837,
+     "ust": 380.17,
+     "p": 1.10222373644301e-25
+    },
+    "2. kapanma": {
+     "etki_yuzde": 177.163,
+     "alt": 130.724,
+     "ust": 232.95,
+     "p": 1.2080787087971063e-27
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": 323.502,
+     "alt": 217.778,
+     "ust": 464.4,
+     "p": 6.836517377469916e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 354.403,
+     "alt": 254.798,
+     "ust": 481.971,
+     "p": 3.9455653810052406e-33
+    },
+    "2. kapanma": {
+     "etki_yuzde": 224.545,
+     "alt": 165.859,
+     "ust": 296.185,
+     "p": 5.948704242226049e-31
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": 304.19,
+     "alt": 208.036,
+     "ust": 430.36,
+     "p": 6.995019382782652e-24
+    },
+    "Açılış": {
+     "etki_yuzde": 330.985,
+     "alt": 251.969,
+     "ust": 427.738,
+     "p": 2.211674732075894e-45
+    },
+    "2. kapanma": {
+     "etki_yuzde": 200.605,
+     "alt": 151.238,
+     "ust": 259.674,
+     "p": 2.6339234196992566e-33
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": 303.704,
+     "alt": 206.948,
+     "ust": 430.961,
+     "p": 1.8214740445317093e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 334.329,
+     "alt": 250.773,
+     "ust": 437.789,
+     "p": 2.2793705077396624e-41
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.32,
+     "alt": 151.571,
+     "ust": 260.907,
+     "p": 4.483540662788898e-33
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": 303.704,
+     "alt": 209.98,
+     "ust": 425.767,
+     "p": 4.0249400269873817e-25
+    },
+    "Açılış": {
+     "etki_yuzde": 334.329,
+     "alt": 237.165,
+     "ust": 459.495,
+     "p": 6.096499682952605e-30
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.32,
+     "alt": 152.763,
+     "ust": 259.205,
+     "p": 8.735597536928169e-35
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": 303.704,
+     "alt": 224.069,
+     "ust": 402.909,
+     "p": 1.4301020455326214e-35
+    },
+    "Açılış": {
+     "etki_yuzde": 334.329,
+     "alt": 256.048,
+     "ust": 429.822,
+     "p": 1.5287982482216054e-47
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.32,
+     "alt": 152.464,
+     "ust": 259.63,
+     "p": 2.411147345310524e-34
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 347.801,
+     "alt": 242.676,
+     "ust": 485.177,
+     "p": 4.666145340226605e-28
+    },
+    "Açılış": {
+     "etki_yuzde": 445.291,
+     "alt": 352.075,
+     "ust": 557.728,
+     "p": 2.3301864118951757e-70
+    },
+    "2. kapanma": {
+     "etki_yuzde": 206.325,
+     "alt": 147.201,
+     "ust": 279.589,
+     "p": 1.426289144993087e-24
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": 366.808,
+     "alt": 243.145,
+     "ust": 535.037,
+     "p": 9.972727488788629e-23
+    },
+    "Açılış": {
+     "etki_yuzde": 363.846,
+     "alt": 275.795,
+     "ust": 472.527,
+     "p": 2.6621028359685153e-46
+    },
+    "2. kapanma": {
+     "etki_yuzde": 194.577,
+     "alt": 142.174,
+     "ust": 258.319,
+     "p": 3.0825346472775027e-27
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 346.126,
+     "alt": 240.773,
+     "ust": 484.05,
+     "p": 1.4278307974872277e-27
+    },
+    "Açılış": {
+     "etki_yuzde": 444.559,
+     "alt": 351.224,
+     "ust": 557.199,
+     "p": 7.37472734488289e-70
+    },
+    "2. kapanma": {
+     "etki_yuzde": 206.382,
+     "alt": 146.692,
+     "ust": 280.516,
+     "p": 4.179687402761944e-24
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -3.937,
+    "2026-04": 480.798,
+    "2026-05": 259.372,
+    "2026-06": 635.421,
+    "2026-07": 293.341,
+    "2026-08": 314.647,
+    "2026-09": 99.959
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.011,
+    "1. kapanma": 0.01,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     49.72
+    ],
+    [
+     "2024-10-01",
+     57.17
+    ],
+    [
+     "2024-11-01",
+     61.46
+    ],
+    [
+     "2024-12-01",
+     47.84
+    ],
+    [
+     "2025-01-01",
+     68.56
+    ],
+    [
+     "2025-02-01",
+     39.05
+    ],
+    [
+     "2025-03-01",
+     42.8
+    ],
+    [
+     "2025-04-01",
+     70.18
+    ],
+    [
+     "2025-05-01",
+     126.17
+    ],
+    [
+     "2025-06-01",
+     70.58
+    ],
+    [
+     "2025-07-01",
+     91.16
+    ],
+    [
+     "2025-08-01",
+     59.09
+    ],
+    [
+     "2025-09-01",
+     71.52
+    ],
+    [
+     "2025-10-01",
+     62.38
+    ],
+    [
+     "2025-11-01",
+     80.88
+    ],
+    [
+     "2025-12-01",
+     44.23
+    ],
+    [
+     "2026-01-01",
+     64.24
+    ],
+    [
+     "2026-02-01",
+     70.47
+    ],
+    [
+     "2026-03-01",
+     41.11
+    ],
+    [
+     "2026-04-01",
+     407.57
+    ],
+    [
+     "2026-05-01",
+     453.42
+    ],
+    [
+     "2026-06-01",
+     519.06
+    ],
+    [
+     "2026-07-01",
+     358.57
+    ],
+    [
+     "2026-08-01",
+     245.01
+    ],
+    [
+     "2026-09-01",
+     145.15
+    ]
+   ]
+  },
+  "Bahreyn": {
+   "hucre": 10,
+   "once_medyan_frp": 8.25,
+   "once_ortalama_frp": 8.93,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.076,
+     "ust": -69.164,
+     "p": 3.9560077228825006e-19,
+     "p_holm": 6.725213128900251e-18
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -66.904,
+     "ust": -14.644,
+     "p": 0.008918853500356079
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.955,
+     "ust": -44.436,
+     "p": 0.0005269838394789335,
+     "p_holm": 0.005796822234268268
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -69.064,
+     "alt": -76.713,
+     "ust": -58.902,
+     "p": 5.67666112295031e-16
+    },
+    "Açılış": {
+     "etki_yuzde": -49.077,
+     "alt": -65.081,
+     "ust": -25.738,
+     "p": 0.00045506419631950534
+    },
+    "2. kapanma": {
+     "etki_yuzde": -72.164,
+     "alt": -80.82,
+     "ust": -59.602,
+     "p": 1.701841294076347e-11
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.076,
+     "ust": -69.164,
+     "p": 3.9560077228825006e-19
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -66.904,
+     "ust": -14.644,
+     "p": 0.008918853500356079
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.955,
+     "ust": -44.436,
+     "p": 0.0005269838394789335
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.076,
+     "ust": -69.164,
+     "p": 3.9560077228825006e-19
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -66.904,
+     "ust": -14.644,
+     "p": 0.008918853500356079
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.955,
+     "ust": -44.436,
+     "p": 0.0005269838394789335
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -73.727,
+     "alt": -82.436,
+     "ust": -60.7,
+     "p": 7.733877578225196e-11
+    },
+    "Açılış": {
+     "etki_yuzde": -49.021,
+     "alt": -69.036,
+     "ust": -16.071,
+     "p": 0.008079376016684566
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.282,
+     "alt": -88.322,
+     "ust": -43.362,
+     "p": 0.000747948875482263
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -75.501,
+     "alt": -82.911,
+     "ust": -64.876,
+     "p": 1.9681070077886904e-14
+    },
+    "Açılış": {
+     "etki_yuzde": -47.892,
+     "alt": -67.913,
+     "ust": -15.379,
+     "p": 0.00841393187361541
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.184,
+     "alt": -88.146,
+     "ust": -43.781,
+     "p": 0.0006487490469429113
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -75.386,
+     "alt": -82.442,
+     "ust": -65.493,
+     "p": 4.1873878268549305e-16
+    },
+    "Açılış": {
+     "etki_yuzde": -50.908,
+     "alt": -67.495,
+     "ust": -25.857,
+     "p": 0.0007190800262415648
+    },
+    "2. kapanma": {
+     "etki_yuzde": -76.771,
+     "alt": -88.066,
+     "ust": -54.786,
+     "p": 1.7396987347896534e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -73.578,
+     "alt": -82.766,
+     "ust": -59.493,
+     "p": 1.0253160100841302e-09
+    },
+    "Açılış": {
+     "etki_yuzde": -48.026,
+     "alt": -69.978,
+     "ust": -10.021,
+     "p": 0.019432871223251956
+    },
+    "2. kapanma": {
+     "etki_yuzde": -71.548,
+     "alt": -88.451,
+     "ust": -29.904,
+     "p": 0.0062882717390444496
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -77.87,
+     "alt": -84.101,
+     "ust": -69.197,
+     "p": 3.9107655278079315e-19
+    },
+    "Açılış": {
+     "etki_yuzde": -46.982,
+     "alt": -67.204,
+     "ust": -14.291,
+     "p": 0.009618134015459311
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.211,
+     "alt": -88.034,
+     "ust": -44.419,
+     "p": 0.000541958574048368
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.076,
+     "ust": -69.164,
+     "p": 3.9560077228825006e-19
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -66.904,
+     "ust": -14.644,
+     "p": 0.008918853500356079
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.955,
+     "ust": -44.436,
+     "p": 0.0005269838394789335
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.062,
+     "ust": -69.191,
+     "p": 3.179098537957161e-19
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -71.108,
+     "ust": -2.223,
+     "p": 0.04212352240316055
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.735,
+     "ust": -45.433,
+     "p": 0.0003841521995016144
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -83.044,
+     "ust": -71.041,
+     "p": 2.5427055445022314e-28
+    },
+    "Açılış": {
+     "etki_yuzde": -46.85,
+     "alt": -61.432,
+     "ust": -26.755,
+     "p": 0.000112027020462185
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.366,
+     "ust": -47.027,
+     "p": 0.00021757537066903178
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -73.133,
+     "alt": -81.54,
+     "ust": -60.896,
+     "p": 6.720223404566722e-12
+    },
+    "Açılış": {
+     "etki_yuzde": -44.894,
+     "alt": -63.564,
+     "ust": -16.657,
+     "p": 0.004754315684281635
+    },
+    "2. kapanma": {
+     "etki_yuzde": -78.179,
+     "alt": -89.621,
+     "ust": -54.123,
+     "p": 5.937610045761692e-05
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -73.328,
+     "alt": -80.972,
+     "ust": -62.615,
+     "p": 1.7051441766679276e-14
+    },
+    "Açılış": {
+     "etki_yuzde": -41.886,
+     "alt": -62.665,
+     "ust": -9.543,
+     "p": 0.016205153920759486
+    },
+    "2. kapanma": {
+     "etki_yuzde": -77.665,
+     "alt": -88.483,
+     "ust": -56.684,
+     "p": 9.174470703303023e-06
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -72.756,
+     "alt": -81.206,
+     "ust": -60.506,
+     "p": 6.683955342510265e-12
+    },
+    "Açılış": {
+     "etki_yuzde": -44.825,
+     "alt": -63.49,
+     "ust": -16.619,
+     "p": 0.004762320684762157
+    },
+    "2. kapanma": {
+     "etki_yuzde": -77.938,
+     "alt": -89.475,
+     "ust": -53.755,
+     "p": 6.270768608485896e-05
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -91.184,
+    "2026-04": -90.865,
+    "2026-05": -100.0,
+    "2026-06": -41.201,
+    "2026-07": -62.798,
+    "2026-08": -100.0,
+    "2026-09": -81.948
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.11,
+    "1. kapanma": 0.524,
+    "Açılış": 0.304,
+    "2. kapanma": 0.535
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     5.37
+    ],
+    [
+     "2024-10-01",
+     9.78
+    ],
+    [
+     "2024-11-01",
+     10.01
+    ],
+    [
+     "2024-12-01",
+     7.62
+    ],
+    [
+     "2025-01-01",
+     7.65
+    ],
+    [
+     "2025-02-01",
+     0.56
+    ],
+    [
+     "2025-03-01",
+     7.43
+    ],
+    [
+     "2025-04-01",
+     9.3
+    ],
+    [
+     "2025-05-01",
+     6.63
+    ],
+    [
+     "2025-06-01",
+     3.67
+    ],
+    [
+     "2025-07-01",
+     6.29
+    ],
+    [
+     "2025-08-01",
+     6.54
+    ],
+    [
+     "2025-09-01",
+     12.77
+    ],
+    [
+     "2025-10-01",
+     17.36
+    ],
+    [
+     "2025-11-01",
+     12.85
+    ],
+    [
+     "2025-12-01",
+     7.84
+    ],
+    [
+     "2026-01-01",
+     11.52
+    ],
+    [
+     "2026-02-01",
+     8.01
+    ],
+    [
+     "2026-03-01",
+     0.66
+    ],
+    [
+     "2026-04-01",
+     0.85
+    ],
+    [
+     "2026-05-01",
+     0.0
+    ],
+    [
+     "2026-06-01",
+     2.15
+    ],
+    [
+     "2026-07-01",
+     2.34
+    ],
+    [
+     "2026-08-01",
+     0.0
+    ],
+    [
+     "2026-09-01",
+     2.21
+    ]
+   ]
+  },
+  "Batı İran (çoğu Huzistan)": {
+   "hucre": 493,
+   "once_medyan_frp": 1052.31,
+   "once_ortalama_frp": 1077.37,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.326,
+     "ust": 1.381,
+     "p": 0.07108932861032875,
+     "p_holm": 0.4976253002723013
+    },
+    "Açılış": {
+     "etki_yuzde": -12.459,
+     "alt": -23.106,
+     "ust": -0.339,
+     "p": 0.044290338798395175
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -33.571,
+     "ust": -17.068,
+     "p": 1.393278133896195e-07,
+     "p_holm": 2.0899172008442926e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -10.667,
+     "alt": -34.626,
+     "ust": 22.075,
+     "p": 0.4789472253206989
+    },
+    "Açılış": {
+     "etki_yuzde": -11.554,
+     "alt": -22.175,
+     "ust": 0.516,
+     "p": 0.059954869039084854
+    },
+    "2. kapanma": {
+     "etki_yuzde": -26.89,
+     "alt": -34.762,
+     "ust": -18.067,
+     "p": 7.128212583946809e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -14.748,
+     "alt": -28.316,
+     "ust": 1.389,
+     "p": 0.07122548393299181
+    },
+    "Açılış": {
+     "etki_yuzde": -12.458,
+     "alt": -23.105,
+     "ust": -0.337,
+     "p": 0.044322407968483156
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.778,
+     "alt": -33.572,
+     "ust": -17.069,
+     "p": 1.3907083768563228e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.326,
+     "ust": 1.381,
+     "p": 0.07108932861033868
+    },
+    "Açılış": {
+     "etki_yuzde": -12.459,
+     "alt": -23.106,
+     "ust": -0.339,
+     "p": 0.0442903387983938
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -33.571,
+     "ust": -17.068,
+     "p": 1.393278133897006e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -13.735,
+     "alt": -27.636,
+     "ust": 2.837,
+     "p": 0.09936981938372211
+    },
+    "Açılış": {
+     "etki_yuzde": -12.647,
+     "alt": -24.195,
+     "ust": 0.661,
+     "p": 0.06162255326094855
+    },
+    "2. kapanma": {
+     "etki_yuzde": -24.822,
+     "alt": -33.405,
+     "ust": -15.132,
+     "p": 3.978173869524992e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -14.743,
+     "alt": -28.683,
+     "ust": 1.922,
+     "p": 0.07994045024822469
+    },
+    "Açılış": {
+     "etki_yuzde": -13.215,
+     "alt": -24.216,
+     "ust": -0.617,
+     "p": 0.04041244886803082
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.902,
+     "alt": -33.908,
+     "ust": -16.927,
+     "p": 2.7609424561401516e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -19.504,
+     "alt": -31.95,
+     "ust": -4.782,
+     "p": 0.011348139787091514
+    },
+    "Açılış": {
+     "etki_yuzde": -15.204,
+     "alt": -24.628,
+     "ust": -4.602,
+     "p": 0.006073922676722354
+    },
+    "2. kapanma": {
+     "etki_yuzde": -30.259,
+     "alt": -37.689,
+     "ust": -21.944,
+     "p": 3.59849226962833e-10
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -11.886,
+     "alt": -26.324,
+     "ust": 5.382,
+     "p": 0.16579615944744386
+    },
+    "Açılış": {
+     "etki_yuzde": -10.624,
+     "alt": -23.019,
+     "ust": 3.765,
+     "p": 0.1402929452064652
+    },
+    "2. kapanma": {
+     "etki_yuzde": -24.325,
+     "alt": -33.604,
+     "ust": -13.749,
+     "p": 2.9639184865101348e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -14.383,
+     "alt": -28.099,
+     "ust": 1.95,
+     "p": 0.08130451785815504
+    },
+    "Açılış": {
+     "etki_yuzde": -13.685,
+     "alt": -24.773,
+     "ust": -0.962,
+     "p": 0.03591710773298376
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.693,
+     "alt": -33.376,
+     "ust": -17.124,
+     "p": 9.66160631747542e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.326,
+     "ust": 1.381,
+     "p": 0.07108932861032875
+    },
+    "Açılış": {
+     "etki_yuzde": -12.459,
+     "alt": -23.106,
+     "ust": -0.339,
+     "p": 0.044290338798395175
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -33.571,
+     "ust": -17.068,
+     "p": 1.393278133896195e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.044,
+     "ust": 0.984,
+     "p": 0.06478141396377614
+    },
+    "Açılış": {
+     "etki_yuzde": -12.459,
+     "alt": -23.754,
+     "ust": 0.508,
+     "p": 0.059010871220812874
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -33.839,
+     "ust": -16.732,
+     "p": 3.751326375088454e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.187,
+     "ust": 1.185,
+     "p": 0.0679590095448561
+    },
+    "Açılış": {
+     "etki_yuzde": -12.459,
+     "alt": -20.527,
+     "ust": -3.573,
+     "p": 0.006986320914244883
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -32.609,
+     "ust": -18.252,
+     "p": 1.444393659390811e-09
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -6.512,
+     "alt": -24.739,
+     "ust": 16.128,
+     "p": 0.542761950553294
+    },
+    "Açılış": {
+     "etki_yuzde": -12.614,
+     "alt": -24.101,
+     "ust": 0.612,
+     "p": 0.06076555429438812
+    },
+    "2. kapanma": {
+     "etki_yuzde": -27.829,
+     "alt": -33.43,
+     "ust": -21.757,
+     "p": 2.518599664318739e-15
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -5.093,
+     "alt": -25.314,
+     "ust": 20.604,
+     "p": 0.6689803137358672
+    },
+    "Açılış": {
+     "etki_yuzde": -9.578,
+     "alt": -22.137,
+     "ust": 5.006,
+     "p": 0.18693221368060275
+    },
+    "2. kapanma": {
+     "etki_yuzde": -27.055,
+     "alt": -33.309,
+     "ust": -20.215,
+     "p": 5.2698919645350115e-12
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -6.092,
+     "alt": -24.492,
+     "ust": 16.792,
+     "p": 0.57212005462322
+    },
+    "Açılış": {
+     "etki_yuzde": -12.6,
+     "alt": -24.088,
+     "ust": 0.627,
+     "p": 0.06105995095879837
+    },
+    "2. kapanma": {
+     "etki_yuzde": -28.167,
+     "alt": -33.839,
+     "ust": -22.01,
+     "p": 3.172165380325759e-15
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -6.617,
+    "2026-04": 28.148,
+    "2026-05": -30.559,
+    "2026-06": -27.95,
+    "2026-07": -4.485,
+    "2026-08": -35.741,
+    "2026-09": -33.368
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.007,
+    "1. kapanma": 0.0,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     1263.34
+    ],
+    [
+     "2024-10-01",
+     1122.43
+    ],
+    [
+     "2024-11-01",
+     790.11
+    ],
+    [
+     "2024-12-01",
+     747.95
+    ],
+    [
+     "2025-01-01",
+     740.88
+    ],
+    [
+     "2025-02-01",
+     593.61
+    ],
+    [
+     "2025-03-01",
+     791.84
+    ],
+    [
+     "2025-04-01",
+     889.87
+    ],
+    [
+     "2025-05-01",
+     1482.98
+    ],
+    [
+     "2025-06-01",
+     1746.2
+    ],
+    [
+     "2025-07-01",
+     1338.32
+    ],
+    [
+     "2025-08-01",
+     1253.79
+    ],
+    [
+     "2025-09-01",
+     1559.84
+    ],
+    [
+     "2025-10-01",
+     1310.91
+    ],
+    [
+     "2025-11-01",
+     982.41
+    ],
+    [
+     "2025-12-01",
+     587.81
+    ],
+    [
+     "2026-01-01",
+     768.44
+    ],
+    [
+     "2026-02-01",
+     805.04
+    ],
+    [
+     "2026-03-01",
+     739.44
+    ],
+    [
+     "2026-04-01",
+     1140.35
+    ],
+    [
+     "2026-05-01",
+     1029.8
+    ],
+    [
+     "2026-06-01",
+     1258.14
+    ],
+    [
+     "2026-07-01",
+     1278.29
+    ],
+    [
+     "2026-08-01",
+     805.67
+    ],
+    [
+     "2026-09-01",
+     1039.35
+    ]
+   ]
+  },
+  "Diğer": {
+   "hucre": 9,
+   "once_medyan_frp": 23.88,
+   "once_ortalama_frp": 35.33,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -89.973,
+     "ust": -60.012,
+     "p": 5.181167833717626e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -62.661,
+     "ust": 32.288,
+     "p": 0.27444195942848426
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -33.309,
+     "ust": 1.986,
+     "p": 0.07532133837124959
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -84.247,
+     "alt": -90.47,
+     "ust": -73.961,
+     "p": 5.68994473579655e-13
+    },
+    "Açılış": {
+     "etki_yuzde": -37.196,
+     "alt": -67.002,
+     "ust": 19.533,
+     "p": 0.156595130518903
+    },
+    "2. kapanma": {
+     "etki_yuzde": -33.87,
+     "alt": -47.705,
+     "ust": -16.375,
+     "p": 0.0005539181644173922
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -89.973,
+     "ust": -60.012,
+     "p": 5.181167833717626e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -62.661,
+     "ust": 32.288,
+     "p": 0.27444195942848426
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -33.309,
+     "ust": 1.986,
+     "p": 0.07532133837124959
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -89.973,
+     "ust": -60.012,
+     "p": 5.181167833717626e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -62.661,
+     "ust": 32.288,
+     "p": 0.27444195942848426
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -33.309,
+     "ust": 1.986,
+     "p": 0.07532133837124959
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -81.291,
+     "alt": -90.877,
+     "ust": -61.635,
+     "p": 4.771437484084017e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -31.678,
+     "alt": -63.063,
+     "ust": 26.375,
+     "p": 0.22474515316281796
+    },
+    "2. kapanma": {
+     "etki_yuzde": -14.585,
+     "alt": -30.912,
+     "ust": 5.601,
+     "p": 0.14525647120185947
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -80.215,
+     "alt": -90.247,
+     "ust": -59.866,
+     "p": 7.130029061791303e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -31.885,
+     "alt": -62.974,
+     "ust": 25.305,
+     "p": 0.21695540902319432
+    },
+    "2. kapanma": {
+     "etki_yuzde": -15.002,
+     "alt": -30.976,
+     "ust": 4.67,
+     "p": 0.12594462814751425
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -79.877,
+     "alt": -89.787,
+     "ust": -60.354,
+     "p": 3.5872366577957566e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -30.156,
+     "alt": -62.703,
+     "ust": 30.791,
+     "p": 0.2621422992443202
+    },
+    "2. kapanma": {
+     "etki_yuzde": -13.706,
+     "alt": -29.51,
+     "ust": 5.642,
+     "p": 0.1532255772626745
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -81.257,
+     "alt": -90.993,
+     "ust": -60.997,
+     "p": 7.526063659145312e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -30.253,
+     "alt": -62.661,
+     "ust": 30.285,
+     "p": 0.25841062465043974
+    },
+    "2. kapanma": {
+     "etki_yuzde": -10.87,
+     "alt": -28.369,
+     "ust": 10.904,
+     "p": 0.30212547369484
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -79.779,
+     "alt": -89.762,
+     "ust": -60.061,
+     "p": 4.163159782949622e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -33.774,
+     "alt": -64.653,
+     "ust": 24.078,
+     "p": 0.1982684260930726
+    },
+    "2. kapanma": {
+     "etki_yuzde": -18.403,
+     "alt": -33.656,
+     "ust": 0.357,
+     "p": 0.05407742193206121
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -89.973,
+     "ust": -60.012,
+     "p": 5.181167833717626e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -62.661,
+     "ust": 32.288,
+     "p": 0.27444195942848426
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -33.309,
+     "ust": 1.986,
+     "p": 0.07532133837124959
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -88.733,
+     "ust": -64.416,
+     "p": 4.201337828480799e-08
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -63.171,
+     "ust": 34.118,
+     "p": 0.2847769601266047
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -34.973,
+     "ust": 4.596,
+     "p": 0.1119707359922775
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -79.976,
+     "alt": -91.471,
+     "ust": -52.989,
+     "p": 0.00022131243470254687
+    },
+    "Açılış": {
+     "etki_yuzde": -29.719,
+     "alt": -56.376,
+     "ust": 13.227,
+     "p": 0.14721455127365857
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.528,
+     "alt": -30.416,
+     "ust": -2.253,
+     "p": 0.02622241692692195
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -70.319,
+     "alt": -85.04,
+     "ust": -41.11,
+     "p": 0.0005113551049091075
+    },
+    "Açılış": {
+     "etki_yuzde": -46.154,
+     "alt": -74.752,
+     "ust": 14.835,
+     "p": 0.10914957428010055
+    },
+    "2. kapanma": {
+     "etki_yuzde": -4.234,
+     "alt": -18.67,
+     "ust": 12.764,
+     "p": 0.6037604356784805
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -68.904,
+     "alt": -84.644,
+     "ust": -37.032,
+     "p": 0.0011746651804043517
+    },
+    "Açılış": {
+     "etki_yuzde": -33.029,
+     "alt": -64.688,
+     "ust": 27.013,
+     "p": 0.2195423395743088
+    },
+    "2. kapanma": {
+     "etki_yuzde": -16.973,
+     "alt": -33.88,
+     "ust": 4.257,
+     "p": 0.10934607822801719
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -69.844,
+     "alt": -85.042,
+     "ust": -39.205,
+     "p": 0.0008045206076201771
+    },
+    "Açılış": {
+     "etki_yuzde": -46.331,
+     "alt": -74.692,
+     "ust": 13.813,
+     "p": 0.10466412881298381
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.908,
+     "alt": -19.567,
+     "ust": 7.742,
+     "p": 0.33704096495952274
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -60.169,
+    "2026-04": -97.001,
+    "2026-05": -94.278,
+    "2026-06": -84.746,
+    "2026-07": 10.778,
+    "2026-08": -24.45,
+    "2026-09": -53.591
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.112,
+    "1. kapanma": 0.369,
+    "Açılış": 0.043,
+    "2. kapanma": 0.07
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     37.67
+    ],
+    [
+     "2024-10-01",
+     37.37
+    ],
+    [
+     "2024-11-01",
+     12.27
+    ],
+    [
+     "2024-12-01",
+     9.68
+    ],
+    [
+     "2025-01-01",
+     19.31
+    ],
+    [
+     "2025-02-01",
+     3.88
+    ],
+    [
+     "2025-03-01",
+     11.26
+    ],
+    [
+     "2025-04-01",
+     38.17
+    ],
+    [
+     "2025-05-01",
+     22.02
+    ],
+    [
+     "2025-06-01",
+     26.71
+    ],
+    [
+     "2025-07-01",
+     28.02
+    ],
+    [
+     "2025-08-01",
+     25.89
+    ],
+    [
+     "2025-09-01",
+     26.8
+    ],
+    [
+     "2025-10-01",
+     31.47
+    ],
+    [
+     "2025-11-01",
+     37.39
+    ],
+    [
+     "2025-12-01",
+     18.98
+    ],
+    [
+     "2026-01-01",
+     18.31
+    ],
+    [
+     "2026-02-01",
+     20.44
+    ],
+    [
+     "2026-03-01",
+     4.48
+    ],
+    [
+     "2026-04-01",
+     1.15
+    ],
+    [
+     "2026-05-01",
+     1.26
+    ],
+    [
+     "2026-06-01",
+     4.08
+    ],
+    [
+     "2026-07-01",
+     31.04
+    ],
+    [
+     "2026-08-01",
+     19.56
+    ],
+    [
+     "2026-09-01",
+     12.44
+    ]
+   ]
+  },
+  "Irak (güney)": {
+   "hucre": 227,
+   "once_medyan_frp": 1052.98,
+   "once_ortalama_frp": 1021.87,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.716,
+     "ust": -78.99,
+     "p": 1.1117375193234646e-40,
+     "p_holm": 2.2234750386469293e-39
+    },
+    "Açılış": {
+     "etki_yuzde": -53.144,
+     "alt": -66.299,
+     "ust": -34.855,
+     "p": 6.514832686314978e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -48.701,
+     "ust": -21.525,
+     "p": 2.7275251123374288e-05,
+     "p_holm": 0.00035457826460386576
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -81.281,
+     "alt": -87.653,
+     "ust": -71.62,
+     "p": 2.9666477926322026e-15
+    },
+    "Açılış": {
+     "etki_yuzde": -55.065,
+     "alt": -68.263,
+     "ust": -36.379,
+     "p": 6.513821854053159e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -41.084,
+     "alt": -53.325,
+     "ust": -25.633,
+     "p": 8.493915524511466e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.717,
+     "ust": -78.99,
+     "p": 1.1112383723724914e-40
+    },
+    "Açılış": {
+     "etki_yuzde": -53.146,
+     "alt": -66.299,
+     "ust": -34.859,
+     "p": 6.49831813633247e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.547,
+     "alt": -48.692,
+     "ust": -21.527,
+     "p": 2.7133574044775848e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.716,
+     "ust": -78.99,
+     "p": 1.1117375193234646e-40
+    },
+    "Açılış": {
+     "etki_yuzde": -53.144,
+     "alt": -66.299,
+     "ust": -34.855,
+     "p": 6.514832686314978e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -48.701,
+     "ust": -21.525,
+     "p": 2.7275251123374288e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -83.714,
+     "alt": -88.255,
+     "ust": -77.419,
+     "p": 1.378186184551498e-27
+    },
+    "Açılış": {
+     "etki_yuzde": -51.783,
+     "alt": -66.11,
+     "ust": -31.399,
+     "p": 5.0164916757239176e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.699,
+     "alt": -49.068,
+     "ust": -21.327,
+     "p": 3.747519861335182e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -83.881,
+     "alt": -87.935,
+     "ust": -78.464,
+     "p": 4.992123118031657e-35
+    },
+    "Açılış": {
+     "etki_yuzde": -51.735,
+     "alt": -65.702,
+     "ust": -32.081,
+     "p": 2.920904678571547e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.003,
+     "alt": -48.268,
+     "ust": -20.831,
+     "p": 3.924390786657579e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -81.446,
+     "alt": -86.366,
+     "ust": -74.751,
+     "p": 8.597779649051131e-27
+    },
+    "Açılış": {
+     "etki_yuzde": -44.896,
+     "alt": -58.78,
+     "ust": -26.336,
+     "p": 5.729314048803064e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": -33.419,
+     "alt": -45.003,
+     "ust": -19.396,
+     "p": 3.0313874416763473e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -83.201,
+     "alt": -88.281,
+     "ust": -75.919,
+     "p": 2.7534356105711785e-22
+    },
+    "Açılış": {
+     "etki_yuzde": -50.506,
+     "alt": -65.729,
+     "ust": -28.522,
+     "p": 0.00017639501412742062
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.694,
+     "alt": -49.236,
+     "ust": -21.053,
+     "p": 4.938318208280031e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -83.841,
+     "alt": -87.639,
+     "ust": -78.875,
+     "p": 1.5109495453462199e-40
+    },
+    "Açılış": {
+     "etki_yuzde": -53.813,
+     "alt": -66.631,
+     "ust": -36.072,
+     "p": 3.197836148621109e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.278,
+     "alt": -48.984,
+     "ust": -20.407,
+     "p": 7.141327364824385e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.716,
+     "ust": -78.99,
+     "p": 1.1117375193234646e-40
+    },
+    "Açılış": {
+     "etki_yuzde": -53.144,
+     "alt": -66.299,
+     "ust": -34.855,
+     "p": 6.514832686314978e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -48.701,
+     "ust": -21.525,
+     "p": 2.7275251123374288e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.7,
+     "ust": -79.019,
+     "p": 4.4468387891356725e-41
+    },
+    "Açılış": {
+     "etki_yuzde": -53.144,
+     "alt": -67.871,
+     "ust": -31.667,
+     "p": 8.217419387171228e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -47.01,
+     "ust": -24.029,
+     "p": 7.406213705336098e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.254,
+     "ust": -79.752,
+     "p": 4.367644804865715e-54
+    },
+    "Açılış": {
+     "etki_yuzde": -53.144,
+     "alt": -64.189,
+     "ust": -38.693,
+     "p": 3.251275820204842e-08
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -50.195,
+     "ust": -19.171,
+     "p": 0.00023049299158273216
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -85.601,
+     "alt": -89.899,
+     "ust": -79.474,
+     "p": 8.7067712081385e-27
+    },
+    "Açılış": {
+     "etki_yuzde": -52.803,
+     "alt": -64.617,
+     "ust": -37.044,
+     "p": 3.2545017640607e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.471,
+     "alt": -48.352,
+     "ust": -21.857,
+     "p": 1.748374584375295e-05
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -84.147,
+     "alt": -89.73,
+     "ust": -75.529,
+     "p": 9.125384421860892e-17
+    },
+    "Açılış": {
+     "etki_yuzde": -53.91,
+     "alt": -66.779,
+     "ust": -36.054,
+     "p": 3.542660138488272e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": -34.946,
+     "alt": -47.121,
+     "ust": -19.967,
+     "p": 4.7662451133245715e-05
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -85.503,
+     "alt": -89.843,
+     "ust": -79.309,
+     "p": 1.950110370742738e-26
+    },
+    "Açılış": {
+     "etki_yuzde": -52.802,
+     "alt": -64.604,
+     "ust": -37.064,
+     "p": 3.1570875559254645e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.578,
+     "alt": -48.52,
+     "ust": -21.865,
+     "p": 1.885658655766075e-05
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -88.19,
+    "2026-04": -88.407,
+    "2026-05": -83.442,
+    "2026-06": -81.701,
+    "2026-07": -57.193,
+    "2026-08": -29.787,
+    "2026-09": -24.238
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.011,
+    "1. kapanma": 0.0,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     1195.31
+    ],
+    [
+     "2024-10-01",
+     1358.97
+    ],
+    [
+     "2024-11-01",
+     800.64
+    ],
+    [
+     "2024-12-01",
+     882.37
+    ],
+    [
+     "2025-01-01",
+     951.52
+    ],
+    [
+     "2025-02-01",
+     909.62
+    ],
+    [
+     "2025-03-01",
+     925.51
+    ],
+    [
+     "2025-04-01",
+     870.11
+    ],
+    [
+     "2025-05-01",
+     1046.51
+    ],
+    [
+     "2025-06-01",
+     1297.39
+    ],
+    [
+     "2025-07-01",
+     1168.78
+    ],
+    [
+     "2025-08-01",
+     1093.28
+    ],
+    [
+     "2025-09-01",
+     1253.49
+    ],
+    [
+     "2025-10-01",
+     1216.28
+    ],
+    [
+     "2025-11-01",
+     1042.14
+    ],
+    [
+     "2025-12-01",
+     574.5
+    ],
+    [
+     "2026-01-01",
+     762.27
+    ],
+    [
+     "2026-02-01",
+     847.43
+    ],
+    [
+     "2026-03-01",
+     109.31
+    ],
+    [
+     "2026-04-01",
+     100.88
+    ],
+    [
+     "2026-05-01",
+     173.28
+    ],
+    [
+     "2026-06-01",
+     237.41
+    ],
+    [
+     "2026-07-01",
+     500.32
+    ],
+    [
+     "2026-08-01",
+     767.62
+    ],
+    [
+     "2026-09-01",
+     985.77
+    ]
+   ]
+  },
+  "Irak (kuzey)": {
+   "hucre": 105,
+   "once_medyan_frp": 273.25,
+   "once_ortalama_frp": 276.91,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": 23.388,
+     "alt": 9.535,
+     "ust": 38.993,
+     "p": 0.0005424906847020763,
+     "p_holm": 0.005796822234268268
+    },
+    "Açılış": {
+     "etki_yuzde": 39.476,
+     "alt": 27.451,
+     "ust": 52.635,
+     "p": 4.716137313982346e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.594,
+     "alt": 18.262,
+     "ust": 42.012,
+     "p": 2.814729874844207e-08,
+     "p_holm": 4.5035677997507313e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": 4.799,
+     "alt": -26.305,
+     "ust": 49.031,
+     "p": 0.7941410048349387
+    },
+    "Açılış": {
+     "etki_yuzde": 35.797,
+     "alt": 24.422,
+     "ust": 48.213,
+     "p": 7.114470606065268e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.153,
+     "alt": 16.77,
+     "ust": 42.849,
+     "p": 6.524760324904651e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": 23.421,
+     "alt": 9.592,
+     "ust": 38.994,
+     "p": 0.0005190234362086117
+    },
+    "Açılış": {
+     "etki_yuzde": 39.155,
+     "alt": 27.039,
+     "ust": 52.427,
+     "p": 1.16717901141898e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.606,
+     "alt": 18.241,
+     "ust": 42.062,
+     "p": 3.047757516996768e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": 23.388,
+     "alt": 9.535,
+     "ust": 38.993,
+     "p": 0.0005424906847020763
+    },
+    "Açılış": {
+     "etki_yuzde": 39.476,
+     "alt": 27.451,
+     "ust": 52.635,
+     "p": 4.716137313982346e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.594,
+     "alt": 18.262,
+     "ust": 42.012,
+     "p": 2.814729874844207e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 26.239,
+     "alt": 11.741,
+     "ust": 42.618,
+     "p": 0.00018142997794954135
+    },
+    "Açılış": {
+     "etki_yuzde": 43.602,
+     "alt": 29.318,
+     "ust": 59.463,
+     "p": 1.2900582594461595e-11
+    },
+    "2. kapanma": {
+     "etki_yuzde": 33.188,
+     "alt": 21.569,
+     "ust": 45.918,
+     "p": 7.560449900810009e-10
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": 24.304,
+     "alt": 10.084,
+     "ust": 40.361,
+     "p": 0.00044798439221334244
+    },
+    "Açılış": {
+     "etki_yuzde": 42.589,
+     "alt": 29.491,
+     "ust": 57.011,
+     "p": 5.297951032058837e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 30.89,
+     "alt": 19.861,
+     "ust": 42.935,
+     "p": 2.0497349015407145e-09
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 26.507,
+     "alt": 10.858,
+     "ust": 44.365,
+     "p": 0.00048303418035542685
+    },
+    "Açılış": {
+     "etki_yuzde": 42.943,
+     "alt": 30.93,
+     "ust": 56.058,
+     "p": 1.4956487510066754e-15
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.283,
+     "alt": 19.452,
+     "ust": 39.923,
+     "p": 1.9535127856568967e-10
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": 28.015,
+     "alt": 12.296,
+     "ust": 45.934,
+     "p": 0.00021992289082301732
+    },
+    "Açılış": {
+     "etki_yuzde": 40.944,
+     "alt": 25.066,
+     "ust": 58.839,
+     "p": 1.8245440104532462e-08
+    },
+    "2. kapanma": {
+     "etki_yuzde": 36.069,
+     "alt": 22.803,
+     "ust": 50.768,
+     "p": 3.9844311813446995e-09
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": 24.298,
+     "alt": 10.462,
+     "ust": 39.867,
+     "p": 0.00030307674867087345
+    },
+    "Açılış": {
+     "etki_yuzde": 41.465,
+     "alt": 29.53,
+     "ust": 54.5,
+     "p": 1.2208307362583113e-14
+    },
+    "2. kapanma": {
+     "etki_yuzde": 31.028,
+     "alt": 19.106,
+     "ust": 44.144,
+     "p": 2.8208485625308176e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": 22.736,
+     "alt": 9.844,
+     "ust": 37.14,
+     "p": 0.0002964793097890685
+    },
+    "Açılış": {
+     "etki_yuzde": 39.25,
+     "alt": 27.398,
+     "ust": 52.204,
+     "p": 2.9793390575015315e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 30.254,
+     "alt": 18.717,
+     "ust": 42.911,
+     "p": 2.321932540704981e-08
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": 23.388,
+     "alt": 8.954,
+     "ust": 39.734,
+     "p": 0.0009294932295528477
+    },
+    "Açılış": {
+     "etki_yuzde": 39.476,
+     "alt": 25.895,
+     "ust": 54.521,
+     "p": 1.942707596859416e-10
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.594,
+     "alt": 18.969,
+     "ust": 41.169,
+     "p": 2.8594312491602838e-09
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": 23.388,
+     "alt": 11.916,
+     "ust": 36.035,
+     "p": 2.4297093769858287e-05
+    },
+    "Açılış": {
+     "etki_yuzde": 39.476,
+     "alt": 29.048,
+     "ust": 50.745,
+     "p": 4.749038804346993e-17
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.594,
+     "alt": 16.62,
+     "ust": 44.012,
+     "p": 1.4594341849812147e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 13.624,
+     "alt": -6.759,
+     "ust": 38.463,
+     "p": 0.20544173179677516
+    },
+    "Açılış": {
+     "etki_yuzde": 31.055,
+     "alt": 22.578,
+     "ust": 40.119,
+     "p": 2.245863478944258e-15
+    },
+    "2. kapanma": {
+     "etki_yuzde": 21.637,
+     "alt": 11.567,
+     "ust": 32.617,
+     "p": 8.90079845153655e-06
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": 19.023,
+     "alt": 2.98,
+     "ust": 37.566,
+     "p": 0.018399793577208425
+    },
+    "Açılış": {
+     "etki_yuzde": 39.319,
+     "alt": 27.994,
+     "ust": 51.646,
+     "p": 1.77744867296653e-14
+    },
+    "2. kapanma": {
+     "etki_yuzde": 27.043,
+     "alt": 15.539,
+     "ust": 39.692,
+     "p": 7.713362645541875e-07
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 14.802,
+     "alt": -5.207,
+     "ust": 39.035,
+     "p": 0.15773129939612618
+    },
+    "Açılış": {
+     "etki_yuzde": 31.34,
+     "alt": 22.91,
+     "ust": 40.349,
+     "p": 7.999022041941989e-16
+    },
+    "2. kapanma": {
+     "etki_yuzde": 21.929,
+     "alt": 11.913,
+     "ust": 32.841,
+     "p": 5.792991798551805e-06
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": 25.46,
+    "2026-04": 24.574,
+    "2026-05": 21.314,
+    "2026-06": 20.447,
+    "2026-07": 26.109,
+    "2026-08": 23.645,
+    "2026-09": 5.575
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.029,
+    "1. kapanma": 0.058,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     249.88
+    ],
+    [
+     "2024-10-01",
+     254.22
+    ],
+    [
+     "2024-11-01",
+     179.53
+    ],
+    [
+     "2024-12-01",
+     185.3
+    ],
+    [
+     "2025-01-01",
+     224.42
+    ],
+    [
+     "2025-02-01",
+     172.25
+    ],
+    [
+     "2025-03-01",
+     185.51
+    ],
+    [
+     "2025-04-01",
+     241.12
+    ],
+    [
+     "2025-05-01",
+     294.08
+    ],
+    [
+     "2025-06-01",
+     386.83
+    ],
+    [
+     "2025-07-01",
+     348.69
+    ],
+    [
+     "2025-08-01",
+     394.4
+    ],
+    [
+     "2025-09-01",
+     394.03
+    ],
+    [
+     "2025-10-01",
+     382.88
+    ],
+    [
+     "2025-11-01",
+     315.11
+    ],
+    [
+     "2025-12-01",
+     193.48
+    ],
+    [
+     "2026-01-01",
+     204.15
+    ],
+    [
+     "2026-02-01",
+     225.45
+    ],
+    [
+     "2026-03-01",
+     232.74
+    ],
+    [
+     "2026-04-01",
+     300.38
+    ],
+    [
+     "2026-05-01",
+     356.76
+    ],
+    [
+     "2026-06-01",
+     465.93
+    ],
+    [
+     "2026-07-01",
+     439.73
+    ],
+    [
+     "2026-08-01",
+     487.65
+    ],
+    [
+     "2026-09-01",
+     434.52
+    ]
+   ]
+  },
+  "Irak (orta)": {
+   "hucre": 21,
+   "once_medyan_frp": 38.36,
+   "once_ortalama_frp": 38.06,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -5.958,
+     "ust": 38.828,
+     "p": 0.17968131762978767
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 16.157,
+     "ust": 43.803,
+     "p": 2.476787923639298e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -11.493,
+     "ust": 33.01,
+     "p": 0.4323928947395309
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -6.236,
+     "alt": -41.137,
+     "ust": 49.358,
+     "p": 0.7863289594885372
+    },
+    "Açılış": {
+     "etki_yuzde": 31.432,
+     "alt": 11.799,
+     "ust": 54.513,
+     "p": 0.0009289709002732127
+    },
+    "2. kapanma": {
+     "etki_yuzde": -0.123,
+     "alt": -22.2,
+     "ust": 28.219,
+     "p": 0.992291696465762
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -5.958,
+     "ust": 38.828,
+     "p": 0.17968131762978767
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 16.157,
+     "ust": 43.803,
+     "p": 2.476787923639298e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -11.493,
+     "ust": 33.01,
+     "p": 0.4323928947395309
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -5.958,
+     "ust": 38.828,
+     "p": 0.17968131762978767
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 16.157,
+     "ust": 43.803,
+     "p": 2.476787923639298e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -11.493,
+     "ust": 33.01,
+     "p": 0.4323928947395309
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 14.9,
+     "alt": -5.389,
+     "ust": 39.54,
+     "p": 0.16116192966518017
+    },
+    "Açılış": {
+     "etki_yuzde": 32.827,
+     "alt": 19.017,
+     "ust": 48.24,
+     "p": 4.015661259042424e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 9.713,
+     "alt": -10.931,
+     "ust": 35.142,
+     "p": 0.38342790003030847
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": 15.136,
+     "alt": -5.046,
+     "ust": 39.607,
+     "p": 0.1517485916914596
+    },
+    "Açılış": {
+     "etki_yuzde": 33.542,
+     "alt": 19.788,
+     "ust": 48.876,
+     "p": 1.8316347745379742e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 9.334,
+     "alt": -11.381,
+     "ust": 34.89,
+     "p": 0.4050385098189039
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 13.858,
+     "alt": -6.927,
+     "ust": 39.284,
+     "p": 0.20696472687376244
+    },
+    "Açılış": {
+     "etki_yuzde": 42.747,
+     "alt": 24.896,
+     "ust": 63.149,
+     "p": 1.7729581816778415e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 6.624,
+     "alt": -13.829,
+     "ust": 31.93,
+     "p": 0.5550281176737101
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": 10.931,
+     "alt": -9.48,
+     "ust": 35.944,
+     "p": 0.317333376695049
+    },
+    "Açılış": {
+     "etki_yuzde": 37.402,
+     "alt": 21.6,
+     "ust": 55.258,
+     "p": 3.442324980581556e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.062,
+     "alt": -8.73,
+     "ust": 40.058,
+     "p": 0.2611001305533749
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": 14.713,
+     "alt": -5.471,
+     "ust": 39.208,
+     "p": 0.16447641649380684
+    },
+    "Açılış": {
+     "etki_yuzde": 29.642,
+     "alt": 16.513,
+     "ust": 44.251,
+     "p": 1.8841499828178733e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.972,
+     "alt": -10.597,
+     "ust": 32.823,
+     "p": 0.3948758859915248
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -5.958,
+     "ust": 38.828,
+     "p": 0.17968131762978767
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 16.157,
+     "ust": 43.803,
+     "p": 2.476787923639298e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -11.493,
+     "ust": 33.01,
+     "p": 0.4323928947395309
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -5.038,
+     "ust": 37.483,
+     "p": 0.15784123621462665
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 15.556,
+     "ust": 44.551,
+     "p": 7.071364976585502e-06
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -8.881,
+     "ust": 29.198,
+     "p": 0.35973828739268976
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": 14.261,
+     "alt": -3.841,
+     "ust": 35.772,
+     "p": 0.12979584849512663
+    },
+    "Açılış": {
+     "etki_yuzde": 29.243,
+     "alt": 18.016,
+     "ust": 41.538,
+     "p": 3.1523889531666354e-08
+    },
+    "2. kapanma": {
+     "etki_yuzde": 8.5,
+     "alt": -13.764,
+     "ust": 36.512,
+     "p": 0.48627752402899926
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -6.097,
+     "alt": -29.85,
+     "ust": 25.698,
+     "p": 0.6724177781360825
+    },
+    "Açılış": {
+     "etki_yuzde": 47.317,
+     "alt": 28.985,
+     "ust": 68.256,
+     "p": 1.1050155234759787e-08
+    },
+    "2. kapanma": {
+     "etki_yuzde": 15.997,
+     "alt": -8.28,
+     "ust": 46.698,
+     "p": 0.21548787923505286
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": 9.282,
+     "alt": -13.667,
+     "ust": 38.331,
+     "p": 0.46048462718190586
+    },
+    "Açılış": {
+     "etki_yuzde": 27.424,
+     "alt": 13.693,
+     "ust": 42.813,
+     "p": 3.0984824475790835e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": 4.788,
+     "alt": -14.25,
+     "ust": 28.052,
+     "p": 0.6475563263818189
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -5.462,
+     "alt": -29.019,
+     "ust": 25.913,
+     "p": 0.7008782652755758
+    },
+    "Açılış": {
+     "etki_yuzde": 47.648,
+     "alt": 29.471,
+     "ust": 68.377,
+     "p": 6.118663448908398e-09
+    },
+    "2. kapanma": {
+     "etki_yuzde": 16.836,
+     "alt": -7.427,
+     "ust": 47.46,
+     "p": 0.1901344443787859
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -20.983,
+    "2026-04": 9.824,
+    "2026-05": 27.806,
+    "2026-06": 36.771,
+    "2026-07": 64.138,
+    "2026-08": 27.137,
+    "2026-09": -41.707
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.062,
+    "1. kapanma": 0.126,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     41.54
+    ],
+    [
+     "2024-10-01",
+     46.28
+    ],
+    [
+     "2024-11-01",
+     29.82
+    ],
+    [
+     "2024-12-01",
+     30.81
+    ],
+    [
+     "2025-01-01",
+     28.93
+    ],
+    [
+     "2025-02-01",
+     31.05
+    ],
+    [
+     "2025-03-01",
+     29.19
+    ],
+    [
+     "2025-04-01",
+     27.89
+    ],
+    [
+     "2025-05-01",
+     35.46
+    ],
+    [
+     "2025-06-01",
+     46.89
+    ],
+    [
+     "2025-07-01",
+     39.68
+    ],
+    [
+     "2025-08-01",
+     53.1
+    ],
+    [
+     "2025-09-01",
+     48.35
+    ],
+    [
+     "2025-10-01",
+     47.61
+    ],
+    [
+     "2025-11-01",
+     41.12
+    ],
+    [
+     "2025-12-01",
+     35.96
+    ],
+    [
+     "2026-01-01",
+     33.53
+    ],
+    [
+     "2026-02-01",
+     40.33
+    ],
+    [
+     "2026-03-01",
+     23.07
+    ],
+    [
+     "2026-04-01",
+     30.63
+    ],
+    [
+     "2026-05-01",
+     45.32
+    ],
+    [
+     "2026-06-01",
+     64.12
+    ],
+    [
+     "2026-07-01",
+     65.13
+    ],
+    [
+     "2026-08-01",
+     67.51
+    ],
+    [
+     "2026-09-01",
+     29.1
+    ]
+   ]
+  },
+  "Katar": {
+   "hucre": 56,
+   "once_medyan_frp": 66.74,
+   "once_ortalama_frp": 71.19,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -49.523,
+     "ust": -6.301,
+     "p": 0.01766999666721106,
+     "p_holm": 0.1413599733376885
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": 0.572,
+     "ust": 51.781,
+     "p": 0.04397069792510283
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.809,
+     "ust": 2.505,
+     "p": 0.12828540083118278,
+     "p_holm": 0.7697124049870967
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -57.765,
+     "alt": -72.603,
+     "ust": -34.89,
+     "p": 9.494783840902649e-05
+    },
+    "Açılış": {
+     "etki_yuzde": 19.646,
+     "alt": -11.463,
+     "ust": 61.685,
+     "p": 0.24299753083844733
+    },
+    "2. kapanma": {
+     "etki_yuzde": -12.772,
+     "alt": -22.201,
+     "ust": -2.201,
+     "p": 0.019211793308239213
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -49.523,
+     "ust": -6.301,
+     "p": 0.01766999666721106
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": 0.572,
+     "ust": 51.781,
+     "p": 0.04397069792510283
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.809,
+     "ust": 2.505,
+     "p": 0.12828540083118278
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -49.523,
+     "ust": -6.301,
+     "p": 0.01766999666721106
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": 0.572,
+     "ust": 51.781,
+     "p": 0.04397069792510283
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.809,
+     "ust": 2.505,
+     "p": 0.12828540083118278
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -31.64,
+     "alt": -50.207,
+     "ust": -6.148,
+     "p": 0.018651290552267115
+    },
+    "Açılış": {
+     "etki_yuzde": 23.304,
+     "alt": -0.263,
+     "ust": 52.438,
+     "p": 0.05290331138358878
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.301,
+     "alt": -15.978,
+     "ust": 4.49,
+     "p": 0.24189664115884446
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -32.014,
+     "alt": -49.929,
+     "ust": -7.689,
+     "p": 0.013408557391958488
+    },
+    "Açılış": {
+     "etki_yuzde": 22.69,
+     "alt": 0.14,
+     "ust": 50.318,
+     "p": 0.04844339126853667
+    },
+    "2. kapanma": {
+     "etki_yuzde": -7.164,
+     "alt": -16.463,
+     "ust": 3.169,
+     "p": 0.16741466560030627
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -25.815,
+     "alt": -44.893,
+     "ust": -0.131,
+     "p": 0.04899730612051521
+    },
+    "Açılış": {
+     "etki_yuzde": 30.825,
+     "alt": 3.379,
+     "ust": 65.558,
+     "p": 0.025313030353807015
+    },
+    "2. kapanma": {
+     "etki_yuzde": 1.905,
+     "alt": -8.463,
+     "ust": 13.446,
+     "p": 0.7303435698099323
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -28.529,
+     "alt": -50.357,
+     "ust": 2.897,
+     "p": 0.07085680644388531
+    },
+    "Açılış": {
+     "etki_yuzde": 24.169,
+     "alt": -2.877,
+     "ust": 58.747,
+     "p": 0.08415161939808953
+    },
+    "2. kapanma": {
+     "etki_yuzde": -4.511,
+     "alt": -15.114,
+     "ust": 7.417,
+     "p": 0.44214829687279544
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -31.122,
+     "alt": -49.417,
+     "ust": -6.212,
+     "p": 0.017923905878813737
+    },
+    "Açılış": {
+     "etki_yuzde": 21.909,
+     "alt": -1.148,
+     "ust": 50.343,
+     "p": 0.06402277260301029
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.57,
+     "alt": -18.385,
+     "ust": 2.425,
+     "p": 0.12200092985336825
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -49.523,
+     "ust": -6.301,
+     "p": 0.01766999666721106
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": 0.572,
+     "ust": 51.781,
+     "p": 0.04397069792510283
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.809,
+     "ust": 2.505,
+     "p": 0.12828540083118278
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -47.777,
+     "ust": -9.435,
+     "p": 0.007685279141304131
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": 3.622,
+     "ust": 47.315,
+     "p": 0.01845439350930813
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -19.039,
+     "ust": 4.062,
+     "p": 0.18081275065262004
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -51.463,
+     "ust": -2.557,
+     "p": 0.03522973378986973
+    },
+    "Açılış": {
+     "etki_yuzde": 23.552,
+     "alt": -2.35,
+     "ust": 56.323,
+     "p": 0.07808375323148349
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.356,
+     "ust": 1.942,
+     "p": 0.10944223597401463
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -37.898,
+     "alt": -62.162,
+     "ust": 1.925,
+     "p": 0.05948979197297201
+    },
+    "Açılış": {
+     "etki_yuzde": 7.456,
+     "alt": -13.156,
+     "ust": 32.96,
+     "p": 0.5080828640799852
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.814,
+     "alt": -26.543,
+     "ust": -8.048,
+     "p": 0.0006159557537671469
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -33.562,
+     "alt": -60.794,
+     "ust": 12.585,
+     "p": 0.12863773419397076
+    },
+    "Açılış": {
+     "etki_yuzde": 20.519,
+     "alt": -1.261,
+     "ust": 47.104,
+     "p": 0.06647686862445017
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.241,
+     "alt": -17.986,
+     "ust": 2.662,
+     "p": 0.1332690687333599
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -37.385,
+     "alt": -61.717,
+     "ust": 2.411,
+     "p": 0.06217057834599192
+    },
+    "Açılış": {
+     "etki_yuzde": 7.549,
+     "alt": -12.959,
+     "ust": 32.889,
+     "p": 0.5001686662943005
+    },
+    "2. kapanma": {
+     "etki_yuzde": -17.901,
+     "alt": -26.705,
+     "ust": -8.039,
+     "p": 0.000654154125441645
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -63.703,
+    "2026-04": -83.625,
+    "2026-05": -30.539,
+    "2026-06": 27.265,
+    "2026-07": 14.809,
+    "2026-08": -14.199,
+    "2026-09": -42.765
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.018,
+    "1. kapanma": 0.126,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     65.05
+    ],
+    [
+     "2024-10-01",
+     71.33
+    ],
+    [
+     "2024-11-01",
+     64.89
+    ],
+    [
+     "2024-12-01",
+     59.87
+    ],
+    [
+     "2025-01-01",
+     55.54
+    ],
+    [
+     "2025-02-01",
+     39.84
+    ],
+    [
+     "2025-03-01",
+     53.49
+    ],
+    [
+     "2025-04-01",
+     77.56
+    ],
+    [
+     "2025-05-01",
+     91.36
+    ],
+    [
+     "2025-06-01",
+     81.22
+    ],
+    [
+     "2025-07-01",
+     61.99
+    ],
+    [
+     "2025-08-01",
+     59.16
+    ],
+    [
+     "2025-09-01",
+     85.02
+    ],
+    [
+     "2025-10-01",
+     77.94
+    ],
+    [
+     "2025-11-01",
+     69.13
+    ],
+    [
+     "2025-12-01",
+     54.16
+    ],
+    [
+     "2026-01-01",
+     69.6
+    ],
+    [
+     "2026-02-01",
+     66.65
+    ],
+    [
+     "2026-03-01",
+     19.41
+    ],
+    [
+     "2026-04-01",
+     12.7
+    ],
+    [
+     "2026-05-01",
+     63.46
+    ],
+    [
+     "2026-06-01",
+     103.36
+    ],
+    [
+     "2026-07-01",
+     71.17
+    ],
+    [
+     "2026-08-01",
+     50.76
+    ],
+    [
+     "2026-09-01",
+     48.04
+    ]
+   ]
+  },
+  "Kuveyt": {
+   "hucre": 45,
+   "once_medyan_frp": 23.97,
+   "once_ortalama_frp": 33.41,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.837,
+     "ust": 35.821,
+     "p": 0.7981567374799929,
+     "p_holm": 1.0
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 101.249,
+     "ust": 238.993,
+     "p": 5.289809980660736e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 27.14,
+     "ust": 130.384,
+     "p": 0.0003949940437038641,
+     "p_holm": 0.004739928524446369
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -1.467,
+     "alt": -36.962,
+     "ust": 54.013,
+     "p": 0.9482863194767092
+    },
+    "Açılış": {
+     "etki_yuzde": 169.752,
+     "alt": 113.55,
+     "ust": 240.745,
+     "p": 8.438209560899563e-17
+    },
+    "2. kapanma": {
+     "etki_yuzde": 58.28,
+     "alt": 20.609,
+     "ust": 107.717,
+     "p": 0.0009289481976738005
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.837,
+     "ust": 35.821,
+     "p": 0.7981567374799929
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 101.249,
+     "ust": 238.993,
+     "p": 5.289809980660736e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 27.14,
+     "ust": 130.384,
+     "p": 0.0003949940437038641
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.837,
+     "ust": 35.821,
+     "p": 0.7981567374799929
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 101.249,
+     "ust": 238.993,
+     "p": 5.289809980660736e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 27.14,
+     "ust": 130.384,
+     "p": 0.0003949940437038641
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -3.506,
+     "alt": -32.103,
+     "ust": 37.135,
+     "p": 0.8422516758563481
+    },
+    "Açılış": {
+     "etki_yuzde": 163.375,
+     "alt": 102.653,
+     "ust": 242.291,
+     "p": 4.410946032642823e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 85.008,
+     "alt": 28.277,
+     "ust": 166.827,
+     "p": 0.0009919017924937944
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -4.539,
+     "alt": -32.222,
+     "ust": 34.449,
+     "p": 0.7903351140390302
+    },
+    "Açılış": {
+     "etki_yuzde": 157.598,
+     "alt": 100.43,
+     "ust": 231.074,
+     "p": 1.460690004943944e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 76.483,
+     "alt": 26.611,
+     "ust": 146.001,
+     "p": 0.0008008738191138221
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -3.606,
+     "alt": -28.603,
+     "ust": 30.143,
+     "p": 0.8104988310147352
+    },
+    "Açılış": {
+     "etki_yuzde": 137.943,
+     "alt": 85.941,
+     "ust": 204.489,
+     "p": 5.587047205010056e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 73.285,
+     "alt": 32.211,
+     "ust": 127.119,
+     "p": 6.805885013346123e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -2.837,
+     "alt": -33.372,
+     "ust": 41.69,
+     "p": 0.8811272449246818
+    },
+    "Açılış": {
+     "etki_yuzde": 168.371,
+     "alt": 100.936,
+     "ust": 258.436,
+     "p": 2.2878627893476675e-11
+    },
+    "2. kapanma": {
+     "etki_yuzde": 108.632,
+     "alt": 39.232,
+     "ust": 212.623,
+     "p": 0.00036523692213723713
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -3.993,
+     "alt": -32.144,
+     "ust": 35.837,
+     "p": 0.8179824409524403
+    },
+    "Açılış": {
+     "etki_yuzde": 156.228,
+     "alt": 97.414,
+     "ust": 232.565,
+     "p": 1.526277194070722e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 69.768,
+     "alt": 26.155,
+     "ust": 128.459,
+     "p": 0.0004763757082763329
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.837,
+     "ust": 35.821,
+     "p": 0.7981567374799929
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 101.249,
+     "ust": 238.993,
+     "p": 5.289809980660736e-13
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 27.14,
+     "ust": 130.384,
+     "p": 0.0003949940437038641
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.859,
+     "ust": 35.866,
+     "p": 0.7983404499187077
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 105.276,
+     "ust": 232.343,
+     "p": 5.6618060741108e-15
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 23.816,
+     "ust": 136.571,
+     "p": 0.001140437157866592
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -27.788,
+     "ust": 26.325,
+     "p": 0.747434862526591
+    },
+    "Açılış": {
+     "etki_yuzde": 161.193,
+     "alt": 99.404,
+     "ust": 242.129,
+     "p": 3.137070472943537e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 26.078,
+     "ust": 132.326,
+     "p": 0.0005687382937030817
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -1.755,
+     "alt": -35.402,
+     "ust": 49.418,
+     "p": 0.9340331944136914
+    },
+    "Açılış": {
+     "etki_yuzde": 107.926,
+     "alt": 55.163,
+     "ust": 178.631,
+     "p": 9.504234884188549e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 86.074,
+     "alt": 46.963,
+     "ust": 135.593,
+     "p": 2.495111901326858e-07
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": 10.64,
+     "alt": -30.346,
+     "ust": 75.742,
+     "p": 0.6684458518080747
+    },
+    "Açılış": {
+     "etki_yuzde": 164.947,
+     "alt": 102.69,
+     "ust": 246.327,
+     "p": 1.0046856201088917e-12
+    },
+    "2. kapanma": {
+     "etki_yuzde": 72.129,
+     "alt": 25.669,
+     "ust": 135.764,
+     "p": 0.0007156142170185858
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -1.151,
+     "alt": -34.943,
+     "ust": 50.194,
+     "p": 0.956754456090138
+    },
+    "Açılış": {
+     "etki_yuzde": 107.921,
+     "alt": 55.345,
+     "ust": 178.292,
+     "p": 8.585539356728842e-07
+    },
+    "2. kapanma": {
+     "etki_yuzde": 85.376,
+     "alt": 46.611,
+     "ust": 134.391,
+     "p": 2.516051405536156e-07
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -6.562,
+    "2026-04": -11.483,
+    "2026-05": -29.436,
+    "2026-06": 164.837,
+    "2026-07": 81.305,
+    "2026-08": 16.216,
+    "2026-09": 184.814
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.066,
+    "1. kapanma": 0.117,
+    "Açılış": 0.0,
+    "2. kapanma": 0.014
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     22.62
+    ],
+    [
+     "2024-10-01",
+     21.63
+    ],
+    [
+     "2024-11-01",
+     17.63
+    ],
+    [
+     "2024-12-01",
+     21.2
+    ],
+    [
+     "2025-01-01",
+     29.91
+    ],
+    [
+     "2025-02-01",
+     25.55
+    ],
+    [
+     "2025-03-01",
+     17.22
+    ],
+    [
+     "2025-04-01",
+     41.11
+    ],
+    [
+     "2025-05-01",
+     40.46
+    ],
+    [
+     "2025-06-01",
+     20.41
+    ],
+    [
+     "2025-07-01",
+     27.44
+    ],
+    [
+     "2025-08-01",
+     22.54
+    ],
+    [
+     "2025-09-01",
+     25.15
+    ],
+    [
+     "2025-10-01",
+     45.01
+    ],
+    [
+     "2025-11-01",
+     27.41
+    ],
+    [
+     "2025-12-01",
+     16.94
+    ],
+    [
+     "2026-01-01",
+     15.91
+    ],
+    [
+     "2026-02-01",
+     40.47
+    ],
+    [
+     "2026-03-01",
+     16.09
+    ],
+    [
+     "2026-04-01",
+     36.38
+    ],
+    [
+     "2026-05-01",
+     28.55
+    ],
+    [
+     "2026-06-01",
+     54.04
+    ],
+    [
+     "2026-07-01",
+     49.75
+    ],
+    [
+     "2026-08-01",
+     26.2
+    ],
+    [
+     "2026-09-01",
+     79.05
+    ]
+   ]
+  },
+  "Suudi Arabistan": {
+   "hucre": 191,
+   "once_medyan_frp": 178.71,
+   "once_ortalama_frp": 193.7,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -10.384,
+     "ust": 35.071,
+     "p": 0.3615225523090706,
+     "p_holm": 1.0
+    },
+    "Açılış": {
+     "etki_yuzde": 20.955,
+     "alt": -2.251,
+     "ust": 49.671,
+     "p": 0.08002317348460719
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -6.853,
+     "ust": 38.836,
+     "p": 0.2066975871372173,
+     "p_holm": 1.0
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -3.03,
+     "alt": -24.176,
+     "ust": 24.013,
+     "p": 0.8063324392747983
+    },
+    "Açılış": {
+     "etki_yuzde": 20.065,
+     "alt": -0.85,
+     "ust": 45.391,
+     "p": 0.06112696137200083
+    },
+    "2. kapanma": {
+     "etki_yuzde": 14.461,
+     "alt": -2.381,
+     "ust": 34.208,
+     "p": 0.09626634250885924
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": 10.02,
+     "alt": -10.385,
+     "ust": 35.07,
+     "p": 0.3615652757483173
+    },
+    "Açılış": {
+     "etki_yuzde": 20.945,
+     "alt": -2.253,
+     "ust": 49.648,
+     "p": 0.08007374122714146
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.664,
+     "alt": -6.871,
+     "ust": 38.728,
+     "p": 0.20774622198946457
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -10.384,
+     "ust": 35.071,
+     "p": 0.3615225523090706
+    },
+    "Açılış": {
+     "etki_yuzde": 20.955,
+     "alt": -2.251,
+     "ust": 49.671,
+     "p": 0.08002317348460719
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -6.853,
+     "ust": 38.836,
+     "p": 0.2066975871372173
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 15.274,
+     "alt": -5.695,
+     "ust": 40.905,
+     "p": 0.16526355600288878
+    },
+    "Açılış": {
+     "etki_yuzde": 26.678,
+     "alt": 1.633,
+     "ust": 57.893,
+     "p": 0.03536510935093301
+    },
+    "2. kapanma": {
+     "etki_yuzde": 17.637,
+     "alt": -5.904,
+     "ust": 47.069,
+     "p": 0.1539167139475634
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": 10.918,
+     "alt": -8.94,
+     "ust": 35.107,
+     "p": 0.30322815545397985
+    },
+    "Açılış": {
+     "etki_yuzde": 22.214,
+     "alt": -1.236,
+     "ust": 51.233,
+     "p": 0.06495376297640751
+    },
+    "2. kapanma": {
+     "etki_yuzde": 14.421,
+     "alt": -6.896,
+     "ust": 40.619,
+     "p": 0.2002885275008388
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": 8.844,
+     "alt": -6.5,
+     "ust": 26.706,
+     "p": 0.27433515924145957
+    },
+    "Açılış": {
+     "etki_yuzde": 28.346,
+     "alt": 10.038,
+     "ust": 49.7,
+     "p": 0.001481988765874073
+    },
+    "2. kapanma": {
+     "etki_yuzde": 15.473,
+     "alt": -0.202,
+     "ust": 33.61,
+     "p": 0.05325679535756908
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": 19.755,
+     "alt": -2.884,
+     "ust": 47.67,
+     "p": 0.091738363725698
+    },
+    "Açılış": {
+     "etki_yuzde": 32.529,
+     "alt": 5.621,
+     "ust": 66.292,
+     "p": 0.015003357322682074
+    },
+    "2. kapanma": {
+     "etki_yuzde": 18.711,
+     "alt": -6.1,
+     "ust": 50.078,
+     "p": 0.1516117858652056
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": 9.952,
+     "alt": -10.535,
+     "ust": 35.131,
+     "p": 0.3671422094994107
+    },
+    "Açılış": {
+     "etki_yuzde": 20.386,
+     "alt": -2.548,
+     "ust": 48.717,
+     "p": 0.08531209879418299
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.492,
+     "alt": -6.991,
+     "ust": 38.486,
+     "p": 0.21265205565921275
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -10.384,
+     "ust": 35.071,
+     "p": 0.3615225523090706
+    },
+    "Açılış": {
+     "etki_yuzde": 20.955,
+     "alt": -2.251,
+     "ust": 49.671,
+     "p": 0.08002317348460719
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -6.853,
+     "ust": 38.836,
+     "p": 0.2066975871372173
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -10.813,
+     "ust": 35.72,
+     "p": 0.3725961829665333
+    },
+    "Açılış": {
+     "etki_yuzde": 20.955,
+     "alt": -2.235,
+     "ust": 49.648,
+     "p": 0.0798041378361991
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -6.645,
+     "ust": 38.525,
+     "p": 0.20159166975159093
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -7.16,
+     "ust": 30.381,
+     "p": 0.2702845407922496
+    },
+    "Açılış": {
+     "etki_yuzde": 20.955,
+     "alt": -1.441,
+     "ust": 48.441,
+     "p": 0.06859677164543947
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -8.387,
+     "ust": 41.161,
+     "p": 0.2437352704444664
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 20.23,
+     "alt": -12.028,
+     "ust": 64.317,
+     "p": 0.24769633955042714
+    },
+    "Açılış": {
+     "etki_yuzde": 18.089,
+     "alt": -8.76,
+     "ust": 52.84,
+     "p": 0.20645532188434756
+    },
+    "2. kapanma": {
+     "etki_yuzde": 21.327,
+     "alt": -0.773,
+     "ust": 48.349,
+     "p": 0.05951371558777533
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -3.653,
+     "alt": -25.436,
+     "ust": 24.495,
+     "p": 0.7759932774230931
+    },
+    "Açılış": {
+     "etki_yuzde": 18.507,
+     "alt": -5.457,
+     "ust": 48.545,
+     "p": 0.14070802318784614
+    },
+    "2. kapanma": {
+     "etki_yuzde": 15.556,
+     "alt": -5.762,
+     "ust": 41.698,
+     "p": 0.1646484019689698
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": 20.833,
+     "alt": -11.761,
+     "ust": 65.469,
+     "p": 0.23804792437891764
+    },
+    "Açılış": {
+     "etki_yuzde": 17.82,
+     "alt": -8.809,
+     "ust": 52.225,
+     "p": 0.2096346626723855
+    },
+    "2. kapanma": {
+     "etki_yuzde": 19.115,
+     "alt": -2.559,
+     "ust": 45.61,
+     "p": 0.08782227956285715
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -20.975,
+    "2026-04": -35.833,
+    "2026-05": 27.236,
+    "2026-06": 9.063,
+    "2026-07": -7.829,
+    "2026-08": 16.21,
+    "2026-09": 46.167
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.006,
+    "1. kapanma": 0.0,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     211.28
+    ],
+    [
+     "2024-10-01",
+     163.95
+    ],
+    [
+     "2024-11-01",
+     157.08
+    ],
+    [
+     "2024-12-01",
+     151.97
+    ],
+    [
+     "2025-01-01",
+     132.17
+    ],
+    [
+     "2025-02-01",
+     74.5
+    ],
+    [
+     "2025-03-01",
+     127.2
+    ],
+    [
+     "2025-04-01",
+     132.95
+    ],
+    [
+     "2025-05-01",
+     152.85
+    ],
+    [
+     "2025-06-01",
+     232.87
+    ],
+    [
+     "2025-07-01",
+     254.57
+    ],
+    [
+     "2025-08-01",
+     167.06
+    ],
+    [
+     "2025-09-01",
+     185.94
+    ],
+    [
+     "2025-10-01",
+     191.8
+    ],
+    [
+     "2025-11-01",
+     218.55
+    ],
+    [
+     "2025-12-01",
+     206.57
+    ],
+    [
+     "2026-01-01",
+     246.2
+    ],
+    [
+     "2026-02-01",
+     216.37
+    ],
+    [
+     "2026-03-01",
+     100.52
+    ],
+    [
+     "2026-04-01",
+     85.31
+    ],
+    [
+     "2026-05-01",
+     194.48
+    ],
+    [
+     "2026-06-01",
+     253.98
+    ],
+    [
+     "2026-07-01",
+     234.64
+    ],
+    [
+     "2026-08-01",
+     194.14
+    ],
+    [
+     "2026-09-01",
+     271.77
+    ]
+   ]
+  },
+  "Umman": {
+   "hucre": 99,
+   "once_medyan_frp": 80.89,
+   "once_ortalama_frp": 87.48,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.382,
+     "ust": 13.596,
+     "p": 0.5796011314471627,
+     "p_holm": 1.0
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 9.143,
+     "ust": 58.559,
+     "p": 0.003998799048077747
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 11.993,
+     "ust": 81.648,
+     "p": 0.004001736556348453,
+     "p_holm": 0.03601562900713608
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -10.034,
+     "alt": -32.881,
+     "ust": 20.589,
+     "p": 0.47928431551326467
+    },
+    "Açılış": {
+     "etki_yuzde": 44.954,
+     "alt": 15.317,
+     "ust": 82.208,
+     "p": 0.001466586728209986
+    },
+    "2. kapanma": {
+     "etki_yuzde": 52.902,
+     "alt": 14.742,
+     "ust": 103.753,
+     "p": 0.0037463624753496017
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.382,
+     "ust": 13.596,
+     "p": 0.5796011314471627
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 9.143,
+     "ust": 58.559,
+     "p": 0.003998799048077747
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 11.993,
+     "ust": 81.648,
+     "p": 0.004001736556348453
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.382,
+     "ust": 13.596,
+     "p": 0.5796011314471627
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 9.143,
+     "ust": 58.559,
+     "p": 0.003998799048077747
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 11.993,
+     "ust": 81.648,
+     "p": 0.004001736556348453
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -5.407,
+     "alt": -21.104,
+     "ust": 13.413,
+     "p": 0.5481967467189102
+    },
+    "Açılış": {
+     "etki_yuzde": 34.121,
+     "alt": 11.388,
+     "ust": 61.494,
+     "p": 0.0019471476770133419
+    },
+    "2. kapanma": {
+     "etki_yuzde": 43.645,
+     "alt": 12.697,
+     "ust": 83.091,
+     "p": 0.0034380044982421022
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -5.061,
+     "alt": -20.66,
+     "ust": 13.605,
+     "p": 0.5706631870962648
+    },
+    "Açılış": {
+     "etki_yuzde": 32.019,
+     "alt": 9.714,
+     "ust": 58.857,
+     "p": 0.0032619391222974297
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.853,
+     "alt": 12.303,
+     "ust": 81.715,
+     "p": 0.0036706294028836053
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -4.661,
+     "alt": -20.535,
+     "ust": 14.385,
+     "p": 0.6074910047997851
+    },
+    "Açılış": {
+     "etki_yuzde": 37.307,
+     "alt": 17.79,
+     "ust": 60.058,
+     "p": 5.051929266592348e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": 44.391,
+     "alt": 18.564,
+     "ust": 75.843,
+     "p": 0.00025855586651613456
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -5.732,
+     "alt": -22.202,
+     "ust": 14.225,
+     "p": 0.5468351575482435
+    },
+    "Açılış": {
+     "etki_yuzde": 35.693,
+     "alt": 12.208,
+     "ust": 64.093,
+     "p": 0.001644105166466129
+    },
+    "2. kapanma": {
+     "etki_yuzde": 46.788,
+     "alt": 14.105,
+     "ust": 88.832,
+     "p": 0.002818842620021614
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -4.663,
+     "alt": -20.159,
+     "ust": 13.84,
+     "p": 0.5977397210063926
+    },
+    "Açılış": {
+     "etki_yuzde": 30.755,
+     "alt": 8.629,
+     "ust": 57.387,
+     "p": 0.004582025822810539
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.525,
+     "alt": 11.671,
+     "ust": 81.903,
+     "p": 0.0044156459035003285
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.382,
+     "ust": 13.596,
+     "p": 0.5796011314471627
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 9.143,
+     "ust": 58.559,
+     "p": 0.003998799048077747
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 11.993,
+     "ust": 81.648,
+     "p": 0.004001736556348453
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -18.485,
+     "ust": 10.952,
+     "p": 0.5230810224923429
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 8.95,
+     "ust": 58.84,
+     "p": 0.004355147286295709
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 14.328,
+     "ust": 77.937,
+     "p": 0.0016519407199005244
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.542,
+     "ust": 13.825,
+     "p": 0.5838424998124702
+    },
+    "Açılış": {
+     "etki_yuzde": 31.551,
+     "alt": 10.343,
+     "ust": 56.835,
+     "p": 0.0022335915406624307
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 10.903,
+     "ust": 83.432,
+     "p": 0.0056715612488076675
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -10.431,
+     "alt": -28.179,
+     "ust": 11.702,
+     "p": 0.3281819835925991
+    },
+    "Açılış": {
+     "etki_yuzde": 40.473,
+     "alt": 19.081,
+     "ust": 65.708,
+     "p": 5.536378459351425e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": 41.266,
+     "alt": 11.091,
+     "ust": 79.638,
+     "p": 0.004834093357503708
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -13.222,
+     "alt": -33.839,
+     "ust": 13.82,
+     "p": 0.3055060481476788
+    },
+    "Açılış": {
+     "etki_yuzde": 29.275,
+     "alt": 6.98,
+     "ust": 56.217,
+     "p": 0.007847698323788989
+    },
+    "2. kapanma": {
+     "etki_yuzde": 44.541,
+     "alt": 13.906,
+     "ust": 83.415,
+     "p": 0.0024338420735369303
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -10.487,
+     "alt": -28.655,
+     "ust": 12.307,
+     "p": 0.3384692469234969
+    },
+    "Açılış": {
+     "etki_yuzde": 39.932,
+     "alt": 18.893,
+     "ust": 64.694,
+     "p": 5.304093328906607e-05
+    },
+    "2. kapanma": {
+     "etki_yuzde": 38.259,
+     "alt": 10.183,
+     "ust": 73.489,
+     "p": 0.005153001754342859
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -2.15,
+    "2026-04": -11.027,
+    "2026-05": 13.062,
+    "2026-06": 14.404,
+    "2026-07": 36.746,
+    "2026-08": 53.27,
+    "2026-09": 47.279
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.004,
+    "1. kapanma": 0.0,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     60.94
+    ],
+    [
+     "2024-10-01",
+     87.29
+    ],
+    [
+     "2024-11-01",
+     84.76
+    ],
+    [
+     "2024-12-01",
+     70.48
+    ],
+    [
+     "2025-01-01",
+     76.28
+    ],
+    [
+     "2025-02-01",
+     66.86
+    ],
+    [
+     "2025-03-01",
+     93.94
+    ],
+    [
+     "2025-04-01",
+     108.19
+    ],
+    [
+     "2025-05-01",
+     89.42
+    ],
+    [
+     "2025-06-01",
+     80.08
+    ],
+    [
+     "2025-07-01",
+     64.85
+    ],
+    [
+     "2025-08-01",
+     60.4
+    ],
+    [
+     "2025-09-01",
+     71.59
+    ],
+    [
+     "2025-10-01",
+     80.38
+    ],
+    [
+     "2025-11-01",
+     118.53
+    ],
+    [
+     "2025-12-01",
+     81.61
+    ],
+    [
+     "2026-01-01",
+     93.85
+    ],
+    [
+     "2026-02-01",
+     120.25
+    ],
+    [
+     "2026-03-01",
+     91.92
+    ],
+    [
+     "2026-04-01",
+     96.25
+    ],
+    [
+     "2026-05-01",
+     101.1
+    ],
+    [
+     "2026-06-01",
+     91.61
+    ],
+    [
+     "2026-07-01",
+     88.68
+    ],
+    [
+     "2026-08-01",
+     92.58
+    ],
+    [
+     "2026-09-01",
+     104.47
+    ]
+   ]
+  },
+  "İran (Asaluyeh)": {
+   "hucre": 77,
+   "once_medyan_frp": 205.75,
+   "once_ortalama_frp": 238.52,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -21.8,
+     "ust": 16.873,
+     "p": 0.6606970467863164,
+     "p_holm": 1.0
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -10.658,
+     "ust": 42.585,
+     "p": 0.31012031054200273
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -27.253,
+     "ust": -13.195,
+     "p": 3.399857831588701e-07,
+     "p_holm": 4.759800964224181e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -27.395,
+     "alt": -54.646,
+     "ust": 16.229,
+     "p": 0.18235376384184143
+    },
+    "Açılış": {
+     "etki_yuzde": 14.071,
+     "alt": -16.573,
+     "ust": 55.971,
+     "p": 0.4094835332096298
+    },
+    "2. kapanma": {
+     "etki_yuzde": -26.906,
+     "alt": -39.12,
+     "ust": -12.242,
+     "p": 0.0007797186815355305
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -21.8,
+     "ust": 16.873,
+     "p": 0.6606970467863164
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -10.658,
+     "ust": 42.585,
+     "p": 0.31012031054200273
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -27.253,
+     "ust": -13.195,
+     "p": 3.399857831588701e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -21.8,
+     "ust": 16.873,
+     "p": 0.6606970467863164
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -10.658,
+     "ust": 42.585,
+     "p": 0.31012031054200273
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -27.253,
+     "ust": -13.195,
+     "p": 3.399857831588701e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -2.441,
+     "alt": -21.461,
+     "ust": 21.186,
+     "p": 0.8232895320106264
+    },
+    "Açılış": {
+     "etki_yuzde": 19.019,
+     "alt": -7.729,
+     "ust": 53.52,
+     "p": 0.18004120559666137
+    },
+    "2. kapanma": {
+     "etki_yuzde": -21.98,
+     "alt": -30.417,
+     "ust": -12.521,
+     "p": 2.1265417289950577e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -2.565,
+     "alt": -20.937,
+     "ust": 20.075,
+     "p": 0.8073928111983673
+    },
+    "Açılış": {
+     "etki_yuzde": 15.231,
+     "alt": -8.74,
+     "ust": 45.499,
+     "p": 0.23348869185393506
+    },
+    "2. kapanma": {
+     "etki_yuzde": -21.803,
+     "alt": -29.143,
+     "ust": -13.703,
+     "p": 1.0056331175222707e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -3.481,
+     "alt": -22.68,
+     "ust": 20.486,
+     "p": 0.7542203077702467
+    },
+    "Açılış": {
+     "etki_yuzde": 15.075,
+     "alt": -6.112,
+     "ust": 41.043,
+     "p": 0.17622407711378896
+    },
+    "2. kapanma": {
+     "etki_yuzde": -18.677,
+     "alt": -26.214,
+     "ust": -10.371,
+     "p": 3.0930429008669684e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -2.149,
+     "alt": -21.791,
+     "ust": 22.426,
+     "p": 0.8492791283236294
+    },
+    "Açılış": {
+     "etki_yuzde": 24.175,
+     "alt": -6.411,
+     "ust": 64.757,
+     "p": 0.13342367170163882
+    },
+    "2. kapanma": {
+     "etki_yuzde": -23.278,
+     "alt": -32.901,
+     "ust": -12.275,
+     "p": 0.00010654242520101453
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -3.741,
+     "alt": -20.927,
+     "ust": 17.179,
+     "p": 0.7039287197083737
+    },
+    "Açılış": {
+     "etki_yuzde": 9.604,
+     "alt": -10.759,
+     "ust": 34.614,
+     "p": 0.38183551248491077
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.913,
+     "alt": -28.213,
+     "ust": -12.871,
+     "p": 2.0491922158099008e-06
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -21.8,
+     "ust": 16.873,
+     "p": 0.6606970467863164
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -10.658,
+     "ust": 42.585,
+     "p": 0.31012031054200273
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -27.253,
+     "ust": -13.195,
+     "p": 3.399857831588701e-07
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -20.61,
+     "ust": 15.12,
+     "p": 0.6350315390925263
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -12.118,
+     "ust": 44.954,
+     "p": 0.34306425958765674
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -29.102,
+     "ust": -10.931,
+     "p": 7.856050671681862e-05
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -23.776,
+     "ust": 19.902,
+     "p": 0.6970091109966869
+    },
+    "Açılış": {
+     "etki_yuzde": 12.867,
+     "alt": -7.552,
+     "ust": 37.794,
+     "p": 0.23451706228603364
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -26.175,
+     "ust": -14.462,
+     "p": 9.474842985601708e-10
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -15.146,
+     "alt": -32.865,
+     "ust": 7.25,
+     "p": 0.1693520918573448
+    },
+    "Açılış": {
+     "etki_yuzde": -7.735,
+     "alt": -20.684,
+     "ust": 7.329,
+     "p": 0.29678038110311067
+    },
+    "2. kapanma": {
+     "etki_yuzde": -23.066,
+     "alt": -32.449,
+     "ust": -12.38,
+     "p": 7.764110240563714e-05
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -10.921,
+     "alt": -32.758,
+     "ust": 18.009,
+     "p": 0.4202620291149112
+    },
+    "Açılış": {
+     "etki_yuzde": 8.618,
+     "alt": -11.737,
+     "ust": 33.668,
+     "p": 0.43492811741203874
+    },
+    "2. kapanma": {
+     "etki_yuzde": -18.803,
+     "alt": -25.634,
+     "ust": -11.345,
+     "p": 3.3839410450486947e-06
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -15.136,
+     "alt": -32.844,
+     "ust": 7.241,
+     "p": 0.16928440402044342
+    },
+    "Açılış": {
+     "etki_yuzde": -7.805,
+     "alt": -20.724,
+     "ust": 7.22,
+     "p": 0.29143031516836326
+    },
+    "2. kapanma": {
+     "etki_yuzde": -23.524,
+     "alt": -33.017,
+     "ust": -12.684,
+     "p": 7.316189794174304e-05
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -11.984,
+    "2026-04": -59.413,
+    "2026-05": 26.98,
+    "2026-06": 54.039,
+    "2026-07": -3.553,
+    "2026-08": -15.946,
+    "2026-09": -30.919
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.046,
+    "1. kapanma": 0.126,
+    "Açılış": 0.0,
+    "2. kapanma": 0.028
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     269.47
+    ],
+    [
+     "2024-10-01",
+     329.7
+    ],
+    [
+     "2024-11-01",
+     234.11
+    ],
+    [
+     "2024-12-01",
+     202.43
+    ],
+    [
+     "2025-01-01",
+     169.54
+    ],
+    [
+     "2025-02-01",
+     71.91
+    ],
+    [
+     "2025-03-01",
+     123.54
+    ],
+    [
+     "2025-04-01",
+     232.91
+    ],
+    [
+     "2025-05-01",
+     216.05
+    ],
+    [
+     "2025-06-01",
+     180.92
+    ],
+    [
+     "2025-07-01",
+     211.35
+    ],
+    [
+     "2025-08-01",
+     193.84
+    ],
+    [
+     "2025-09-01",
+     335.49
+    ],
+    [
+     "2025-10-01",
+     254.97
+    ],
+    [
+     "2025-11-01",
+     210.9
+    ],
+    [
+     "2025-12-01",
+     161.97
+    ],
+    [
+     "2026-01-01",
+     195.12
+    ],
+    [
+     "2026-02-01",
+     135.78
+    ],
+    [
+     "2026-03-01",
+     108.73
+    ],
+    [
+     "2026-04-01",
+     94.53
+    ],
+    [
+     "2026-05-01",
+     274.34
+    ],
+    [
+     "2026-06-01",
+     278.68
+    ],
+    [
+     "2026-07-01",
+     203.84
+    ],
+    [
+     "2026-08-01",
+     162.93
+    ],
+    [
+     "2026-09-01",
+     231.76
+    ]
+   ]
+  },
+  "İran (diğer)": {
+   "hucre": 251,
+   "once_medyan_frp": 231.0,
+   "once_ortalama_frp": 228.25,
+   "etki": {
+    "1. kapanma": {
+     "etki_yuzde": -30.157,
+     "alt": -40.292,
+     "ust": -18.3,
+     "p": 7.2373022995187765e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -14.974,
+     "alt": -24.62,
+     "ust": -4.094,
+     "p": 0.008278344765653405
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.489,
+     "alt": -12.124,
+     "ust": -0.493,
+     "p": 0.03435430422714807
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_log": {
+    "1. kapanma": {
+     "etki_yuzde": -34.172,
+     "alt": -47.644,
+     "ust": -17.233,
+     "p": 0.00034505267318014497
+    },
+    "Açılış": {
+     "etki_yuzde": -16.335,
+     "alt": -27.393,
+     "ust": -3.593,
+     "p": 0.013666243071344725
+    },
+    "2. kapanma": {
+     "etki_yuzde": -7.431,
+     "alt": -13.275,
+     "ust": -1.193,
+     "p": 0.020296861897806624
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_scan": {
+    "1. kapanma": {
+     "etki_yuzde": -30.188,
+     "alt": -40.317,
+     "ust": -18.341,
+     "p": 7.005212348699801e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -14.96,
+     "alt": -24.604,
+     "ust": -4.083,
+     "p": 0.0083212567230453
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.478,
+     "alt": -12.116,
+     "ust": -0.479,
+     "p": 0.03473868833992292
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_alan": {
+    "1. kapanma": {
+     "etki_yuzde": -30.157,
+     "alt": -40.292,
+     "ust": -18.3,
+     "p": 7.2373022995187765e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -14.974,
+     "alt": -24.62,
+     "ust": -4.094,
+     "p": 0.008278344765653405
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.489,
+     "alt": -12.124,
+     "ust": -0.493,
+     "p": 0.03435430422714807
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -28.605,
+     "alt": -39.71,
+     "ust": -15.454,
+     "p": 9.373052464458503e-05
+    },
+    "Açılış": {
+     "etki_yuzde": -13.679,
+     "alt": -25.761,
+     "ust": 0.37,
+     "p": 0.05587078838237003
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.963,
+     "alt": -13.174,
+     "ust": -0.308,
+     "p": 0.04062133157717903
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_ortalama": {
+    "1. kapanma": {
+     "etki_yuzde": -28.799,
+     "alt": -39.469,
+     "ust": -16.248,
+     "p": 4.120296401185498e-05
+    },
+    "Açılış": {
+     "etki_yuzde": -13.594,
+     "alt": -24.45,
+     "ust": -1.18,
+     "p": 0.032902191096173476
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.511,
+     "alt": -12.196,
+     "ust": -0.459,
+     "p": 0.035402914708853095
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_piksel_en_yuksek": {
+    "1. kapanma": {
+     "etki_yuzde": -26.159,
+     "alt": -37.649,
+     "ust": -12.553,
+     "p": 0.0004406308937566387
+    },
+    "Açılış": {
+     "etki_yuzde": -10.738,
+     "alt": -21.765,
+     "ust": 1.842,
+     "p": 0.09127939489524556
+    },
+    "2. kapanma": {
+     "etki_yuzde": -4.933,
+     "alt": -10.962,
+     "ust": 1.504,
+     "p": 0.13016338205778516
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_kural_toplam": {
+    "1. kapanma": {
+     "etki_yuzde": -29.35,
+     "alt": -40.902,
+     "ust": -15.54,
+     "p": 0.00013674501988325248
+    },
+    "Açılış": {
+     "etki_yuzde": -13.385,
+     "alt": -26.854,
+     "ust": 2.563,
+     "p": 0.09561382227595136
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.812,
+     "alt": -13.584,
+     "ust": 0.49,
+     "p": 0.06679726875785819
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_gecis_kukla": {
+    "1. kapanma": {
+     "etki_yuzde": -29.847,
+     "alt": -39.902,
+     "ust": -18.11,
+     "p": 7.073978158050156e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -15.916,
+     "alt": -24.967,
+     "ust": -5.772,
+     "p": 0.002854202491916246
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.403,
+     "alt": -11.928,
+     "ust": -0.531,
+     "p": 0.03305892758477307
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_yerel_gece": {
+    "1. kapanma": {
+     "etki_yuzde": -30.157,
+     "alt": -40.292,
+     "ust": -18.3,
+     "p": 7.2373022995187765e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -14.974,
+     "alt": -24.62,
+     "ust": -4.094,
+     "p": 0.008278344765653405
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.489,
+     "alt": -12.124,
+     "ust": -0.493,
+     "p": 0.03435430422714807
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac7": {
+    "1. kapanma": {
+     "etki_yuzde": -30.157,
+     "alt": -39.734,
+     "ust": -19.057,
+     "p": 1.8455856941194354e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -14.974,
+     "alt": -24.7,
+     "ust": -3.993,
+     "p": 0.008859281317113036
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.489,
+     "alt": -13.084,
+     "ust": 0.607,
+     "p": 0.07219531607923796
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_hac28": {
+    "1. kapanma": {
+     "etki_yuzde": -30.157,
+     "alt": -41.031,
+     "ust": -17.277,
+     "p": 3.228971011543527e-05
+    },
+    "Açılış": {
+     "etki_yuzde": -14.974,
+     "alt": -24.345,
+     "ust": -4.443,
+     "p": 0.006471163504061512
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.489,
+     "alt": -11.368,
+     "ust": -1.341,
+     "p": 0.014137537804840979
+    },
+    "n": 741,
+    "n_donem": {
+     "Savaş öncesi": 544,
+     "1. kapanma": 103,
+     "Açılış": 23,
+     "2. kapanma": 71
+    }
+   },
+   "etki_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -41.343,
+     "alt": -53.386,
+     "ust": -26.189,
+     "p": 5.368027410148224e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -26.127,
+     "alt": -37.897,
+     "ust": -12.126,
+     "p": 0.0006268169870255575
+    },
+    "2. kapanma": {
+     "etki_yuzde": -10.215,
+     "alt": -16.33,
+     "ust": -3.652,
+     "p": 0.0027561151613926253
+    },
+    "n": 692,
+    "n_donem": {
+     "Savaş öncesi": 538,
+     "1. kapanma": 64,
+     "Açılış": 22,
+     "2. kapanma": 68
+    }
+   },
+   "etki_ortak_noaa21": {
+    "1. kapanma": {
+     "etki_yuzde": -33.698,
+     "alt": -47.641,
+     "ust": -16.043,
+     "p": 0.0006454802687024336
+    },
+    "Açılış": {
+     "etki_yuzde": -13.957,
+     "alt": -24.838,
+     "ust": -1.5,
+     "p": 0.029329122465671296
+    },
+    "2. kapanma": {
+     "etki_yuzde": -6.612,
+     "alt": -12.719,
+     "ust": -0.078,
+     "p": 0.04739896402807636
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "etki_ortak_snpp": {
+    "1. kapanma": {
+     "etki_yuzde": -41.012,
+     "alt": -52.98,
+     "ust": -25.996,
+     "p": 5.067974925119003e-06
+    },
+    "Açılış": {
+     "etki_yuzde": -26.122,
+     "alt": -37.805,
+     "ust": -12.245,
+     "p": 0.0005661169959937537
+    },
+    "2. kapanma": {
+     "etki_yuzde": -10.604,
+     "alt": -16.676,
+     "ust": -4.091,
+     "p": 0.00178452638649265
+    },
+    "n": 689,
+    "n_donem": {
+     "Savaş öncesi": 537,
+     "1. kapanma": 63,
+     "Açılış": 22,
+     "2. kapanma": 67
+    }
+   },
+   "yillik": {
+    "2026-03": -35.08,
+    "2026-04": -50.205,
+    "2026-05": -22.404,
+    "2026-06": -15.607,
+    "2026-07": 3.709,
+    "2026-08": -16.629,
+    "2026-09": -9.718
+   },
+   "sifir_gece_payi": {
+    "Savaş öncesi": 0.002,
+    "1. kapanma": 0.0,
+    "Açılış": 0.0,
+    "2. kapanma": 0.0
+   },
+   "aylik": [
+    [
+     "2024-09-01",
+     275.53
+    ],
+    [
+     "2024-10-01",
+     253.51
+    ],
+    [
+     "2024-11-01",
+     223.38
+    ],
+    [
+     "2024-12-01",
+     181.11
+    ],
+    [
+     "2025-01-01",
+     136.71
+    ],
+    [
+     "2025-02-01",
+     113.28
+    ],
+    [
+     "2025-03-01",
+     181.1
+    ],
+    [
+     "2025-04-01",
+     253.26
+    ],
+    [
+     "2025-05-01",
+     268.08
+    ],
+    [
+     "2025-06-01",
+     272.76
+    ],
+    [
+     "2025-07-01",
+     211.94
+    ],
+    [
+     "2025-08-01",
+     240.54
+    ],
+    [
+     "2025-09-01",
+     278.31
+    ],
+    [
+     "2025-10-01",
+     294.64
+    ],
+    [
+     "2025-11-01",
+     275.35
+    ],
+    [
+     "2025-12-01",
+     176.41
+    ],
+    [
+     "2026-01-01",
+     173.75
+    ],
+    [
+     "2026-02-01",
+     209.32
+    ],
+    [
+     "2026-03-01",
+     117.57
+    ],
+    [
+     "2026-04-01",
+     126.11
+    ],
+    [
+     "2026-05-01",
+     208.02
+    ],
+    [
+     "2026-06-01",
+     230.19
+    ],
+    [
+     "2026-07-01",
+     219.8
+    ],
+    [
+     "2026-08-01",
+     200.54
+    ],
+    [
+     "2026-09-01",
+     239.64
+    ]
+   ]
+  }
+ },
+ "fark_guney_kuzey": {
+  "1. kapanma": {
+   "etki_yuzde": -86.98,
+   "alt": -89.651,
+   "ust": -83.621,
+   "p": 7.039827410096802e-68
+  },
+  "2. kapanma": {
+   "etki_yuzde": -51.041,
+   "alt": -61.474,
+   "ust": -37.782,
+   "p": 5.196425069886716e-09
+  }
+ },
+ "fark_guney_kuzey_snpp": {
+  "1. kapanma": {
+   "etki_yuzde": -87.328,
+   "alt": -90.69,
+   "ust": -82.751,
+   "p": 2.1453826867896206e-39
+  },
+  "2. kapanma": {
+   "etki_yuzde": -47.772,
+   "alt": -58.813,
+   "ust": -33.772,
+   "p": 8.284392202859868e-08
+  }
+ },
+ "somo": {
+  "aylik": {
+   "2025-06": {
+    "basra_milyon_varil": 97.719,
+    "basra_bin_varil_gun": 3257.313,
+    "ceyhan_milyon_varil": null,
+    "ceyhan_bin_varil_gun": null,
+    "ceyhan_kirkuk_milyon_varil": null,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": 0.947,
+    "irak_guney_frp": 1297.39,
+    "irak_kuzey_frp": 386.83
+   },
+   "2025-07": {
+    "basra_milyon_varil": 104.255,
+    "basra_bin_varil_gun": 3363.069,
+    "ceyhan_milyon_varil": null,
+    "ceyhan_bin_varil_gun": null,
+    "ceyhan_kirkuk_milyon_varil": null,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": 0.496,
+    "irak_guney_frp": 1168.78,
+    "irak_kuzey_frp": 348.69
+   },
+   "2025-08": {
+    "basra_milyon_varil": 103.896,
+    "basra_bin_varil_gun": 3351.474,
+    "ceyhan_milyon_varil": null,
+    "ceyhan_bin_varil_gun": null,
+    "ceyhan_kirkuk_milyon_varil": null,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": 0.911,
+    "irak_guney_frp": 1093.28,
+    "irak_kuzey_frp": 394.4
+   },
+   "2025-09": {
+    "basra_milyon_varil": 102.15,
+    "basra_bin_varil_gun": 3405.012,
+    "ceyhan_milyon_varil": null,
+    "ceyhan_bin_varil_gun": null,
+    "ceyhan_kirkuk_milyon_varil": null,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 1253.49,
+    "irak_kuzey_frp": 394.03
+   },
+   "2025-10": {
+    "basra_milyon_varil": 104.816,
+    "basra_bin_varil_gun": 3381.165,
+    "ceyhan_milyon_varil": 5.835,
+    "ceyhan_bin_varil_gun": 188.221,
+    "ceyhan_kirkuk_milyon_varil": 5.835,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 1216.28,
+    "irak_kuzey_frp": 382.88
+   },
+   "2025-11": {
+    "basra_milyon_varil": 98.71,
+    "basra_bin_varil_gun": 3290.326,
+    "ceyhan_milyon_varil": 7.584,
+    "ceyhan_bin_varil_gun": 252.791,
+    "ceyhan_kirkuk_milyon_varil": 7.584,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 1042.14,
+    "irak_kuzey_frp": 315.11
+   },
+   "2025-12": {
+    "basra_milyon_varil": 100.42,
+    "basra_bin_varil_gun": 3239.356,
+    "ceyhan_milyon_varil": 5.998,
+    "ceyhan_bin_varil_gun": 193.469,
+    "ceyhan_kirkuk_milyon_varil": 5.998,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": 0.924,
+    "irak_guney_frp": 574.5,
+    "irak_kuzey_frp": 193.48
+   },
+   "2026-01": {
+    "basra_milyon_varil": 101.16,
+    "basra_bin_varil_gun": 3263.237,
+    "ceyhan_milyon_varil": 6.456,
+    "ceyhan_bin_varil_gun": 208.254,
+    "ceyhan_kirkuk_milyon_varil": 6.456,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 762.27,
+    "irak_kuzey_frp": 204.15
+   },
+   "2026-02": {
+    "basra_milyon_varil": 93.349,
+    "basra_bin_varil_gun": 3333.91,
+    "ceyhan_milyon_varil": 5.552,
+    "ceyhan_bin_varil_gun": 198.272,
+    "ceyhan_kirkuk_milyon_varil": 5.552,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": 0.971,
+    "irak_guney_frp": 847.43,
+    "irak_kuzey_frp": 225.45
+   },
+   "2026-03": {
+    "basra_milyon_varil": 14.562,
+    "basra_bin_varil_gun": 469.727,
+    "ceyhan_milyon_varil": 4.043,
+    "ceyhan_bin_varil_gun": 130.433,
+    "ceyhan_kirkuk_milyon_varil": 2.772,
+    "ceyhan_krg_milyon_varil": 1.271,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 109.31,
+    "irak_kuzey_frp": 232.74
+   },
+   "2026-04": {
+    "basra_milyon_varil": 4.588,
+    "basra_bin_varil_gun": 152.92,
+    "ceyhan_milyon_varil": 5.297,
+    "ceyhan_bin_varil_gun": 176.551,
+    "ceyhan_kirkuk_milyon_varil": 4.957,
+    "ceyhan_krg_milyon_varil": 0.339,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 100.88,
+    "irak_kuzey_frp": 300.38
+   },
+   "2026-05": {
+    "basra_milyon_varil": 2.44,
+    "basra_bin_varil_gun": 78.703,
+    "ceyhan_milyon_varil": 5.194,
+    "ceyhan_bin_varil_gun": 167.535,
+    "ceyhan_kirkuk_milyon_varil": 5.194,
+    "ceyhan_krg_milyon_varil": null,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 173.28,
+    "irak_kuzey_frp": 356.76
+   },
+   "2026-06": {
+    "basra_milyon_varil": 17.799,
+    "basra_bin_varil_gun": 593.301,
+    "ceyhan_milyon_varil": 6.682,
+    "ceyhan_bin_varil_gun": 222.741,
+    "ceyhan_kirkuk_milyon_varil": 5.118,
+    "ceyhan_krg_milyon_varil": 1.565,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 237.41,
+    "irak_kuzey_frp": 465.93
+   },
+   "2026-08": {
+    "basra_milyon_varil": 69.755,
+    "basra_bin_varil_gun": 2250.159,
+    "ceyhan_milyon_varil": 3.933,
+    "ceyhan_bin_varil_gun": 126.861,
+    "ceyhan_kirkuk_milyon_varil": 1.76,
+    "ceyhan_krg_milyon_varil": 2.173,
+    "khor_zubair_qaiyarah_milyon_varil": null,
+    "irak_guney_frp": 767.62,
+    "irak_kuzey_frp": 487.65
+   }
+  },
+  "korelasyon": {
+   "aylar": [
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-08"
+   ],
+   "n": 14,
+   "pearson": 0.9053816079624364,
+   "spearman": 0.8417582417582418,
+   "savas_oncesi_aylari": [
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02"
+   ],
+   "savas_oncesi_pearson": 0.5960996303709685,
+   "kapanma_aylari": [
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-08"
+   ],
+   "kapanma_pearson": 0.971919898793748
+  },
+  "kaynak": "SOMO aylık rapor PDF'leri (Haziran 2025-Mart 2026, Ağustos 2026) ve ihracat grafiği (Nisan-Haziran 2026); somo_cek.py"
+ },
+ "erken_mart": {
+  "taban": [
+   "2026-01-15",
+   "2026-02-27"
+  ],
+  "bolgeler": {
+   "Irak (güney)": {
+    "taban_mw": 811.65,
+    "1-10 Mart": -53.652,
+    "11-31 Mart": -89.371,
+    "Nisan": -87.868,
+    "Mayıs": -79.634,
+    "1-13 Haziran": -76.716
+   },
+   "Kuveyt": {
+    "taban_mw": 37.96,
+    "1-10 Mart": -21.975,
+    "11-31 Mart": -46.841,
+    "Nisan": 6.669,
+    "Mayıs": -17.495,
+    "1-13 Haziran": 26.837
+   },
+   "Katar": {
+    "taban_mw": 78.18,
+    "1-10 Mart": -66.745,
+    "11-31 Mart": -77.804,
+    "Nisan": -66.455,
+    "Mayıs": -3.371,
+    "1-13 Haziran": 49.903
+   },
+   "Bahreyn": {
+    "taban_mw": 11.02,
+    "1-10 Mart": -73.121,
+    "11-31 Mart": -85.721,
+    "Nisan": -82.967,
+    "Mayıs": -89.09,
+    "1-13 Haziran": -80.169
+   },
+   "Batı İran (çoğu Huzistan)": {
+    "taban_mw": 729.74,
+    "1-10 Mart": 49.556,
+    "11-31 Mart": -21.867,
+    "Nisan": 47.437,
+    "Mayıs": 35.575,
+    "1-13 Haziran": 79.863
+   },
+   "İran (Asaluyeh)": {
+    "taban_mw": 175.07,
+    "1-10 Mart": -57.351,
+    "11-31 Mart": -15.265,
+    "Nisan": -18.321,
+    "Mayıs": 72.35,
+    "1-13 Haziran": 94.867
+   },
+   "Suudi Arabistan": {
+    "taban_mw": 224.48,
+    "1-10 Mart": -48.487,
+    "11-31 Mart": -50.124,
+    "Nisan": -35.835,
+    "Mayıs": 9.838,
+    "1-13 Haziran": 6.031
+   },
+   "BAE": {
+    "taban_mw": 93.17,
+    "1-10 Mart": -55.866,
+    "11-31 Mart": -13.4,
+    "Nisan": 370.754,
+    "Mayıs": 408.288,
+    "1-13 Haziran": 498.674
+   },
+   "Umman": {
+    "taban_mw": 110.26,
+    "1-10 Mart": 8.4,
+    "11-31 Mart": -43.653,
+    "Nisan": -14.276,
+    "Mayıs": -0.78,
+    "1-13 Haziran": -20.867
+   },
+   "Irak (kuzey)": {
+    "taban_mw": 211.07,
+    "1-10 Mart": 37.603,
+    "11-31 Mart": -14.604,
+    "Nisan": 48.365,
+    "Mayıs": 72.355,
+    "1-13 Haziran": 109.915
+   },
+   "İran (toplam)": {
+    "taban_mw": 1087.27,
+    "1-10 Mart": 22.594,
+    "11-31 Mart": -25.455,
+    "Nisan": 25.388,
+    "Mayıs": 38.648,
+    "1-13 Haziran": 75.259
+   },
+   "Irak (toplam)": {
+    "taban_mw": 1056.74,
+    "1-10 Mart": -33.201,
+    "11-31 Mart": -73.271,
+    "Nisan": -58.333,
+    "Mayıs": -45.817,
+    "1-13 Haziran": -34.182
+   }
+  }
+ },
+ "saglamlik": {
+  "kurgu": 6,
+  "tum": [
+   {
+    "hucre": 0.01,
+    "esik": 0.02,
+    "bolge": "Irak (güney)",
+    "k1": -84.133,
+    "k2": -39.732
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.02,
+    "bolge": "Irak (kuzey)",
+    "k1": 23.058,
+    "k2": 29.285
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.02,
+    "bolge": "Katar",
+    "k1": -24.044,
+    "k2": -0.063
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.05,
+    "bolge": "Irak (güney)",
+    "k1": -83.935,
+    "k2": -36.552
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.05,
+    "bolge": "Irak (kuzey)",
+    "k1": 23.388,
+    "k2": 29.594
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.05,
+    "bolge": "Katar",
+    "k1": -31.228,
+    "k2": -8.212
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.1,
+    "bolge": "Irak (güney)",
+    "k1": -84.005,
+    "k2": -35.331
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.1,
+    "bolge": "Irak (kuzey)",
+    "k1": 23.163,
+    "k2": 31.056
+   },
+   {
+    "hucre": 0.01,
+    "esik": 0.1,
+    "bolge": "Katar",
+    "k1": -29.127,
+    "k2": -17.837
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.02,
+    "bolge": "Irak (güney)",
+    "k1": -84.303,
+    "k2": -40.953
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.02,
+    "bolge": "Irak (kuzey)",
+    "k1": 21.528,
+    "k2": 27.663
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.02,
+    "bolge": "Katar",
+    "k1": -21.036,
+    "k2": -0.704
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.05,
+    "bolge": "Irak (güney)",
+    "k1": -84.236,
+    "k2": -38.623
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.05,
+    "bolge": "Irak (kuzey)",
+    "k1": 21.716,
+    "k2": 28.169
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.05,
+    "bolge": "Katar",
+    "k1": -27.38,
+    "k2": -3.335
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.1,
+    "bolge": "Irak (güney)",
+    "k1": -84.282,
+    "k2": -36.836
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.1,
+    "bolge": "Irak (kuzey)",
+    "k1": 21.863,
+    "k2": 29.379
+   },
+   {
+    "hucre": 0.02,
+    "esik": 0.1,
+    "bolge": "Katar",
+    "k1": -27.081,
+    "k2": -7.398
+   }
+  ],
+  "Irak (güney)": {
+   "k1_aralik": [
+    -84.303,
+    -83.935
+   ],
+   "k2_aralik": [
+    -40.953,
+    -35.331
+   ]
+  },
+  "Irak (kuzey)": {
+   "k1_aralik": [
+    21.528,
+    23.388
+   ],
+   "k2_aralik": [
+    27.663,
+    31.056
+   ]
+  },
+  "Katar": {
+   "k1_aralik": [
+    -31.228,
+    -21.036
+   ],
+   "k2_aralik": [
+    -17.837,
+    -0.063
+   ]
+  }
+ },
+ "harita": [
+  {
+   "lon": 43.55,
+   "lat": 35.05,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 2.7,
+   "d1": 70.5,
+   "d2": 190.2
+  },
+  {
+   "lon": 43.65,
+   "lat": 36.05,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 3.5,
+   "d1": 13.4,
+   "d2": -5.5
+  },
+  {
+   "lon": 43.75,
+   "lat": 34.85,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 6.2,
+   "d1": 21.5,
+   "d2": 25.7
+  },
+  {
+   "lon": 43.75,
+   "lat": 35.95,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 11.9,
+   "d1": 33.3,
+   "d2": 105.3
+  },
+  {
+   "lon": 43.85,
+   "lat": 34.85,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 49.8,
+   "d1": 15.8,
+   "d2": 45.7
+  },
+  {
+   "lon": 43.85,
+   "lat": 35.65,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 58.3,
+   "d1": 54.4,
+   "d2": -5.0
+  },
+  {
+   "lon": 43.95,
+   "lat": 35.65,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 11.2,
+   "d1": -37.0,
+   "d2": -61.5
+  },
+  {
+   "lon": 43.95,
+   "lat": 35.75,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 4.4,
+   "d1": 1.8,
+   "d2": 50.6
+  },
+  {
+   "lon": 44.05,
+   "lat": 34.85,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 7.6,
+   "d1": 14.9,
+   "d2": 47.2
+  },
+  {
+   "lon": 44.05,
+   "lat": 35.65,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 24.8,
+   "d1": 23.2,
+   "d2": 23.1
+  },
+  {
+   "lon": 44.05,
+   "lat": 35.75,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 13.4,
+   "d1": 95.4,
+   "d2": 93.1
+  },
+  {
+   "lon": 44.15,
+   "lat": 35.45,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 10.2,
+   "d1": 71.9,
+   "d2": 141.6
+  },
+  {
+   "lon": 44.25,
+   "lat": 35.35,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 6.4,
+   "d1": 35.7,
+   "d2": 64.5
+  },
+  {
+   "lon": 44.25,
+   "lat": 35.45,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 2.2,
+   "d1": 52.8,
+   "d2": 7.9
+  },
+  {
+   "lon": 44.35,
+   "lat": 33.45,
+   "bolge": "Irak (orta)",
+   "once_mw": 2.9,
+   "d1": -72.8,
+   "d2": -58.6
+  },
+  {
+   "lon": 44.35,
+   "lat": 35.55,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 27.9,
+   "d1": -43.0,
+   "d2": -42.1
+  },
+  {
+   "lon": 44.45,
+   "lat": 31.95,
+   "bolge": "Irak (güney)",
+   "once_mw": 2.3,
+   "d1": -87.2,
+   "d2": -90.6
+  },
+  {
+   "lon": 44.45,
+   "lat": 35.25,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 8.9,
+   "d1": 1148.6,
+   "d2": 84.8
+  },
+  {
+   "lon": 44.45,
+   "lat": 35.45,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 5.7,
+   "d1": -28.2,
+   "d2": 35.7
+  },
+  {
+   "lon": 44.55,
+   "lat": 33.35,
+   "bolge": "Irak (orta)",
+   "once_mw": 4.2,
+   "d1": 43.2,
+   "d2": 77.0
+  },
+  {
+   "lon": 44.55,
+   "lat": 35.15,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 2.1,
+   "d1": -31.9,
+   "d2": 9.1
+  },
+  {
+   "lon": 44.75,
+   "lat": 33.15,
+   "bolge": "Irak (orta)",
+   "once_mw": 11.5,
+   "d1": -3.1,
+   "d2": 17.2
+  },
+  {
+   "lon": 44.75,
+   "lat": 33.25,
+   "bolge": "Irak (orta)",
+   "once_mw": 16.3,
+   "d1": 47.2,
+   "d2": 10.3
+  },
+  {
+   "lon": 44.85,
+   "lat": 35.15,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 7.0,
+   "d1": null,
+   "d2": -93.2
+  },
+  {
+   "lon": 45.05,
+   "lat": 35.65,
+   "bolge": "Irak (kuzey)",
+   "once_mw": 4.0,
+   "d1": -28.3,
+   "d2": -0.3
+  },
+  {
+   "lon": 45.65,
+   "lat": 24.75,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 3.7,
+   "d1": 20.5,
+   "d2": 49.4
+  },
+  {
+   "lon": 45.65,
+   "lat": 32.45,
+   "bolge": "Irak (güney)",
+   "once_mw": 7.7,
+   "d1": -60.6,
+   "d2": 3.2
+  },
+  {
+   "lon": 45.95,
+   "lat": 31.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 9.8,
+   "d1": 73.0,
+   "d2": -16.1
+  },
+  {
+   "lon": 46.05,
+   "lat": 31.75,
+   "bolge": "Irak (güney)",
+   "once_mw": 35.4,
+   "d1": -96.8,
+   "d2": -34.5
+  },
+  {
+   "lon": 46.15,
+   "lat": 32.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.3,
+   "d1": 30.0,
+   "d2": -51.0
+  },
+  {
+   "lon": 46.15,
+   "lat": 33.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.6,
+   "d1": -27.2,
+   "d2": 4.7
+  },
+  {
+   "lon": 46.25,
+   "lat": 33.65,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 5.2,
+   "d1": 420.4,
+   "d2": 40.7
+  },
+  {
+   "lon": 46.25,
+   "lat": 33.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.4,
+   "d1": -0.2,
+   "d2": -60.0
+  },
+  {
+   "lon": 46.85,
+   "lat": 30.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 7.0,
+   "d1": -95.9,
+   "d2": -100.0
+  },
+  {
+   "lon": 47.05,
+   "lat": 24.95,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.2,
+   "d1": 67.6,
+   "d2": 59.7
+  },
+  {
+   "lon": 47.15,
+   "lat": 24.45,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 6.7,
+   "d1": -15.3,
+   "d2": 145.4
+  },
+  {
+   "lon": 47.15,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 27.4,
+   "d1": -85.6,
+   "d2": 9.0
+  },
+  {
+   "lon": 47.25,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 4.8,
+   "d1": -81.3,
+   "d2": -86.5
+  },
+  {
+   "lon": 47.25,
+   "lat": 31.05,
+   "bolge": "Irak (güney)",
+   "once_mw": 209.1,
+   "d1": -97.7,
+   "d2": -73.7
+  },
+  {
+   "lon": 47.25,
+   "lat": 31.15,
+   "bolge": "Irak (güney)",
+   "once_mw": 4.7,
+   "d1": -99.2,
+   "d2": -100.0
+  },
+  {
+   "lon": 47.25,
+   "lat": 31.65,
+   "bolge": "Irak (güney)",
+   "once_mw": 3.3,
+   "d1": -33.6,
+   "d2": 27.1
+  },
+  {
+   "lon": 47.25,
+   "lat": 32.25,
+   "bolge": "Irak (güney)",
+   "once_mw": 16.5,
+   "d1": -97.2,
+   "d2": -16.3
+  },
+  {
+   "lon": 47.25,
+   "lat": 32.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 17.2,
+   "d1": 11.6,
+   "d2": -1.1
+  },
+  {
+   "lon": 47.25,
+   "lat": 32.55,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.2,
+   "d1": 14.8,
+   "d2": -78.7
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.15,
+   "bolge": "Irak (güney)",
+   "once_mw": 3.8,
+   "d1": -98.2,
+   "d2": -60.8
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.25,
+   "bolge": "Irak (güney)",
+   "once_mw": 45.4,
+   "d1": -96.8,
+   "d2": 31.4
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 40.1,
+   "d1": -98.3,
+   "d2": 17.3
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.45,
+   "bolge": "Irak (güney)",
+   "once_mw": 22.2,
+   "d1": -53.2,
+   "d2": -12.3
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 30.0,
+   "d1": -59.6,
+   "d2": -2.9
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.65,
+   "bolge": "Irak (güney)",
+   "once_mw": 49.1,
+   "d1": -65.8,
+   "d2": 10.5
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.75,
+   "bolge": "Irak (güney)",
+   "once_mw": 19.1,
+   "d1": -99.0,
+   "d2": -18.7
+  },
+  {
+   "lon": 47.35,
+   "lat": 30.85,
+   "bolge": "Irak (güney)",
+   "once_mw": 90.0,
+   "d1": -94.3,
+   "d2": -38.8
+  },
+  {
+   "lon": 47.45,
+   "lat": 30.15,
+   "bolge": "Irak (güney)",
+   "once_mw": 21.5,
+   "d1": -97.8,
+   "d2": -0.7
+  },
+  {
+   "lon": 47.45,
+   "lat": 32.05,
+   "bolge": "Irak (güney)",
+   "once_mw": 25.5,
+   "d1": -94.8,
+   "d2": -37.9
+  },
+  {
+   "lon": 47.45,
+   "lat": 32.15,
+   "bolge": "Irak (güney)",
+   "once_mw": 56.6,
+   "d1": -95.7,
+   "d2": 3.5
+  },
+  {
+   "lon": 47.45,
+   "lat": 32.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 3.8,
+   "d1": -33.3,
+   "d2": 4.3
+  },
+  {
+   "lon": 47.55,
+   "lat": 24.75,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.4,
+   "d1": -18.0,
+   "d2": 3.6
+  },
+  {
+   "lon": 47.55,
+   "lat": 30.45,
+   "bolge": "Irak (güney)",
+   "once_mw": 2.4,
+   "d1": -72.3,
+   "d2": -43.8
+  },
+  {
+   "lon": 47.55,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 2.2,
+   "d1": -65.3,
+   "d2": -12.5
+  },
+  {
+   "lon": 47.55,
+   "lat": 31.65,
+   "bolge": "Irak (güney)",
+   "once_mw": 34.9,
+   "d1": -84.4,
+   "d2": -34.8
+  },
+  {
+   "lon": 47.55,
+   "lat": 32.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 43.5,
+   "d1": -91.3,
+   "d2": -24.1
+  },
+  {
+   "lon": 47.55,
+   "lat": 32.55,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 5.5,
+   "d1": 0.8,
+   "d2": -0.1
+  },
+  {
+   "lon": 47.65,
+   "lat": 29.05,
+   "bolge": "Kuveyt",
+   "once_mw": 2.2,
+   "d1": 3.5,
+   "d2": null
+  },
+  {
+   "lon": 47.65,
+   "lat": 30.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 4.9,
+   "d1": -28.7,
+   "d2": 54.3
+  },
+  {
+   "lon": 47.65,
+   "lat": 30.45,
+   "bolge": "Irak (güney)",
+   "once_mw": 14.0,
+   "d1": -2.5,
+   "d2": 18.9
+  },
+  {
+   "lon": 47.65,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 16.1,
+   "d1": -58.6,
+   "d2": -53.1
+  },
+  {
+   "lon": 47.65,
+   "lat": 30.75,
+   "bolge": "Irak (güney)",
+   "once_mw": 7.7,
+   "d1": -55.5,
+   "d2": -35.4
+  },
+  {
+   "lon": 47.65,
+   "lat": 31.05,
+   "bolge": "Irak (güney)",
+   "once_mw": 25.5,
+   "d1": -86.0,
+   "d2": -26.2
+  },
+  {
+   "lon": 47.65,
+   "lat": 32.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.5,
+   "d1": 19.0,
+   "d2": -20.1
+  },
+  {
+   "lon": 47.75,
+   "lat": 29.05,
+   "bolge": "Kuveyt",
+   "once_mw": 4.0,
+   "d1": -36.6,
+   "d2": 3151.8
+  },
+  {
+   "lon": 47.75,
+   "lat": 29.85,
+   "bolge": "Kuveyt",
+   "once_mw": 2.5,
+   "d1": -32.7,
+   "d2": -93.5
+  },
+  {
+   "lon": 47.75,
+   "lat": 30.25,
+   "bolge": "Irak (güney)",
+   "once_mw": 19.8,
+   "d1": -82.6,
+   "d2": -46.9
+  },
+  {
+   "lon": 47.75,
+   "lat": 30.35,
+   "bolge": "Irak (güney)",
+   "once_mw": 6.0,
+   "d1": -100.0,
+   "d2": null
+  },
+  {
+   "lon": 47.75,
+   "lat": 30.45,
+   "bolge": "Irak (güney)",
+   "once_mw": 4.5,
+   "d1": 29.2,
+   "d2": -21.2
+  },
+  {
+   "lon": 47.75,
+   "lat": 30.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 3.7,
+   "d1": -100.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 47.75,
+   "lat": 31.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 49.0,
+   "d1": 15.2,
+   "d2": 16.5
+  },
+  {
+   "lon": 47.75,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.2,
+   "d1": 49.4,
+   "d2": 1.2
+  },
+  {
+   "lon": 47.75,
+   "lat": 31.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.2,
+   "d1": 49.5,
+   "d2": 31.9
+  },
+  {
+   "lon": 47.75,
+   "lat": 31.55,
+   "bolge": "Irak (güney)",
+   "once_mw": 3.6,
+   "d1": -100.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 47.75,
+   "lat": 31.65,
+   "bolge": "Irak (güney)",
+   "once_mw": 2.8,
+   "d1": null,
+   "d2": -100.0
+  },
+  {
+   "lon": 47.75,
+   "lat": 32.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 41.2,
+   "d1": -37.0,
+   "d2": -33.0
+  },
+  {
+   "lon": 47.75,
+   "lat": 33.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.1,
+   "d1": 27.9,
+   "d2": 38.1
+  },
+  {
+   "lon": 47.85,
+   "lat": 31.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.2,
+   "d1": 16.1,
+   "d2": -14.1
+  },
+  {
+   "lon": 47.85,
+   "lat": 31.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.4,
+   "d1": 93.5,
+   "d2": -15.6
+  },
+  {
+   "lon": 47.85,
+   "lat": 31.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.5,
+   "d1": 1312.5,
+   "d2": 81.0
+  },
+  {
+   "lon": 47.95,
+   "lat": 28.55,
+   "bolge": "Kuveyt",
+   "once_mw": 5.9,
+   "d1": -75.5,
+   "d2": -57.5
+  },
+  {
+   "lon": 47.95,
+   "lat": 29.05,
+   "bolge": "Kuveyt",
+   "once_mw": 3.1,
+   "d1": -92.7,
+   "d2": null
+  },
+  {
+   "lon": 47.95,
+   "lat": 30.85,
+   "bolge": "Irak (güney)",
+   "once_mw": 107.1,
+   "d1": -72.2,
+   "d2": -83.5
+  },
+  {
+   "lon": 47.95,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.1,
+   "d1": 153.7,
+   "d2": 69.9
+  },
+  {
+   "lon": 48.05,
+   "lat": 31.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 15.2,
+   "d1": 79.3,
+   "d2": -55.3
+  },
+  {
+   "lon": 48.15,
+   "lat": 25.25,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 3.7,
+   "d1": 584.8,
+   "d2": 7.3
+  },
+  {
+   "lon": 48.15,
+   "lat": 28.95,
+   "bolge": "Kuveyt",
+   "once_mw": 4.5,
+   "d1": -32.6,
+   "d2": 4.7
+  },
+  {
+   "lon": 48.15,
+   "lat": 29.05,
+   "bolge": "Kuveyt",
+   "once_mw": 4.5,
+   "d1": 211.1,
+   "d2": 43.2
+  },
+  {
+   "lon": 48.15,
+   "lat": 31.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.3,
+   "d1": 1919.4,
+   "d2": 165.7
+  },
+  {
+   "lon": 48.15,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 87.7,
+   "d1": -6.7,
+   "d2": 26.6
+  },
+  {
+   "lon": 48.25,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 5.2,
+   "d1": 7.0,
+   "d2": 81.7
+  },
+  {
+   "lon": 48.25,
+   "lat": 30.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.3,
+   "d1": -11.1,
+   "d2": 9.2
+  },
+  {
+   "lon": 48.25,
+   "lat": 30.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 72.9,
+   "d1": 80.0,
+   "d2": 88.9
+  },
+  {
+   "lon": 48.25,
+   "lat": 32.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.3,
+   "d1": -52.7,
+   "d2": -100.0
+  },
+  {
+   "lon": 48.35,
+   "lat": 28.75,
+   "bolge": "Kuveyt",
+   "once_mw": 2.8,
+   "d1": 90.4,
+   "d2": 498.4
+  },
+  {
+   "lon": 48.45,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 6.1,
+   "d1": -63.5,
+   "d2": -100.0
+  },
+  {
+   "lon": 48.55,
+   "lat": 28.35,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 5.4,
+   "d1": -47.6,
+   "d2": -79.5
+  },
+  {
+   "lon": 48.65,
+   "lat": 31.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 15.8,
+   "d1": -54.6,
+   "d2": -82.0
+  },
+  {
+   "lon": 48.65,
+   "lat": 32.65,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.3,
+   "d1": -100.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 48.75,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 15.4,
+   "d1": -70.8,
+   "d2": 42.0
+  },
+  {
+   "lon": 48.75,
+   "lat": 31.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 8.2,
+   "d1": 100.7,
+   "d2": -27.3
+  },
+  {
+   "lon": 48.85,
+   "lat": 27.85,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 5.9,
+   "d1": -82.7,
+   "d2": null
+  },
+  {
+   "lon": 48.85,
+   "lat": 30.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 20.1,
+   "d1": 58.5,
+   "d2": -68.5
+  },
+  {
+   "lon": 48.85,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 10.8,
+   "d1": -38.1,
+   "d2": -80.9
+  },
+  {
+   "lon": 48.95,
+   "lat": 28.45,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.1,
+   "d1": null,
+   "d2": -100.0
+  },
+  {
+   "lon": 48.95,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 37.3,
+   "d1": 59.7,
+   "d2": 59.3
+  },
+  {
+   "lon": 49.05,
+   "lat": 30.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.6,
+   "d1": -41.3,
+   "d2": -61.9
+  },
+  {
+   "lon": 49.05,
+   "lat": 32.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.2,
+   "d1": 162.9,
+   "d2": -100.0
+  },
+  {
+   "lon": 49.05,
+   "lat": 32.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 11.8,
+   "d1": -44.3,
+   "d2": -98.7
+  },
+  {
+   "lon": 49.05,
+   "lat": 32.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 5.6,
+   "d1": -64.5,
+   "d2": -100.0
+  },
+  {
+   "lon": 49.15,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.6,
+   "d1": -9.2,
+   "d2": -66.7
+  },
+  {
+   "lon": 49.15,
+   "lat": 31.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 6.3,
+   "d1": -3.3,
+   "d2": -74.7
+  },
+  {
+   "lon": 49.15,
+   "lat": 31.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.4,
+   "d1": -45.8,
+   "d2": -9.2
+  },
+  {
+   "lon": 49.25,
+   "lat": 27.15,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 3.4,
+   "d1": -33.8,
+   "d2": 263.0
+  },
+  {
+   "lon": 49.25,
+   "lat": 31.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.0,
+   "d1": 46.7,
+   "d2": 17.5
+  },
+  {
+   "lon": 49.25,
+   "lat": 31.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 16.2,
+   "d1": -7.6,
+   "d2": -5.2
+  },
+  {
+   "lon": 49.25,
+   "lat": 31.65,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.8,
+   "d1": -57.3,
+   "d2": -1.3
+  },
+  {
+   "lon": 49.35,
+   "lat": 24.75,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 4.1,
+   "d1": 16.8,
+   "d2": -18.8
+  },
+  {
+   "lon": 49.35,
+   "lat": 25.15,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 4.4,
+   "d1": 54.2,
+   "d2": 76.2
+  },
+  {
+   "lon": 49.35,
+   "lat": 25.65,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 15.3,
+   "d1": -28.6,
+   "d2": -5.6
+  },
+  {
+   "lon": 49.35,
+   "lat": 31.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.5,
+   "d1": 6.4,
+   "d2": -8.5
+  },
+  {
+   "lon": 49.35,
+   "lat": 31.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 43.8,
+   "d1": -31.9,
+   "d2": -21.9
+  },
+  {
+   "lon": 49.45,
+   "lat": 24.85,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.3,
+   "d1": -62.8,
+   "d2": -23.5
+  },
+  {
+   "lon": 49.45,
+   "lat": 25.65,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.2,
+   "d1": 6.5,
+   "d2": 87.7
+  },
+  {
+   "lon": 49.45,
+   "lat": 26.95,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 4.4,
+   "d1": null,
+   "d2": -54.8
+  },
+  {
+   "lon": 49.45,
+   "lat": 29.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.4,
+   "d1": -22.5,
+   "d2": -40.5
+  },
+  {
+   "lon": 49.45,
+   "lat": 31.55,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.2,
+   "d1": -72.1,
+   "d2": -95.0
+  },
+  {
+   "lon": 49.55,
+   "lat": 25.65,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.3,
+   "d1": -22.0,
+   "d2": -9.2
+  },
+  {
+   "lon": 49.55,
+   "lat": 26.95,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 5.7,
+   "d1": 92.5,
+   "d2": 193.6
+  },
+  {
+   "lon": 49.55,
+   "lat": 27.05,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 38.6,
+   "d1": -22.1,
+   "d2": -36.3
+  },
+  {
+   "lon": 49.55,
+   "lat": 28.25,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 3.0,
+   "d1": null,
+   "d2": null
+  },
+  {
+   "lon": 49.55,
+   "lat": 28.35,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 5.0,
+   "d1": null,
+   "d2": null
+  },
+  {
+   "lon": 49.55,
+   "lat": 29.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.1,
+   "d1": 162.9,
+   "d2": 6.4
+  },
+  {
+   "lon": 49.55,
+   "lat": 30.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.7,
+   "d1": -37.4,
+   "d2": -21.8
+  },
+  {
+   "lon": 49.55,
+   "lat": 30.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 24.5,
+   "d1": -85.7,
+   "d2": -89.2
+  },
+  {
+   "lon": 49.55,
+   "lat": 31.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.0,
+   "d1": -91.9,
+   "d2": -92.2
+  },
+  {
+   "lon": 49.65,
+   "lat": 27.05,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.2,
+   "d1": 20.3,
+   "d2": 176.1
+  },
+  {
+   "lon": 49.65,
+   "lat": 29.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.4,
+   "d1": -19.3,
+   "d2": 3.5
+  },
+  {
+   "lon": 49.65,
+   "lat": 30.85,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 13.3,
+   "d1": -18.1,
+   "d2": -65.7
+  },
+  {
+   "lon": 49.65,
+   "lat": 30.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 11.4,
+   "d1": -64.4,
+   "d2": -98.2
+  },
+  {
+   "lon": 49.75,
+   "lat": 28.45,
+   "bolge": "İran (diğer)",
+   "once_mw": 28.8,
+   "d1": -22.6,
+   "d2": 16.4
+  },
+  {
+   "lon": 49.75,
+   "lat": 30.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 12.7,
+   "d1": -49.5,
+   "d2": -92.7
+  },
+  {
+   "lon": 49.75,
+   "lat": 30.85,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.4,
+   "d1": -66.5,
+   "d2": -93.5
+  },
+  {
+   "lon": 49.85,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 42.0,
+   "d1": -65.3,
+   "d2": -100.0
+  },
+  {
+   "lon": 49.85,
+   "lat": 30.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 6.4,
+   "d1": -57.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 49.85,
+   "lat": 30.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 35.5,
+   "d1": -43.0,
+   "d2": -70.3
+  },
+  {
+   "lon": 49.85,
+   "lat": 30.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.6,
+   "d1": 82.4,
+   "d2": -60.2
+  },
+  {
+   "lon": 49.95,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.8,
+   "d1": -70.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 49.95,
+   "lat": 30.55,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 10.2,
+   "d1": -53.2,
+   "d2": -28.0
+  },
+  {
+   "lon": 49.95,
+   "lat": 30.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.1,
+   "d1": -93.0,
+   "d2": -85.6
+  },
+  {
+   "lon": 50.05,
+   "lat": 26.65,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.3,
+   "d1": 115.9,
+   "d2": 128.1
+  },
+  {
+   "lon": 50.05,
+   "lat": 30.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 9.8,
+   "d1": -65.9,
+   "d2": -91.8
+  },
+  {
+   "lon": 50.05,
+   "lat": 30.55,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 10.1,
+   "d1": -20.7,
+   "d2": -7.3
+  },
+  {
+   "lon": 50.15,
+   "lat": 24.75,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 4.0,
+   "d1": null,
+   "d2": -98.7
+  },
+  {
+   "lon": 50.15,
+   "lat": 26.65,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 3.3,
+   "d1": -61.9,
+   "d2": -61.8
+  },
+  {
+   "lon": 50.15,
+   "lat": 30.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.0,
+   "d1": -65.5,
+   "d2": -96.8
+  },
+  {
+   "lon": 50.25,
+   "lat": 24.75,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 7.4,
+   "d1": -97.4,
+   "d2": -100.0
+  },
+  {
+   "lon": 50.25,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 8.4,
+   "d1": -35.8,
+   "d2": 151.7
+  },
+  {
+   "lon": 50.35,
+   "lat": 29.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 8.2,
+   "d1": 78.1,
+   "d2": -49.6
+  },
+  {
+   "lon": 50.35,
+   "lat": 29.75,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 5.3,
+   "d1": -89.6,
+   "d2": -91.5
+  },
+  {
+   "lon": 50.35,
+   "lat": 30.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.7,
+   "d1": -97.2,
+   "d2": -68.8
+  },
+  {
+   "lon": 50.35,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 2.1,
+   "d1": 1.1,
+   "d2": -59.9
+  },
+  {
+   "lon": 50.35,
+   "lat": 30.65,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 4.3,
+   "d1": -24.6,
+   "d2": -75.8
+  },
+  {
+   "lon": 50.45,
+   "lat": 30.15,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 16.2,
+   "d1": -76.5,
+   "d2": -82.2
+  },
+  {
+   "lon": 50.45,
+   "lat": 30.45,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 22.9,
+   "d1": -70.7,
+   "d2": -90.7
+  },
+  {
+   "lon": 50.55,
+   "lat": 30.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 3.1,
+   "d1": -60.5,
+   "d2": -94.1
+  },
+  {
+   "lon": 50.65,
+   "lat": 26.15,
+   "bolge": "Bahreyn",
+   "once_mw": 8.1,
+   "d1": -83.2,
+   "d2": -89.1
+  },
+  {
+   "lon": 50.65,
+   "lat": 30.05,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 14.4,
+   "d1": -54.9,
+   "d2": -69.6
+  },
+  {
+   "lon": 50.65,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 25.6,
+   "d1": -32.5,
+   "d2": -61.4
+  },
+  {
+   "lon": 50.75,
+   "lat": 30.25,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 27.5,
+   "d1": -53.9,
+   "d2": -78.6
+  },
+  {
+   "lon": 50.75,
+   "lat": 30.35,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 6.4,
+   "d1": -63.8,
+   "d2": -55.2
+  },
+  {
+   "lon": 50.85,
+   "lat": 29.95,
+   "bolge": "Batı İran (çoğu Huzistan)",
+   "once_mw": 7.4,
+   "d1": -60.0,
+   "d2": -100.0
+  },
+  {
+   "lon": 51.25,
+   "lat": 29.55,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.9,
+   "d1": -15.4,
+   "d2": -17.1
+  },
+  {
+   "lon": 51.35,
+   "lat": 32.45,
+   "bolge": "İran (diğer)",
+   "once_mw": 9.0,
+   "d1": -38.8,
+   "d2": -31.9
+  },
+  {
+   "lon": 51.45,
+   "lat": 25.95,
+   "bolge": "Katar",
+   "once_mw": 4.1,
+   "d1": -95.8,
+   "d2": -100.0
+  },
+  {
+   "lon": 51.45,
+   "lat": 32.25,
+   "bolge": "İran (diğer)",
+   "once_mw": 60.7,
+   "d1": -83.6,
+   "d2": -40.6
+  },
+  {
+   "lon": 51.45,
+   "lat": 35.55,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.3,
+   "d1": 17.1,
+   "d2": 8.8
+  },
+  {
+   "lon": 51.55,
+   "lat": 24.95,
+   "bolge": "Katar",
+   "once_mw": 7.2,
+   "d1": 1.8,
+   "d2": 36.0
+  },
+  {
+   "lon": 51.55,
+   "lat": 25.85,
+   "bolge": "Katar",
+   "once_mw": 16.9,
+   "d1": -29.8,
+   "d2": -31.6
+  },
+  {
+   "lon": 51.55,
+   "lat": 25.95,
+   "bolge": "Katar",
+   "once_mw": 22.6,
+   "d1": -33.0,
+   "d2": -30.6
+  },
+  {
+   "lon": 51.55,
+   "lat": 32.45,
+   "bolge": "İran (diğer)",
+   "once_mw": 3.5,
+   "d1": 48.8,
+   "d2": -53.2
+  },
+  {
+   "lon": 51.55,
+   "lat": 32.75,
+   "bolge": "İran (diğer)",
+   "once_mw": 3.6,
+   "d1": -22.5,
+   "d2": -3.5
+  },
+  {
+   "lon": 51.55,
+   "lat": 35.55,
+   "bolge": "İran (diğer)",
+   "once_mw": 3.5,
+   "d1": -14.8,
+   "d2": 32.9
+  },
+  {
+   "lon": 51.65,
+   "lat": 25.95,
+   "bolge": "Katar",
+   "once_mw": 2.8,
+   "d1": -78.0,
+   "d2": -91.8
+  },
+  {
+   "lon": 52.15,
+   "lat": 27.75,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 102.7,
+   "d1": -17.5,
+   "d2": -25.9
+  },
+  {
+   "lon": 52.15,
+   "lat": 27.95,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 2.2,
+   "d1": 162.7,
+   "d2": 45.9
+  },
+  {
+   "lon": 52.25,
+   "lat": 27.65,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 34.5,
+   "d1": 20.7,
+   "d2": -7.5
+  },
+  {
+   "lon": 52.55,
+   "lat": 25.55,
+   "bolge": "Katar",
+   "once_mw": 3.8,
+   "d1": 83.8,
+   "d2": 11.2
+  },
+  {
+   "lon": 52.55,
+   "lat": 27.55,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 29.2,
+   "d1": 13.8,
+   "d2": 5.9
+  },
+  {
+   "lon": 52.65,
+   "lat": 24.15,
+   "bolge": "BAE",
+   "once_mw": 4.2,
+   "d1": -53.6,
+   "d2": 7.2
+  },
+  {
+   "lon": 52.65,
+   "lat": 27.45,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 19.2,
+   "d1": -46.2,
+   "d2": -24.3
+  },
+  {
+   "lon": 52.65,
+   "lat": 27.55,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 45.5,
+   "d1": -13.9,
+   "d2": -25.9
+  },
+  {
+   "lon": 52.75,
+   "lat": 24.15,
+   "bolge": "BAE",
+   "once_mw": 7.8,
+   "d1": -55.5,
+   "d2": 43.4
+  },
+  {
+   "lon": 52.75,
+   "lat": 25.45,
+   "bolge": "BAE",
+   "once_mw": 7.6,
+   "d1": -25.6,
+   "d2": -77.2
+  },
+  {
+   "lon": 52.85,
+   "lat": 25.15,
+   "bolge": "BAE",
+   "once_mw": 24.8,
+   "d1": 296.2,
+   "d2": 219.7
+  },
+  {
+   "lon": 52.85,
+   "lat": 29.15,
+   "bolge": "İran (diğer)",
+   "once_mw": 3.9,
+   "d1": 21.8,
+   "d2": 5.9
+  },
+  {
+   "lon": 52.95,
+   "lat": 27.45,
+   "bolge": "İran (Asaluyeh)",
+   "once_mw": 4.2,
+   "d1": -5.0,
+   "d2": 41.9
+  },
+  {
+   "lon": 53.15,
+   "lat": 25.55,
+   "bolge": "Diğer",
+   "once_mw": 34.7,
+   "d1": -80.4,
+   "d2": -12.4
+  },
+  {
+   "lon": 53.15,
+   "lat": 29.25,
+   "bolge": "İran (diğer)",
+   "once_mw": 6.7,
+   "d1": -11.6,
+   "d2": 20.8
+  },
+  {
+   "lon": 53.65,
+   "lat": 23.85,
+   "bolge": "BAE",
+   "once_mw": 5.5,
+   "d1": 412.2,
+   "d2": 93.0
+  },
+  {
+   "lon": 53.75,
+   "lat": 32.35,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.8,
+   "d1": -25.4,
+   "d2": 1.8
+  },
+  {
+   "lon": 53.95,
+   "lat": 22.55,
+   "bolge": "Suudi Arabistan",
+   "once_mw": 2.4,
+   "d1": 15.6,
+   "d2": 226.9
+  },
+  {
+   "lon": 54.15,
+   "lat": 23.35,
+   "bolge": "BAE",
+   "once_mw": 2.1,
+   "d1": 442.0,
+   "d2": 440.3
+  },
+  {
+   "lon": 54.35,
+   "lat": 24.05,
+   "bolge": "BAE",
+   "once_mw": 3.6,
+   "d1": 108.6,
+   "d2": 4.8
+  },
+  {
+   "lon": 54.45,
+   "lat": 24.35,
+   "bolge": "BAE",
+   "once_mw": 2.2,
+   "d1": 3.1,
+   "d2": 111.3
+  },
+  {
+   "lon": 54.55,
+   "lat": 18.05,
+   "bolge": "Umman",
+   "once_mw": 7.3,
+   "d1": 22.4,
+   "d2": 21.7
+  },
+  {
+   "lon": 54.55,
+   "lat": 25.95,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.6,
+   "d1": 54.3,
+   "d2": -83.0
+  },
+  {
+   "lon": 54.65,
+   "lat": 18.05,
+   "bolge": "Umman",
+   "once_mw": 2.1,
+   "d1": -26.0,
+   "d2": -60.1
+  },
+  {
+   "lon": 54.75,
+   "lat": 31.65,
+   "bolge": "İran (diğer)",
+   "once_mw": 2.1,
+   "d1": -20.1,
+   "d2": -30.1
+  },
+  {
+   "lon": 55.15,
+   "lat": 18.35,
+   "bolge": "Umman",
+   "once_mw": 4.1,
+   "d1": 202.1,
+   "d2": 137.0
+  },
+  {
+   "lon": 55.35,
+   "lat": 29.15,
+   "bolge": "İran (diğer)",
+   "once_mw": 2.8,
+   "d1": -30.0,
+   "d2": -56.0
+  },
+  {
+   "lon": 55.35,
+   "lat": 30.05,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.1,
+   "d1": -11.8,
+   "d2": -5.3
+  },
+  {
+   "lon": 55.45,
+   "lat": 23.15,
+   "bolge": "Umman",
+   "once_mw": 8.1,
+   "d1": -26.2,
+   "d2": -46.2
+  },
+  {
+   "lon": 55.55,
+   "lat": 18.65,
+   "bolge": "Umman",
+   "once_mw": 3.7,
+   "d1": -57.5,
+   "d2": -25.0
+  },
+  {
+   "lon": 55.85,
+   "lat": 29.95,
+   "bolge": "İran (diğer)",
+   "once_mw": 10.4,
+   "d1": -10.4,
+   "d2": 34.1
+  },
+  {
+   "lon": 55.95,
+   "lat": 22.05,
+   "bolge": "Umman",
+   "once_mw": 3.2,
+   "d1": -6.0,
+   "d2": -50.5
+  },
+  {
+   "lon": 55.95,
+   "lat": 25.55,
+   "bolge": "BAE",
+   "once_mw": 3.1,
+   "d1": -30.3,
+   "d2": 27.1
+  },
+  {
+   "lon": 56.05,
+   "lat": 25.95,
+   "bolge": "BAE",
+   "once_mw": 3.6,
+   "d1": -11.4,
+   "d2": 20.2
+  },
+  {
+   "lon": 56.05,
+   "lat": 27.15,
+   "bolge": "İran (diğer)",
+   "once_mw": 8.3,
+   "d1": 20.0,
+   "d2": 94.5
+  },
+  {
+   "lon": 56.15,
+   "lat": 27.15,
+   "bolge": "İran (diğer)",
+   "once_mw": 4.7,
+   "d1": -27.0,
+   "d2": 71.4
+  },
+  {
+   "lon": 56.65,
+   "lat": 24.45,
+   "bolge": "Umman",
+   "once_mw": 3.1,
+   "d1": -4.1,
+   "d2": -80.6
+  },
+  {
+   "lon": 56.65,
+   "lat": 24.55,
+   "bolge": "Umman",
+   "once_mw": 11.3,
+   "d1": -26.3,
+   "d2": 34.2
+  },
+  {
+   "lon": 56.85,
+   "lat": 21.85,
+   "bolge": "Umman",
+   "once_mw": 2.1,
+   "d1": 40.9,
+   "d2": 65.8
+  },
+  {
+   "lon": 56.95,
+   "lat": 22.45,
+   "bolge": "Umman",
+   "once_mw": 2.1,
+   "d1": 33.0,
+   "d2": 50.1
+  },
+  {
+   "lon": 56.95,
+   "lat": 30.25,
+   "bolge": "İran (diğer)",
+   "once_mw": 2.9,
+   "d1": -17.2,
+   "d2": -25.6
+  },
+  {
+   "lon": 57.05,
+   "lat": 21.95,
+   "bolge": "Umman",
+   "once_mw": 3.9,
+   "d1": -21.2,
+   "d2": 52.5
+  },
+  {
+   "lon": 57.75,
+   "lat": 21.35,
+   "bolge": "Umman",
+   "once_mw": 8.0,
+   "d1": -5.8,
+   "d2": 38.2
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "konum": "basra",
+ "kutu_bgdk": [
+  48.7,
+  29.4,
+  49.2,
+  29.85
+ ],
+ "cozunurluk_m": 40.0,
+ "yorunge_secimi": "descending",
+ "dosya_eki": "_40m_desc",
+ "epsg": 32639,
+ "sekil_satir_sutun": [
+  1226,
+  1233
+ ],
+ "donusum_affine": [
+  39.985679,
+  0.0,
+  276816.794891,
+  0.0,
+  -39.984312,
+  3303524.069637
+ ],
+ "aday_savas_oncesi_sahne": 91,
+ "ornek_adimi": 3,
+ "kullanilan_sahne": [
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250706T023857_20250706T023922_059957_0772AA_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250718T023856_20250718T023921_060132_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250724T023759_20250724T023828_003356_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250804T024713_20250804T024738_060380_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250816T024713_20250816T024738_060555_0787FF_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250823T023856_20250823T023921_060657_078BFE_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250829T023800_20250829T023830_003881_007BB9_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250904T023921_20250904T023946_060832_0792E9_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250915T024610_20250915T024639_004129_00834C_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250921T024714_20250921T024739_061080_079CDA_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250928T023856_20250928T023921_061182_07A0F3_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251004T023801_20251004T023830_004406_008BAB_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251010T023922_20251010T023947_061357_07A803_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251021T024610_20251021T024640_004654_00933A_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251027T024714_20251027T024739_061605_07B1FF_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251103T023856_20251103T023921_061707_07B5FF_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251109T023801_20251109T023830_004931_009C0D_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251115T023920_20251115T023945_061882_07BCC6_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251126T024609_20251126T024638_005179_00A468_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251202T024712_20251202T024737_062130_07C678_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251209T023854_20251209T023919_062232_07CA7A_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251215T023800_20251215T023829_005456_00ADD3_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251221T023917_20251221T023942_062407_07D13F_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260101T024607_20260101T024637_005704_00B65F_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260107T024708_20260107T024733_062655_07DADF_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260114T023850_20260114T023915_062757_07DEBF_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260125T024606_20260125T024635_006054_00C242_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260131T024706_20260131T024731_063005_07E7E1_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260212T024706_20260212T024731_063180_07EE65_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 108
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260219T023848_20260219T023913_063282_07F23C_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260225T023757_20260225T023826_006506_00D1C5_rtc",
+   "yorunge": "descending",
+   "goreli_yorunge": 35
+  }
+ ],
+ "atlanan_sahne": [],
+ "parametre": {
+  "medyan_esigi_db": -17.0,
+  "genisletme_adimi": 2,
+  "hedef_ornek": 24,
+  "savas_oncesi": "< 2026-02-28",
+  "kara": "Natural Earth 10m admin 0, 300 m tampon",
+  "kanal": "VH"
+ },
+ "maskelenen_pay": 0.00041,
+ "maske_sha256": "d4b1a00f969ad3f2fdb1e6746015ca8b3e797b2e1f9d670139d647f30fe24a57",
+ "yeniden_kurulum": {
+  "tarih": "2026-09-27",
+  "diskteki_maskeyle_ayni": true,
+  "farkli_piksel": 0,
+  "kod_sha256": "e3bc0bb46d1a39f5b97fa159667a36ed60f051cc12a8d38ca19e514d7e15d195",
+  "sahne_araligi": [
+   "2025-07-01",
+   "2026-09-22"
+  ]
+ }
+}

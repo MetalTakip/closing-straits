@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# detection check images written by sar_gemi_sayimi.py
+veri/sar/kontrol/
+veri/sar/log_*.txt

@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use these data or this code, please cite this package as below. Code is licensed under MIT (LICENSE); data, results and figures under CC BY 4.0 (LICENSE-DATA.md). For the findings, cite the report or the working paper listed under references."
+type: dataset
+title: "Closing Straits: satellite radar ship counts, gas flaring and GDELT news indices for the 2026 Strait of Hormuz closures"
+version: "1.4.1"
+authors:
+  - family-names: "Dağlı"
+    given-names: "Yusuf Oskay"
+    affiliation: "MetalTakip"
+    orcid: "https://orcid.org/0009-0008-5513-9217"
+  - family-names: "Özpolat"
+    given-names: "Ebru"
+    affiliation: "MetalTakip"
+    orcid: "https://orcid.org/0009-0006-3864-142X"
+# CFF treats a list of licences as alternatives, so only the data licence is given here; the code licence (MIT) is in LICENSE and the message.
+license: CC-BY-4.0
+doi: "10.5281/zenodo.23009094"
+url: "https://zenodo.org/records/23009094"
+repository-code: "https://github.com/MetalTakip/closing-straits"
+date-released: "2026-10-01"
+keywords:
+  - Strait of Hormuz
+  - Bab el-Mandeb
+  - Sentinel-1
+  - synthetic aperture radar
+  - ship detection
+  - gas flaring
+  - VIIRS
+  - GDELT
+  - oil shipping
+  - Iraq
+references:
+  - type: report
+    title: "Closing Straits: How the Hormuz and Bab el-Mandeb shocks repriced oil, gas, metals and gold"
+    authors:
+      - family-names: "Dağlı"
+        given-names: "Yusuf Oskay"
+        orcid: "https://orcid.org/0009-0008-5513-9217"
+      - family-names: "Özpolat"
+        given-names: "Ebru"
+        orcid: "https://orcid.org/0009-0006-3864-142X"
+    year: 2026
+    month: 9
+    publisher:
+      name: "MetalTakip"
+    url: "https://www.metaltakip.com/en/research/closing-straits"
+    languages:
+      - en
+      - tr
+  - type: report
+    title: "Measuring a chokepoint closure from space: radar ship counts and gas flaring during the 2026 Strait of Hormuz closures"
+    authors:
+      - family-names: "Dağlı"
+        given-names: "Yusuf Oskay"
+        orcid: "https://orcid.org/0009-0008-5513-9217"
+      - family-names: "Özpolat"
+        given-names: "Ebru"
+        orcid: "https://orcid.org/0009-0006-3864-142X"
+    year: 2026
+    month: 9
+    version: "1.6"
+    doi: "10.5281/zenodo.23009748"
+    notes: "Working paper"
+    url: "https://www.metaltakip.com/en/research/closing-straits/paper"
+    publisher:
+      name: "MetalTakip"

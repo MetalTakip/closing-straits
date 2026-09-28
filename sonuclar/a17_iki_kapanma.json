@@ -1,0 +1,3424 @@
+{
+ "meta": {
+  "tanim": "Analiz 17: iki kapanmanın farkı. Denizde (radar, AIS) ve karada (alev) göstergeler, ihracat (SOMO) ve fiziki fiyat (Dated Brent - ICE)\niki kapanmada nasıl ayrıştı? Astra'nın değerlendirme notundaki birinci öneri (27 Eylül 2026).\n\n1. Dönem farkı: aynı modelde ikinci ve ilk kapanma katsayılarının farkı, aynı kovaryansla (Wald). Fark = 100 x [exp(b2 - b1) - 1]:\n   ikinci kapanmadaki beklenen düzeyin ilk kapanmadakine göre yüzde farkı. İki ayrı güven aralığına bakılarak karar verilmez.\n   - Radar: analiz7_sar.py'nin ana modeli (Poisson, dönem + uydu kuklaları, HC1), beş konum ve ana yörünge; Hürmüz'de büyük yankılar da.\n   - Alev: analiz15_alev.py'nin ana modeli (PPML, dönem + takvim ayı kuklaları, HAC 14 gözlenen gece), Tablo 3'ün on bölgesi. Güney ve\n     kuzey Irak için bulut denetimli sürümler (analiz16_kapsama.py): Level-2 ölçüsü, kapsama >= %90 olan geceler; hücre sabit etkili PPML.\n2. Eşit uzunlukta başlangıç pencereleri: iki kapanmanın ilk 30 ve ilk 72 günü (ikinci kapanma veri kesiminde 72 gün). Her kapanma\n   \"ilk n gün\" ve \"kalan\" diye iki kuklaya ayrılır; ilk n günlerin farkı aynı modelle sınanır. Radar sahneleri seyrek (yörünge başına\n   yaklaşık 12 günde bir), bu yüzden 30 günlük pencere yalnız alevlerde.\n3. Mekanizma ipuçları (betimsel): Hürmüz koridorunda radarın büyük yankı payı; PortWatch AIS geçişleri (Hürmüz, günlük; toplam ve tanker\n   sayısı, tankerlerin tahmini yükü); SOMO Basra ihracatı (aylık, günlük hız); Dated Brent - ICE ön vade farkı ($/varil).\n4. Şekil verisi: radar sahneleri, güney Irak alevi (7 gecelik ortalama), Basra aylık günlük hızı, Dated-ICE farkı ve AIS tanker geçişi\n   (7 günlük ortalama); sıklıklar korunur, aylık seri günlüğe yayılmaz.\n5. Basra testi: Ağustos'ta Basra'dan yüklenen petrol boğazı nasıl geçti? (a) İki serinin karşılaştırması (betimsel): PortWatch'un\n   Hürmüz'ü geçen bütün tankerler için AIS'ten tahmin ettiği yük (capacity_tanker: su çekiminden tahmin edilen doluluk oranı x DWT,\n   metrik ton; iki yön) ton başına 7,33 varille (Energy Institute ortalaması) ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesiyle\n   (konşimento tarihine göre) karşılaştırılır. Seri DWT toplamı değil, tahmini yüktür: oran taşınabilecek payın üst sınırı ya da görünmeyen\n   petrolün payı değildir (delta denetimi D01). (b) Basra açık deniz terminalleri ve demirleme alanında radar sayımı (sar_gemi_sayimi.py,\n   kutu 48,70-49,20 D, 29,40-29,85 K; iki yörünge ayrı seri, ayrı sabit hedef maskesi; ana seri çıkan yörünge 174). Dönem etkileri radar\n   ana modeliyle; eğilim: gemi ~ gün + uydu (+ göreli yörünge) kuklası, OLS (HC1 ve HC3, t dağılımı), Poisson sağlamlık; bütün ikinci\n   kapanma, yalnız Ağustos ve inen seride göreli yörünge başına. Karşılaştırma ölçeği varsayımsaldır: Ağustos yüklemesinin her yükü kutuya\n   eklenen ayrı ve tespit edilebilir bir gemide kalsaydı sayı 30 günde yükleme kadar (VLCC ya da Suezmax eşdeğeri) artardı; gemi sayısı\n   yük stoku değildir (kutudaki boş kapasite, çıkışlar ve yan yana gemiler bu bağı bozar).\n6. Basra terminalinde AIS görünürlüğü (28 Eylül 2026): PortWatch'un günlük liman verisi (Daily_Ports_Data; portwatch_liman_cek.py) Basra\n   petrol terminalinde tankerlerin yüklediği tahmini yükü (export_tanker, ton; su çekimi değişiminden) veriyor. Aylık ortalama 7,33 varil/ton\n   ile ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesine bölünür: savaştan önce bu oran kamuya açık AIS verisinin yüklemenin ne\n   kadarını gördüğünü, Ağustos 2026'daki değeri ise görünürlüğün ne kadar düştüğünü gösterir. Betimseldir; üst sınır değildir.\nLisanslı fiyat verisi ve PortWatch içeren Excel ya da PortWatch liman dosyası yoksa (herkese açık kod paketi) PortWatch, AIS/Basra, liman ve\nDated-ICE bölümleri atlanır; radar, alev, Basra radarı, SOMO ve küçük akış hesabı aynen üretilir.\nÇıktı: sonuclar/a17_iki_kapanma.json",
+  "denetim": {
+   "radar_en_buyuk_fark": 0.0,
+   "alev_en_buyuk_fark": 0.0
+  }
+ },
+ "kucuk_akis": {
+  "varsayim": "Ağustos 2026 Basra yüklemesi; VLCC 2 milyon, Suezmax 1 milyon varil; kutudan geçiş 70 km, 12 knot",
+  "basra_varil_gun": 2250200.0,
+  "gecis_saat": 3.15,
+  "anlik_gemi_vlcc": 0.1477,
+  "anlik_gemi_suezmax": 0.2953,
+  "gunluk_vlcc": 1.13
+ },
+ "radar": {
+  "hurmuz": {
+   "ad": "Hürmüz koridoru",
+   "n": 73,
+   "1. kapanma": {
+    "etki_yuzde": -80.452,
+    "alt": -85.544,
+    "ust": -73.566,
+    "p": 2.9403286140543086e-26
+   },
+   "2. kapanma": {
+    "etki_yuzde": -81.156,
+    "alt": -88.13,
+    "ust": -70.086,
+    "p": 1.460402455138866e-12
+   },
+   "fark_2_1": {
+    "fark_yuzde": -3.603,
+    "alt": -49.727,
+    "ust": 84.839,
+    "p": 0.9120410504410373
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 38,
+    "1. kapanma": 19,
+    "Açılış": 4,
+    "2. kapanma": 12
+   },
+   "buyuk": {
+    "1. kapanma": {
+     "etki_yuzde": -85.203,
+     "alt": -89.654,
+     "ust": -78.838,
+     "p": 1.2197977948312265e-25
+    },
+    "2. kapanma": {
+     "etki_yuzde": -84.985,
+     "alt": -91.699,
+     "ust": -72.841,
+     "p": 3.5908504890490233e-10
+    },
+    "fark_2_1": {
+     "fark_yuzde": 1.476,
+     "alt": -56.11,
+     "ust": 134.615,
+     "p": 0.9726696234750851
+    }
+   },
+   "pencere_72": {
+    "1. kapanma ilk 72": {
+     "etki_yuzde": -84.018,
+     "alt": -88.554,
+     "ust": -77.685,
+     "p": 4.932374553759244e-27
+    },
+    "2. kapanma ilk 72": {
+     "etki_yuzde": -79.484,
+     "alt": -85.411,
+     "ust": -71.15,
+     "p": 8.494309537997786e-20
+    },
+    "fark_2_1": {
+     "fark_yuzde": 28.372,
+     "alt": -19.966,
+     "ust": 105.906,
+     "p": 0.30015529841640354
+    },
+    "n": {
+     "1. kapanma ilk 72": 12,
+     "2. kapanma ilk 72": 12
+    }
+   }
+  },
+  "fuceyre": {
+   "ad": "Füceyre",
+   "n": 70,
+   "1. kapanma": {
+    "etki_yuzde": -2.127,
+    "alt": -7.188,
+    "ust": 3.21,
+    "p": 0.4274140812353362
+   },
+   "2. kapanma": {
+    "etki_yuzde": 46.499,
+    "alt": 36.748,
+    "ust": 56.946,
+    "p": 1.6805086307450668e-27
+   },
+   "fark_2_1": {
+    "fark_yuzde": 49.683,
+    "alt": 39.955,
+    "ust": 60.087,
+    "p": 5.923715066586859e-32
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 38,
+    "1. kapanma": 18,
+    "Açılış": 4,
+    "2. kapanma": 10
+   },
+   "pencere_72": {
+    "1. kapanma ilk 72": {
+     "etki_yuzde": -5.697,
+     "alt": -10.329,
+     "ust": -0.825,
+     "p": 0.02247884364293941
+    },
+    "2. kapanma ilk 72": {
+     "etki_yuzde": 48.366,
+     "alt": 37.854,
+     "ust": 59.68,
+     "p": 6.864794375994805e-26
+    },
+    "fark_2_1": {
+     "fark_yuzde": 57.329,
+     "alt": 45.029,
+     "ust": 70.672,
+     "p": 1.020912276992388e-27
+    },
+    "n": {
+     "1. kapanma ilk 72": 12,
+     "2. kapanma ilk 72": 10
+    }
+   }
+  },
+  "yanbu": {
+   "ad": "Yanbu",
+   "n": 37,
+   "1. kapanma": {
+    "etki_yuzde": 10.821,
+    "alt": -9.73,
+    "ust": 36.05,
+    "p": 0.3261928737332722
+   },
+   "2. kapanma": {
+    "etki_yuzde": 32.436,
+    "alt": 3.224,
+    "ust": 69.915,
+    "p": 0.027133245562189566
+   },
+   "fark_2_1": {
+    "fark_yuzde": 19.505,
+    "alt": -8.041,
+    "ust": 55.303,
+    "p": 0.18256467276871446
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 19,
+    "1. kapanma": 10,
+    "Açılış": 2,
+    "2. kapanma": 6
+   },
+   "pencere_72": {
+    "1. kapanma ilk 72": {
+     "etki_yuzde": 9.489,
+     "alt": -14.846,
+     "ust": 40.779,
+     "p": 0.47964077720057174
+    },
+    "2. kapanma ilk 72": {
+     "etki_yuzde": 32.436,
+     "alt": 2.813,
+     "ust": 70.594,
+     "p": 0.02964536358486172
+    },
+    "fark_2_1": {
+     "fark_yuzde": 20.958,
+     "alt": -10.486,
+     "ust": 63.447,
+     "p": 0.2154153996161411
+    },
+    "n": {
+     "1. kapanma ilk 72": 6,
+     "2. kapanma ilk 72": 6
+    }
+   }
+  },
+  "babulmendep": {
+   "ad": "Bâbülmendep",
+   "n": 75,
+   "1. kapanma": {
+    "etki_yuzde": 6.145,
+    "alt": -11.3,
+    "ust": 27.021,
+    "p": 0.5150549770838042
+   },
+   "2. kapanma": {
+    "etki_yuzde": 22.136,
+    "alt": -1.879,
+    "ust": 52.029,
+    "p": 0.07341903518420931
+   },
+   "fark_2_1": {
+    "fark_yuzde": 15.066,
+    "alt": -3.32,
+    "ust": 36.947,
+    "p": 0.11412230117797285
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 39,
+    "1. kapanma": 19,
+    "Açılış": 5,
+    "2. kapanma": 12
+   },
+   "pencere_72": {
+    "1. kapanma ilk 72": {
+     "etki_yuzde": 0.868,
+     "alt": -18.158,
+     "ust": 24.318,
+     "p": 0.9353857665602807
+    },
+    "2. kapanma ilk 72": {
+     "etki_yuzde": 23.472,
+     "alt": -0.934,
+     "ust": 53.89,
+     "p": 0.060593165174974636
+    },
+    "fark_2_1": {
+     "fark_yuzde": 22.409,
+     "alt": -1.07,
+     "ust": 51.46,
+     "p": 0.06274589288740223
+    },
+    "n": {
+     "1. kapanma ilk 72": 12,
+     "2. kapanma ilk 72": 12
+    }
+   }
+  },
+  "rastanura": {
+   "ad": "Ras Tanura",
+   "n": 71,
+   "1. kapanma": {
+    "etki_yuzde": -1.503,
+    "alt": -6.691,
+    "ust": 3.973,
+    "p": 0.583249172098502
+   },
+   "2. kapanma": {
+    "etki_yuzde": -7.231,
+    "alt": -14.405,
+    "ust": 0.543,
+    "p": 0.06754750668949251
+   },
+   "fark_2_1": {
+    "fark_yuzde": -5.816,
+    "alt": -12.198,
+    "ust": 1.031,
+    "p": 0.09424423771073863
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 37,
+    "1. kapanma": 18,
+    "Açılış": 4,
+    "2. kapanma": 12
+   },
+   "pencere_72": {
+    "1. kapanma ilk 72": {
+     "etki_yuzde": -1.749,
+     "alt": -7.46,
+     "ust": 4.315,
+     "p": 0.5635844382838979
+    },
+    "2. kapanma ilk 72": {
+     "etki_yuzde": -7.14,
+     "alt": -14.493,
+     "ust": 0.845,
+     "p": 0.07839874143995358
+    },
+    "fark_2_1": {
+     "fark_yuzde": -5.487,
+     "alt": -12.905,
+     "ust": 2.563,
+     "p": 0.1759979113045167
+    },
+    "n": {
+     "1. kapanma ilk 72": 12,
+     "2. kapanma ilk 72": 12
+    }
+   }
+  },
+  "hurmuz_betimsel": {
+   "1. kapanma": {
+    "sahne": 11,
+    "gemi_medyan": 10.0,
+    "buyuk_medyan": 6.0,
+    "buyuk_payi": 0.708
+   },
+   "2. kapanma": {
+    "sahne": 12,
+    "gemi_medyan": 9.5,
+    "buyuk_medyan": 6.5,
+    "buyuk_payi": 0.759
+   },
+   "Açılış": {
+    "sahne": 3,
+    "gemi_medyan": 17.0,
+    "buyuk_medyan": 9.0,
+    "buyuk_payi": 0.682
+   },
+   "Tem 2025-Şub 2026": {
+    "sahne": 18,
+    "gemi_medyan": 40.5,
+    "buyuk_medyan": 34.5,
+    "buyuk_payi": 0.888
+   }
+  }
+ },
+ "alev": {
+  "bolgeler": {
+   "Irak (güney)": {
+    "1. kapanma": {
+     "etki_yuzde": -83.935,
+     "alt": -87.716,
+     "ust": -78.99,
+     "p": 1.1117375193234646e-40
+    },
+    "2. kapanma": {
+     "etki_yuzde": -36.552,
+     "alt": -48.701,
+     "ust": -21.525,
+     "p": 2.7275251123374288e-05
+    },
+    "fark_2_1": {
+     "fark_yuzde": 294.954,
+     "alt": 179.994,
+     "ust": 457.116,
+     "p": 5.026756115891513e-15
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -80.31,
+      "alt": -90.639,
+      "ust": -58.584,
+      "p": 1.8384109775628602e-05
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": -53.605,
+      "alt": -66.039,
+      "ust": -36.618,
+      "p": 1.403074778546899e-06
+     },
+     "fark_2_1": {
+      "fark_yuzde": 135.626,
+      "alt": 5.206,
+      "ust": 427.726,
+      "p": 0.037218589653628696
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -83.701,
+      "alt": -89.103,
+      "ust": -75.621,
+      "p": 1.0362427065082976e-18
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": -36.553,
+      "alt": -48.704,
+      "ust": -21.525,
+      "p": 2.73001340694934e-05
+     },
+     "fark_2_1": {
+      "fark_yuzde": 289.266,
+      "alt": 146.887,
+      "ust": 513.755,
+      "p": 4.907521067850312e-09
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    },
+    "l2_k90": {
+     "1. kapanma": {
+      "etki_yuzde": -84.637,
+      "alt": -87.732,
+      "ust": -80.762,
+      "p": 7.019011562909957e-60
+     },
+     "2. kapanma": {
+      "etki_yuzde": -36.239,
+      "alt": -50.067,
+      "ust": -18.582,
+      "p": 0.0003082343960659994
+     },
+     "fark_2_1": {
+      "fark_yuzde": 315.039,
+      "alt": 197.123,
+      "ust": 479.751,
+      "p": 7.057331156113145e-17
+     },
+     "pencere_30": {
+      "1. kapanma ilk 30": {
+       "etki_yuzde": -78.431,
+       "alt": -87.411,
+       "ust": -63.046,
+       "p": 2.353167356342847e-08
+      },
+      "2. kapanma ilk 30": {
+       "etki_yuzde": -54.501,
+       "alt": -65.28,
+       "ust": -40.375,
+       "p": 1.1397069493362523e-08
+      },
+      "fark_2_1": {
+       "fark_yuzde": 110.949,
+       "alt": 15.488,
+       "ust": 285.315,
+       "p": 0.015161981937742606
+      },
+      "gece": {
+       "1. kapanma ilk 30": 14,
+       "2. kapanma ilk 30": 27
+      }
+     },
+     "pencere_72": {
+      "1. kapanma ilk 72": {
+       "etki_yuzde": -84.307,
+       "alt": -88.997,
+       "ust": -77.618,
+       "p": 1.5514553388965481e-24
+      },
+      "2. kapanma ilk 72": {
+       "etki_yuzde": -36.241,
+       "alt": -50.07,
+       "ust": -18.582,
+       "p": 0.00030846974476112345
+      },
+      "fark_2_1": {
+       "fark_yuzde": 306.279,
+       "alt": 163.983,
+       "ust": 525.276,
+       "p": 1.855814022146515e-10
+      },
+      "gece": {
+       "1. kapanma ilk 72": 41,
+       "2. kapanma ilk 72": 61
+      }
+     }
+    },
+    "hucre_l2": {
+     "1. kapanma": {
+      "etki_yuzde": -85.078,
+      "alt": -87.884,
+      "ust": -81.621,
+      "p": 1.2394012510304771e-71
+     },
+     "2. kapanma": {
+      "etki_yuzde": -36.029,
+      "alt": -48.556,
+      "ust": -20.45,
+      "p": 5.8823959796188106e-05
+     },
+     "fark_2_1": {
+      "fark_yuzde": 328.69,
+      "alt": 216.618,
+      "ust": 480.433,
+      "p": 4.762449249902647e-21
+     }
+    }
+   },
+   "Kuveyt": {
+    "1. kapanma": {
+     "etki_yuzde": -4.49,
+     "alt": -32.837,
+     "ust": 35.821,
+     "p": 0.7981567374799929
+    },
+    "2. kapanma": {
+     "etki_yuzde": 71.146,
+     "alt": 27.14,
+     "ust": 130.384,
+     "p": 0.0003949940437038641
+    },
+    "fark_2_1": {
+     "fark_yuzde": 79.193,
+     "alt": 13.531,
+     "ust": 182.83,
+     "p": 0.012244367089080343
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": 25.785,
+      "alt": -6.26,
+      "ust": 68.784,
+      "p": 0.12623222771421352
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": 49.552,
+      "alt": 6.105,
+      "ust": 110.789,
+      "p": 0.02153852179611643
+     },
+     "fark_2_1": {
+      "fark_yuzde": 18.895,
+      "alt": -24.258,
+      "ust": 86.633,
+      "p": 0.45187439841571975
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -9.706,
+      "alt": -38.39,
+      "ust": 32.332,
+      "p": 0.6005989423000333
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": 71.546,
+      "alt": 27.444,
+      "ust": 130.91,
+      "p": 0.00037170090119170035
+     },
+     "fark_2_1": {
+      "fark_yuzde": 89.987,
+      "alt": 17.348,
+      "ust": 207.588,
+      "p": 0.009033236640018599
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Katar": {
+    "1. kapanma": {
+     "etki_yuzde": -31.228,
+     "alt": -49.523,
+     "ust": -6.301,
+     "p": 0.01766999666721106
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.212,
+     "alt": -17.809,
+     "ust": 2.505,
+     "p": 0.12828540083118278
+    },
+    "fark_2_1": {
+     "fark_yuzde": 33.467,
+     "alt": -4.457,
+     "ust": 86.442,
+     "p": 0.09051681172260495
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -60.329,
+      "alt": -72.508,
+      "ust": -42.754,
+      "p": 7.758393240354644e-07
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": 7.678,
+      "alt": -10.37,
+      "ust": 29.36,
+      "p": 0.4293540183989525
+     },
+     "fark_2_1": {
+      "fark_yuzde": 171.424,
+      "alt": 80.132,
+      "ust": 308.982,
+      "p": 1.810543520951506e-06
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -48.716,
+      "alt": -64.155,
+      "ust": -26.627,
+      "p": 0.0002579292183351047
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": -7.861,
+      "alt": -17.503,
+      "ust": 2.908,
+      "p": 0.14659591523924959
+     },
+     "fark_2_1": {
+      "fark_yuzde": 79.663,
+      "alt": 23.295,
+      "ust": 161.801,
+      "p": 0.0022872793520480597
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Bahreyn": {
+    "1. kapanma": {
+     "etki_yuzde": -77.841,
+     "alt": -84.076,
+     "ust": -69.164,
+     "p": 3.9560077228825006e-19
+    },
+    "2. kapanma": {
+     "etki_yuzde": -74.13,
+     "alt": -87.955,
+     "ust": -44.436,
+     "p": 0.0005269838394789335
+    },
+    "fark_2_1": {
+     "fark_yuzde": 16.747,
+     "alt": -49.46,
+     "ust": 169.682,
+     "p": 0.7169955220401402
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -74.601,
+      "alt": -85.923,
+      "ust": -54.173,
+      "p": 5.326174330640182e-06
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": -63.032,
+      "alt": -89.99,
+      "ust": 36.53,
+      "p": 0.13546894135712934
+     },
+     "fark_2_1": {
+      "fark_yuzde": 45.549,
+      "alt": -65.294,
+      "ust": 510.395,
+      "p": 0.6078349808860173
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -76.294,
+      "alt": -81.853,
+      "ust": -69.032,
+      "p": 4.679343712546839e-26
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": -74.137,
+      "alt": -87.956,
+      "ust": -44.465,
+      "p": 0.0005234554374188899
+     },
+     "fark_2_1": {
+      "fark_yuzde": 9.098,
+      "alt": -51.459,
+      "ust": 145.203,
+      "p": 0.8330813731931825
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Batı İran (çoğu Huzistan)": {
+    "1. kapanma": {
+     "etki_yuzde": -14.757,
+     "alt": -28.326,
+     "ust": 1.381,
+     "p": 0.07108932861032875
+    },
+    "2. kapanma": {
+     "etki_yuzde": -25.777,
+     "alt": -33.571,
+     "ust": -17.068,
+     "p": 1.393278133896195e-07
+    },
+    "fark_2_1": {
+     "fark_yuzde": -12.927,
+     "alt": -28.905,
+     "ust": 6.641,
+     "p": 0.1807750752185051
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": 1.201,
+      "alt": -30.85,
+      "ust": 48.107,
+      "p": 0.9510068870229014
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": -25.146,
+      "alt": -40.387,
+      "ust": -6.008,
+      "p": 0.01265283482251222
+     },
+     "fark_2_1": {
+      "fark_yuzde": -26.034,
+      "alt": -52.552,
+      "ust": 15.305,
+      "p": 0.18309169212849186
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -1.962,
+      "alt": -19.672,
+      "ust": 19.653,
+      "p": 0.8454432859124921
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": -25.917,
+      "alt": -33.646,
+      "ust": -17.288,
+      "p": 9.477667971121811e-08
+     },
+     "fark_2_1": {
+      "fark_yuzde": -24.434,
+      "alt": -39.796,
+      "ust": -5.154,
+      "p": 0.015677776785930665
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "İran (Asaluyeh)": {
+    "1. kapanma": {
+     "etki_yuzde": -4.4,
+     "alt": -21.8,
+     "ust": 16.873,
+     "p": 0.6606970467863164
+    },
+    "2. kapanma": {
+     "etki_yuzde": -20.534,
+     "alt": -27.253,
+     "ust": -13.195,
+     "p": 3.399857831588701e-07
+    },
+    "fark_2_1": {
+     "fark_yuzde": -16.877,
+     "alt": -33.324,
+     "ust": 3.627,
+     "p": 0.10032152990299706
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -5.548,
+      "alt": -36.23,
+      "ust": 39.895,
+      "p": 0.7757799387826891
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": -17.645,
+      "alt": -30.688,
+      "ust": -2.147,
+      "p": 0.027337979705830243
+     },
+     "fark_2_1": {
+      "fark_yuzde": -12.807,
+      "alt": -43.211,
+      "ust": 33.875,
+      "p": 0.5310175250091673
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -20.667,
+      "alt": -37.559,
+      "ust": 0.795,
+      "p": 0.05807383161134304
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": -20.308,
+      "alt": -26.963,
+      "ust": -13.048,
+      "p": 3.345226300995746e-07
+     },
+     "fark_2_1": {
+      "fark_yuzde": 0.452,
+      "alt": -22.156,
+      "ust": 29.625,
+      "p": 0.9723714328270007
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Suudi Arabistan": {
+    "1. kapanma": {
+     "etki_yuzde": 10.021,
+     "alt": -10.384,
+     "ust": 35.071,
+     "p": 0.3615225523090706
+    },
+    "2. kapanma": {
+     "etki_yuzde": 13.719,
+     "alt": -6.853,
+     "ust": 38.836,
+     "p": 0.2066975871372173
+    },
+    "fark_2_1": {
+     "fark_yuzde": 3.362,
+     "alt": -21.491,
+     "ust": 36.082,
+     "p": 0.8137073899230705
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -1.614,
+      "alt": -23.413,
+      "ust": 26.39,
+      "p": 0.8986907817912405
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": -13.282,
+      "alt": -22.004,
+      "ust": -3.585,
+      "p": 0.00841341411038604
+     },
+     "fark_2_1": {
+      "fark_yuzde": -11.86,
+      "alt": -32.835,
+      "ust": 15.665,
+      "p": 0.3625830799559997
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": 1.743,
+      "alt": -16.415,
+      "ust": 23.846,
+      "p": 0.8632024649129997
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": 13.885,
+      "alt": -6.688,
+      "ust": 38.994,
+      "p": 0.20087687967367118
+     },
+     "fark_2_1": {
+      "fark_yuzde": 11.934,
+      "alt": -15.143,
+      "ust": 47.651,
+      "p": 0.42493659518175864
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "BAE": {
+    "1. kapanma": {
+     "etki_yuzde": 303.704,
+     "alt": 206.948,
+     "ust": 430.961,
+     "p": 1.8214740445317093e-23
+    },
+    "2. kapanma": {
+     "etki_yuzde": 201.32,
+     "alt": 151.571,
+     "ust": 260.907,
+     "p": 4.483540662788898e-33
+    },
+    "fark_2_1": {
+     "fark_yuzde": -25.361,
+     "alt": -44.914,
+     "ust": 1.132,
+     "p": 0.0591138225283859
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": 49.696,
+      "alt": -24.473,
+      "ust": 196.702,
+      "p": 0.24774530104147396
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": 254.294,
+      "alt": 196.134,
+      "ust": 323.876,
+      "p": 1.758946991549993e-43
+     },
+     "fark_2_1": {
+      "fark_yuzde": 136.676,
+      "alt": 16.386,
+      "ust": 381.288,
+      "p": 0.01735810545191279
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": 291.664,
+      "alt": 182.099,
+      "ust": 443.783,
+      "p": 3.506955179417149e-16
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": 202.2,
+      "alt": 152.275,
+      "ust": 262.005,
+      "p": 3.372527024770554e-33
+     },
+     "fark_2_1": {
+      "fark_yuzde": -22.842,
+      "alt": -46.113,
+      "ust": 10.478,
+      "p": 0.15680207680416308
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Umman": {
+    "1. kapanma": {
+     "etki_yuzde": -4.899,
+     "alt": -20.382,
+     "ust": 13.596,
+     "p": 0.5796011314471627
+    },
+    "2. kapanma": {
+     "etki_yuzde": 42.63,
+     "alt": 11.993,
+     "ust": 81.648,
+     "p": 0.004001736556348453
+    },
+    "fark_2_1": {
+     "fark_yuzde": 49.976,
+     "alt": 11.836,
+     "ust": 101.124,
+     "p": 0.006785682891378536
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": -18.513,
+      "alt": -51.187,
+      "ust": 36.031,
+      "p": 0.43360403006471593
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": 4.424,
+      "alt": -21.556,
+      "ust": 39.009,
+      "p": 0.7667753700997677
+     },
+     "fark_2_1": {
+      "fark_yuzde": 28.148,
+      "alt": -28.714,
+      "ust": 130.367,
+      "p": 0.4071878130778016
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": -7.529,
+      "alt": -28.115,
+      "ust": 18.952,
+      "p": 0.5423687144555152
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": 42.756,
+      "alt": 12.115,
+      "ust": 81.771,
+      "p": 0.003881484044871719
+     },
+     "fark_2_1": {
+      "fark_yuzde": 54.379,
+      "alt": 9.025,
+      "ust": 118.6,
+      "p": 0.014409051252030604
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    }
+   },
+   "Irak (kuzey)": {
+    "1. kapanma": {
+     "etki_yuzde": 23.388,
+     "alt": 9.535,
+     "ust": 38.993,
+     "p": 0.0005424906847020763
+    },
+    "2. kapanma": {
+     "etki_yuzde": 29.594,
+     "alt": 18.262,
+     "ust": 42.012,
+     "p": 2.814729874844207e-08
+    },
+    "fark_2_1": {
+     "fark_yuzde": 5.03,
+     "alt": -9.492,
+     "ust": 21.882,
+     "p": 0.5180381969225665
+    },
+    "pencere_30": {
+     "1. kapanma ilk 30": {
+      "etki_yuzde": 17.911,
+      "alt": -18.962,
+      "ust": 71.561,
+      "p": 0.3891661242287002
+     },
+     "2. kapanma ilk 30": {
+      "etki_yuzde": 31.77,
+      "alt": 22.454,
+      "ust": 41.795,
+      "p": 1.6491807156181784e-13
+     },
+     "fark_2_1": {
+      "fark_yuzde": 11.754,
+      "alt": -23.741,
+      "ust": 63.77,
+      "p": 0.5687236262938467
+     },
+     "gece": {
+      "1. kapanma ilk 30": 29,
+      "2. kapanma ilk 30": 30
+     }
+    },
+    "pencere_72": {
+     "1. kapanma ilk 72": {
+      "etki_yuzde": 26.261,
+      "alt": 9.052,
+      "ust": 46.186,
+      "p": 0.001813741804810014
+     },
+     "2. kapanma ilk 72": {
+      "etki_yuzde": 29.53,
+      "alt": 18.222,
+      "ust": 41.919,
+      "p": 2.8261625278692645e-08
+     },
+     "fark_2_1": {
+      "fark_yuzde": 2.589,
+      "alt": -13.627,
+      "ust": 21.848,
+      "p": 0.7709283799989037
+     },
+     "gece": {
+      "1. kapanma ilk 72": 71,
+      "2. kapanma ilk 72": 71
+     }
+    },
+    "l2_k90": {
+     "1. kapanma": {
+      "etki_yuzde": 12.902,
+      "alt": 4.551,
+      "ust": 21.92,
+      "p": 0.001966992026829522
+     },
+     "2. kapanma": {
+      "etki_yuzde": 27.337,
+      "alt": 16.513,
+      "ust": 39.166,
+      "p": 9.712469141568172e-08
+     },
+     "fark_2_1": {
+      "fark_yuzde": 12.785,
+      "alt": 0.41,
+      "ust": 26.686,
+      "p": 0.042459881998402914
+     },
+     "pencere_30": {
+      "1. kapanma ilk 30": {
+       "etki_yuzde": 38.848,
+       "alt": 27.103,
+       "ust": 51.679,
+       "p": 3.3841717598329714e-13
+      },
+      "2. kapanma ilk 30": {
+       "etki_yuzde": 30.949,
+       "alt": 21.103,
+       "ust": 41.596,
+       "p": 1.3706502539253912e-11
+      },
+      "fark_2_1": {
+       "fark_yuzde": -5.689,
+       "alt": -16.203,
+       "ust": 6.145,
+       "p": 0.33145740375940547
+      },
+      "gece": {
+       "1. kapanma ilk 30": 12,
+       "2. kapanma ilk 30": 28
+      }
+     },
+     "pencere_72": {
+      "1. kapanma ilk 72": {
+       "etki_yuzde": 19.448,
+       "alt": 9.249,
+       "ust": 30.598,
+       "p": 9.51541718499846e-05
+      },
+      "2. kapanma ilk 72": {
+       "etki_yuzde": 27.233,
+       "alt": 16.449,
+       "ust": 39.016,
+       "p": 9.824253765992429e-08
+      },
+      "fark_2_1": {
+       "fark_yuzde": 6.518,
+       "alt": -6.063,
+       "ust": 20.784,
+       "p": 0.3248015482244122
+      },
+      "gece": {
+       "1. kapanma ilk 72": 39,
+       "2. kapanma ilk 72": 65
+      }
+     }
+    },
+    "hucre_l2": {
+     "1. kapanma": {
+      "etki_yuzde": 16.688,
+      "alt": 5.842,
+      "ust": 28.644,
+      "p": 0.0019297198265299843
+     },
+     "2. kapanma": {
+      "etki_yuzde": 25.436,
+      "alt": 15.186,
+      "ust": 36.598,
+      "p": 1.881920877645418e-07
+     },
+     "fark_2_1": {
+      "fark_yuzde": 7.497,
+      "alt": -5.469,
+      "ust": 22.242,
+      "p": 0.27031054381455843
+     }
+    }
+   }
+  }
+ },
+ "somo_basra": {
+  "2025-10": {
+   "bin_varil_gun": 3381.2,
+   "kaynak": "PDF"
+  },
+  "2025-11": {
+   "bin_varil_gun": 3290.3,
+   "kaynak": "PDF"
+  },
+  "2025-12": {
+   "bin_varil_gun": 3239.4,
+   "kaynak": "PDF"
+  },
+  "2026-01": {
+   "bin_varil_gun": 3263.2,
+   "kaynak": "PDF"
+  },
+  "2026-02": {
+   "bin_varil_gun": 3333.9,
+   "kaynak": "PDF"
+  },
+  "2026-03": {
+   "bin_varil_gun": 469.7,
+   "kaynak": "PDF"
+  },
+  "2026-04": {
+   "bin_varil_gun": 152.9,
+   "kaynak": "grafik"
+  },
+  "2026-05": {
+   "bin_varil_gun": 78.7,
+   "kaynak": "grafik"
+  },
+  "2026-06": {
+   "bin_varil_gun": 593.3,
+   "kaynak": "grafik"
+  },
+  "2026-08": {
+   "bin_varil_gun": 2250.2,
+   "kaynak": "PDF"
+  }
+ },
+ "basra": {
+  "beklenen_30_gun": {
+   "vlcc": 33.8,
+   "suezmax": 67.5,
+   "varsayim": "Varsayımsal ölçek: SOMO'nun Ağustos 2026 Basra yüklemesinin her yükü (VLCC 2 milyon, Suezmax 1 milyon varil) kutuya eklenen ayrı ve tespit edilebilir bir gemide kalsaydı 30 günde eklenecek gemi. Kutudaki boş kapasite, öteki gemilerin çıkışı ve ay içi zamanlama modellenmez; gözlenen stok ya da karşıolgusal tahmin değildir."
+  },
+  "basra": {
+   "ad": "Basra terminalleri (çıkan yörünge)",
+   "yorunge": "ascending",
+   "sahne": 73,
+   "sahne_1c1d": 42,
+   "n": 70,
+   "1. kapanma": {
+    "etki_yuzde": -16.902,
+    "alt": -21.145,
+    "ust": -12.431,
+    "p": 4.3778821370421446e-12
+   },
+   "2. kapanma": {
+    "etki_yuzde": -4.312,
+    "alt": -8.818,
+    "ust": 0.415,
+    "p": 0.07319665801615935
+   },
+   "fark_2_1": {
+    "fark_yuzde": 15.15,
+    "alt": 9.414,
+    "ust": 21.187,
+    "p": 6.260428787747115e-08
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 38,
+    "1. kapanma": 17,
+    "Açılış": 3,
+    "2. kapanma": 12
+   },
+   "uydular": [
+    "S1A",
+    "S1C",
+    "S1D"
+   ],
+   "goreli_yorunge": {
+    "174": 70
+   },
+   "medyan_1c1d": {
+    "1. kapanma": {
+     "sahne": 9,
+     "gemi": 53.0,
+     "buyuk": 44.0
+    },
+    "2. kapanma": {
+     "sahne": 12,
+     "gemi": 59.5,
+     "buyuk": 50.0
+    },
+    "Açılış": {
+     "sahne": 2,
+     "gemi": 55.5,
+     "buyuk": 46.5
+    },
+    "Tem 2025-Şub 2026": {
+     "sahne": 18,
+     "gemi": 63.5,
+     "buyuk": 53.0
+    }
+   },
+   "birikim": {
+    "n": 12,
+    "parametre": 3,
+    "ilk": "2026-07-17",
+    "son": "2026-09-21",
+    "gemi": {
+     "egim_30_gun": 2.0,
+     "alt": -0.48,
+     "ust": 4.48,
+     "p": 0.10160930726586379,
+     "alt_hc3": -1.04,
+     "ust_hc3": 5.04,
+     "p_hc3": 0.17130923732504025
+    },
+    "buyuk_gemi": {
+     "egim_30_gun": 1.68,
+     "alt": -0.76,
+     "ust": 4.12,
+     "p": 0.15378203173538396,
+     "alt_hc3": -1.14,
+     "ust_hc3": 4.5,
+     "p_hc3": 0.21147133783939745
+    },
+    "poisson_yuzde_30_gun": {
+     "etki": 3.39,
+     "alt": -0.25,
+     "ust": 7.17,
+     "p": 0.06848255859513001
+    }
+   },
+   "birikim_agustos": {
+    "n": 5,
+    "parametre": 3,
+    "ilk": "2026-08-04",
+    "son": "2026-08-28",
+    "gemi": {
+     "egim_30_gun": 4.0,
+     "alt": -4.13,
+     "ust": 12.13,
+     "p": 0.1685490936335697,
+     "alt_hc3": -15.21,
+     "ust_hc3": 23.21,
+     "p_hc3": 0.46487995032747326
+    },
+    "buyuk_gemi": {
+     "egim_30_gun": 5.5,
+     "alt": -14.55,
+     "ust": 25.55,
+     "p": 0.35916893463806737,
+     "alt_hc3": -40.53,
+     "ust_hc3": 51.53,
+     "p_hc3": 0.6583290683028292
+    },
+    "poisson_yuzde_30_gun": {
+     "etki": 6.77,
+     "alt": 0.45,
+     "ust": 13.49,
+     "p": 0.03548985427299444
+    }
+   },
+   "buyuk": {
+    "1. kapanma": {
+     "etki_yuzde": -16.605,
+     "alt": -21.564,
+     "ust": -11.331,
+     "p": 6.45156537181633e-09
+    },
+    "2. kapanma": {
+     "etki_yuzde": -5.116,
+     "alt": -10.714,
+     "ust": 0.833,
+     "p": 0.09054561778591917
+    },
+    "fark_2_1": {
+     "fark_yuzde": 13.776,
+     "alt": 6.927,
+     "ust": 21.064,
+     "p": 4.618232162804749e-05
+    }
+   }
+  },
+  "basra_inen": {
+   "ad": "Basra terminalleri (inen yörünge)",
+   "yorunge": "descending",
+   "sahne": 109,
+   "sahne_1c1d": 81,
+   "n": 108,
+   "1. kapanma": {
+    "etki_yuzde": -13.551,
+    "alt": -17.736,
+    "ust": -9.153,
+    "p": 8.842301839483282e-09
+   },
+   "2. kapanma": {
+    "etki_yuzde": -7.828,
+    "alt": -12.632,
+    "ust": -2.76,
+    "p": 0.002837993967277067
+   },
+   "fark_2_1": {
+    "fark_yuzde": 6.62,
+    "alt": 0.167,
+    "ust": 13.488,
+    "p": 0.04416813551899559
+   },
+   "n_donem": {
+    "Tem 2025-Şub 2026": 56,
+    "1. kapanma": 28,
+    "Açılış": 6,
+    "2. kapanma": 18
+   },
+   "uydular": [
+    "S1A",
+    "S1C",
+    "S1D"
+   ],
+   "goreli_yorunge": {
+    "35": 37,
+    "108": 71
+   },
+   "medyan_1c1d": {
+    "1. kapanma": {
+     "sahne": 20,
+     "gemi": 59.0,
+     "buyuk": 50.5
+    },
+    "2. kapanma": {
+     "sahne": 18,
+     "gemi": 63.0,
+     "buyuk": 53.5
+    },
+    "Açılış": {
+     "sahne": 5,
+     "gemi": 67.0,
+     "buyuk": 58.0
+    },
+    "Tem 2025-Şub 2026": {
+     "sahne": 37,
+     "gemi": 69.0,
+     "buyuk": 60.0
+    }
+   },
+   "birikim": {
+    "n": 18,
+    "parametre": 4,
+    "ilk": "2026-07-13",
+    "son": "2026-09-17",
+    "gemi": {
+     "egim_30_gun": -1.14,
+     "alt": -6.23,
+     "ust": 3.95,
+     "p": 0.6374263605368059,
+     "alt_hc3": -7.19,
+     "ust_hc3": 4.9,
+     "p_hc3": 0.6912036989444112
+    },
+    "buyuk_gemi": {
+     "egim_30_gun": -1.55,
+     "alt": -6.68,
+     "ust": 3.59,
+     "p": 0.5284872193638358,
+     "alt_hc3": -7.71,
+     "ust_hc3": 4.61,
+     "p_hc3": 0.5984475049799032
+    },
+    "poisson_yuzde_30_gun": {
+     "etki": -1.8,
+     "alt": -8.83,
+     "ust": 5.77,
+     "p": 0.6321264028987534
+    }
+   },
+   "birikim_agustos": {
+    "n": 8,
+    "parametre": 4,
+    "ilk": "2026-08-06",
+    "son": "2026-08-31",
+    "gemi": {
+     "egim_30_gun": 12.78,
+     "alt": 0.99,
+     "ust": 24.57,
+     "p": 0.039569962648270965,
+     "alt_hc3": -5.98,
+     "ust_hc3": 31.53,
+     "p_hc3": 0.13150935681119802
+    },
+    "buyuk_gemi": {
+     "egim_30_gun": 11.11,
+     "alt": -1.91,
+     "ust": 24.14,
+     "p": 0.07693600205863123,
+     "alt_hc3": -9.61,
+     "ust_hc3": 31.83,
+     "p_hc3": 0.2107773716455574
+    },
+    "poisson_yuzde_30_gun": {
+     "etki": 21.36,
+     "alt": 8.68,
+     "ust": 35.51,
+     "p": 0.0005837147578353368
+    }
+   },
+   "birikim_goreli": {
+    "35": {
+     "n": 6,
+     "parametre": 2,
+     "ilk": "2026-07-14",
+     "son": "2026-09-12",
+     "gemi": {
+      "egim_30_gun": 3.43,
+      "alt": -10.21,
+      "ust": 17.06,
+      "p": 0.5235191061109431,
+      "alt_hc3": -16.61,
+      "ust_hc3": 23.47,
+      "p_hc3": 0.6595005834482877
+     },
+     "buyuk_gemi": {
+      "egim_30_gun": 2.64,
+      "alt": -11.39,
+      "ust": 16.68,
+      "p": 0.6286585241272294,
+      "alt_hc3": -18.9,
+      "ust_hc3": 24.18,
+      "p_hc3": 0.7505165012005263
+     },
+     "poisson_yuzde_30_gun": {
+      "etki": 5.36,
+      "alt": -8.81,
+      "ust": 21.74,
+      "p": 0.47867163348016306
+     }
+    },
+    "108": {
+     "n": 12,
+     "parametre": 3,
+     "ilk": "2026-07-13",
+     "son": "2026-09-17",
+     "gemi": {
+      "egim_30_gun": -3.43,
+      "alt": -8.87,
+      "ust": 2.01,
+      "p": 0.18784645003311493,
+      "alt_hc3": -10.36,
+      "ust_hc3": 3.5,
+      "p_hc3": 0.2918584099502249
+     },
+     "buyuk_gemi": {
+      "egim_30_gun": -3.64,
+      "alt": -9.32,
+      "ust": 2.03,
+      "p": 0.18025763897938887,
+      "alt_hc3": -11.0,
+      "ust_hc3": 3.72,
+      "p_hc3": 0.2919332279046419
+     },
+     "poisson_yuzde_30_gun": {
+      "etki": -5.41,
+      "alt": -12.47,
+      "ust": 2.22,
+      "p": 0.16015705893341814
+     }
+    }
+   },
+   "buyuk": {
+    "1. kapanma": {
+     "etki_yuzde": -13.702,
+     "alt": -18.159,
+     "ust": -9.002,
+     "p": 5.142111025143669e-08
+    },
+    "2. kapanma": {
+     "etki_yuzde": -8.902,
+     "alt": -14.439,
+     "ust": -3.007,
+     "p": 0.0035638503616631113
+    },
+    "fark_2_1": {
+     "fark_yuzde": 5.562,
+     "alt": -1.732,
+     "ust": 13.397,
+     "p": 0.13843973781553393
+    }
+   }
+  }
+ },
+ "sekil": {
+  "radar": [
+   [
+    "2025-12-12",
+    43
+   ],
+   [
+    "2025-12-24",
+    53
+   ],
+   [
+    "2026-01-05",
+    36
+   ],
+   [
+    "2026-01-17",
+    30
+   ],
+   [
+    "2026-01-29",
+    38
+   ],
+   [
+    "2026-02-10",
+    38
+   ],
+   [
+    "2026-02-22",
+    48
+   ],
+   [
+    "2026-03-06",
+    11
+   ],
+   [
+    "2026-03-18",
+    9
+   ],
+   [
+    "2026-03-30",
+    3
+   ],
+   [
+    "2026-04-11",
+    3
+   ],
+   [
+    "2026-04-23",
+    10
+   ],
+   [
+    "2026-05-05",
+    12
+   ],
+   [
+    "2026-05-17",
+    10
+   ],
+   [
+    "2026-05-18",
+    8
+   ],
+   [
+    "2026-05-29",
+    10
+   ],
+   [
+    "2026-05-30",
+    38
+   ],
+   [
+    "2026-06-11",
+    6
+   ],
+   [
+    "2026-06-23",
+    17
+   ],
+   [
+    "2026-06-29",
+    17
+   ],
+   [
+    "2026-07-05",
+    10
+   ],
+   [
+    "2026-07-11",
+    19
+   ],
+   [
+    "2026-07-17",
+    6
+   ],
+   [
+    "2026-07-23",
+    11
+   ],
+   [
+    "2026-07-29",
+    9
+   ],
+   [
+    "2026-08-04",
+    11
+   ],
+   [
+    "2026-08-10",
+    6
+   ],
+   [
+    "2026-08-16",
+    8
+   ],
+   [
+    "2026-08-22",
+    15
+   ],
+   [
+    "2026-08-28",
+    7
+   ],
+   [
+    "2026-09-03",
+    10
+   ],
+   [
+    "2026-09-09",
+    14
+   ],
+   [
+    "2026-09-15",
+    10
+   ],
+   [
+    "2026-09-21",
+    9
+   ]
+  ],
+  "alev_guney_7": [
+   [
+    "2025-12-01",
+    76.72
+   ],
+   [
+    "2025-12-02",
+    76.55
+   ],
+   [
+    "2025-12-03",
+    73.94
+   ],
+   [
+    "2025-12-04",
+    56.76
+   ],
+   [
+    "2025-12-05",
+    52.07
+   ],
+   [
+    "2025-12-06",
+    68.22
+   ],
+   [
+    "2025-12-07",
+    63.04
+   ],
+   [
+    "2025-12-08",
+    54.0
+   ],
+   [
+    "2025-12-09",
+    46.28
+   ],
+   [
+    "2025-12-10",
+    37.54
+   ],
+   [
+    "2025-12-11",
+    45.58
+   ],
+   [
+    "2025-12-12",
+    55.29
+   ],
+   [
+    "2025-12-13",
+    38.09
+   ],
+   [
+    "2025-12-14",
+    46.98
+   ],
+   [
+    "2025-12-15",
+    49.95
+   ],
+   [
+    "2025-12-16",
+    55.59
+   ],
+   [
+    "2025-12-17",
+    56.99
+   ],
+   [
+    "2025-12-18",
+    48.44
+   ],
+   [
+    "2025-12-19",
+    41.73
+   ],
+   [
+    "2025-12-20",
+    45.19
+   ],
+   [
+    "2025-12-21",
+    41.45
+   ],
+   [
+    "2025-12-22",
+    48.21
+   ],
+   [
+    "2025-12-23",
+    55.92
+   ],
+   [
+    "2025-12-24",
+    62.66
+   ],
+   [
+    "2025-12-25",
+    61.71
+   ],
+   [
+    "2025-12-26",
+    51.24
+   ],
+   [
+    "2025-12-27",
+    55.36
+   ],
+   [
+    "2025-12-28",
+    61.58
+   ],
+   [
+    "2025-12-29",
+    54.08
+   ],
+   [
+    "2025-12-30",
+    57.08
+   ],
+   [
+    "2025-12-31",
+    52.52
+   ],
+   [
+    "2026-01-01",
+    57.57
+   ],
+   [
+    "2026-01-02",
+    73.07
+   ],
+   [
+    "2026-01-03",
+    79.19
+   ],
+   [
+    "2026-01-04",
+    83.0
+   ],
+   [
+    "2026-01-05",
+    91.16
+   ],
+   [
+    "2026-01-06",
+    83.67
+   ],
+   [
+    "2026-01-07",
+    87.32
+   ],
+   [
+    "2026-01-08",
+    99.37
+   ],
+   [
+    "2026-01-09",
+    80.19
+   ],
+   [
+    "2026-01-10",
+    73.68
+   ],
+   [
+    "2026-01-11",
+    62.75
+   ],
+   [
+    "2026-01-12",
+    50.65
+   ],
+   [
+    "2026-01-13",
+    47.74
+   ],
+   [
+    "2026-01-14",
+    57.14
+   ],
+   [
+    "2026-01-15",
+    57.25
+   ],
+   [
+    "2026-01-16",
+    68.11
+   ],
+   [
+    "2026-01-17",
+    60.95
+   ],
+   [
+    "2026-01-18",
+    71.47
+   ],
+   [
+    "2026-01-19",
+    97.95
+   ],
+   [
+    "2026-01-20",
+    105.85
+   ],
+   [
+    "2026-01-21",
+    102.39
+   ],
+   [
+    "2026-01-22",
+    86.53
+   ],
+   [
+    "2026-01-23",
+    84.42
+   ],
+   [
+    "2026-01-24",
+    79.12
+   ],
+   [
+    "2026-01-25",
+    79.29
+   ],
+   [
+    "2026-01-26",
+    59.75
+   ],
+   [
+    "2026-01-27",
+    51.66
+   ],
+   [
+    "2026-01-28",
+    41.99
+   ],
+   [
+    "2026-01-29",
+    59.83
+   ],
+   [
+    "2026-01-30",
+    53.97
+   ],
+   [
+    "2026-01-31",
+    64.23
+   ],
+   [
+    "2026-02-01",
+    54.55
+   ],
+   [
+    "2026-02-02",
+    47.88
+   ],
+   [
+    "2026-02-03",
+    53.53
+   ],
+   [
+    "2026-02-04",
+    75.71
+   ],
+   [
+    "2026-02-05",
+    72.92
+   ],
+   [
+    "2026-02-06",
+    69.99
+   ],
+   [
+    "2026-02-07",
+    67.03
+   ],
+   [
+    "2026-02-08",
+    72.23
+   ],
+   [
+    "2026-02-09",
+    86.98
+   ],
+   [
+    "2026-02-10",
+    77.36
+   ],
+   [
+    "2026-02-11",
+    52.18
+   ],
+   [
+    "2026-02-12",
+    46.45
+   ],
+   [
+    "2026-02-13",
+    57.78
+   ],
+   [
+    "2026-02-14",
+    60.12
+   ],
+   [
+    "2026-02-15",
+    66.07
+   ],
+   [
+    "2026-02-16",
+    64.57
+   ],
+   [
+    "2026-02-17",
+    72.66
+   ],
+   [
+    "2026-02-18",
+    86.43
+   ],
+   [
+    "2026-02-19",
+    94.28
+   ],
+   [
+    "2026-02-20",
+    101.21
+   ],
+   [
+    "2026-02-21",
+    106.69
+   ],
+   [
+    "2026-02-22",
+    98.38
+   ],
+   [
+    "2026-02-23",
+    94.27
+   ],
+   [
+    "2026-02-24",
+    95.61
+   ],
+   [
+    "2026-02-25",
+    102.27
+   ],
+   [
+    "2026-02-26",
+    95.84
+   ],
+   [
+    "2026-02-27",
+    90.01
+   ],
+   [
+    "2026-02-28",
+    85.96
+   ],
+   [
+    "2026-03-01",
+    86.42
+   ],
+   [
+    "2026-03-02",
+    92.95
+   ],
+   [
+    "2026-03-03",
+    84.4
+   ],
+   [
+    "2026-03-04",
+    70.25
+   ],
+   [
+    "2026-03-05",
+    61.52
+   ],
+   [
+    "2026-03-06",
+    53.21
+   ],
+   [
+    "2026-03-07",
+    42.81
+   ],
+   [
+    "2026-03-08",
+    37.46
+   ],
+   [
+    "2026-03-09",
+    23.6
+   ],
+   [
+    "2026-03-10",
+    21.77
+   ],
+   [
+    "2026-03-11",
+    16.33
+   ],
+   [
+    "2026-03-12",
+    14.38
+   ],
+   [
+    "2026-03-13",
+    11.8
+   ],
+   [
+    "2026-03-14",
+    11.25
+   ],
+   [
+    "2026-03-15",
+    7.1
+   ],
+   [
+    "2026-03-16",
+    6.75
+   ],
+   [
+    "2026-03-17",
+    7.98
+   ],
+   [
+    "2026-03-18",
+    8.79
+   ],
+   [
+    "2026-03-19",
+    9.28
+   ],
+   [
+    "2026-03-20",
+    9.72
+   ],
+   [
+    "2026-03-21",
+    10.14
+   ],
+   [
+    "2026-03-22",
+    10.16
+   ],
+   [
+    "2026-03-23",
+    8.61
+   ],
+   [
+    "2026-03-24",
+    6.38
+   ],
+   [
+    "2026-03-25",
+    5.96
+   ],
+   [
+    "2026-03-26",
+    6.32
+   ],
+   [
+    "2026-03-27",
+    5.76
+   ],
+   [
+    "2026-03-28",
+    6.95
+   ],
+   [
+    "2026-03-29",
+    7.28
+   ],
+   [
+    "2026-03-30",
+    9.36
+   ],
+   [
+    "2026-03-31",
+    10.56
+   ],
+   [
+    "2026-04-01",
+    9.79
+   ],
+   [
+    "2026-04-02",
+    8.31
+   ],
+   [
+    "2026-04-03",
+    6.78
+   ],
+   [
+    "2026-04-04",
+    7.61
+   ],
+   [
+    "2026-04-05",
+    7.3
+   ],
+   [
+    "2026-04-06",
+    6.69
+   ],
+   [
+    "2026-04-07",
+    7.38
+   ],
+   [
+    "2026-04-08",
+    7.69
+   ],
+   [
+    "2026-04-09",
+    10.64
+   ],
+   [
+    "2026-04-10",
+    12.25
+   ],
+   [
+    "2026-04-11",
+    10.49
+   ],
+   [
+    "2026-04-12",
+    11.29
+   ],
+   [
+    "2026-04-13",
+    11.7
+   ],
+   [
+    "2026-04-14",
+    11.45
+   ],
+   [
+    "2026-04-15",
+    12.28
+   ],
+   [
+    "2026-04-16",
+    9.82
+   ],
+   [
+    "2026-04-17",
+    8.79
+   ],
+   [
+    "2026-04-18",
+    8.13
+   ],
+   [
+    "2026-04-19",
+    7.14
+   ],
+   [
+    "2026-04-20",
+    6.39
+   ],
+   [
+    "2026-04-21",
+    5.63
+   ],
+   [
+    "2026-04-22",
+    5.5
+   ],
+   [
+    "2026-04-23",
+    6.43
+   ],
+   [
+    "2026-04-24",
+    5.92
+   ],
+   [
+    "2026-04-25",
+    6.2
+   ],
+   [
+    "2026-04-26",
+    7.79
+   ],
+   [
+    "2026-04-27",
+    8.12
+   ],
+   [
+    "2026-04-28",
+    8.74
+   ],
+   [
+    "2026-04-29",
+    9.47
+   ],
+   [
+    "2026-04-30",
+    12.51
+   ],
+   [
+    "2026-05-01",
+    14.24
+   ],
+   [
+    "2026-05-02",
+    16.15
+   ],
+   [
+    "2026-05-03",
+    16.13
+   ],
+   [
+    "2026-05-04",
+    16.2
+   ],
+   [
+    "2026-05-05",
+    17.95
+   ],
+   [
+    "2026-05-06",
+    19.05
+   ],
+   [
+    "2026-05-07",
+    14.8
+   ],
+   [
+    "2026-05-08",
+    13.75
+   ],
+   [
+    "2026-05-09",
+    13.74
+   ],
+   [
+    "2026-05-10",
+    14.6
+   ],
+   [
+    "2026-05-11",
+    16.2
+   ],
+   [
+    "2026-05-12",
+    15.57
+   ],
+   [
+    "2026-05-13",
+    13.81
+   ],
+   [
+    "2026-05-14",
+    15.98
+   ],
+   [
+    "2026-05-15",
+    18.15
+   ],
+   [
+    "2026-05-16",
+    18.71
+   ],
+   [
+    "2026-05-17",
+    18.05
+   ],
+   [
+    "2026-05-18",
+    15.12
+   ],
+   [
+    "2026-05-19",
+    13.39
+   ],
+   [
+    "2026-05-20",
+    14.09
+   ],
+   [
+    "2026-05-21",
+    15.71
+   ],
+   [
+    "2026-05-22",
+    16.46
+   ],
+   [
+    "2026-05-23",
+    16.13
+   ],
+   [
+    "2026-05-24",
+    14.64
+   ],
+   [
+    "2026-05-25",
+    15.86
+   ],
+   [
+    "2026-05-26",
+    17.23
+   ],
+   [
+    "2026-05-27",
+    17.97
+   ],
+   [
+    "2026-05-28",
+    16.17
+   ],
+   [
+    "2026-05-29",
+    14.26
+   ],
+   [
+    "2026-05-30",
+    13.96
+   ],
+   [
+    "2026-05-31",
+    15.96
+   ],
+   [
+    "2026-06-01",
+    18.28
+   ],
+   [
+    "2026-06-02",
+    18.59
+   ],
+   [
+    "2026-06-03",
+    17.61
+   ],
+   [
+    "2026-06-04",
+    17.04
+   ],
+   [
+    "2026-06-05",
+    17.41
+   ],
+   [
+    "2026-06-06",
+    17.82
+   ],
+   [
+    "2026-06-07",
+    17.72
+   ],
+   [
+    "2026-06-08",
+    15.75
+   ],
+   [
+    "2026-06-09",
+    14.9
+   ],
+   [
+    "2026-06-10",
+    14.64
+   ],
+   [
+    "2026-06-11",
+    15.45
+   ],
+   [
+    "2026-06-12",
+    17.73
+   ],
+   [
+    "2026-06-13",
+    18.36
+   ],
+   [
+    "2026-06-14",
+    18.45
+   ],
+   [
+    "2026-06-15",
+    19.54
+   ],
+   [
+    "2026-06-16",
+    21.19
+   ],
+   [
+    "2026-06-17",
+    26.68
+   ],
+   [
+    "2026-06-18",
+    29.65
+   ],
+   [
+    "2026-06-19",
+    32.15
+   ],
+   [
+    "2026-06-20",
+    36.37
+   ],
+   [
+    "2026-06-21",
+    41.44
+   ],
+   [
+    "2026-06-22",
+    51.68
+   ],
+   [
+    "2026-06-23",
+    58.56
+   ],
+   [
+    "2026-06-24",
+    56.79
+   ],
+   [
+    "2026-06-25",
+    55.65
+   ],
+   [
+    "2026-06-26",
+    51.89
+   ],
+   [
+    "2026-06-27",
+    48.26
+   ],
+   [
+    "2026-06-28",
+    43.72
+   ],
+   [
+    "2026-06-29",
+    32.84
+   ],
+   [
+    "2026-06-30",
+    24.63
+   ],
+   [
+    "2026-07-01",
+    23.5
+   ],
+   [
+    "2026-07-02",
+    24.79
+   ],
+   [
+    "2026-07-03",
+    34.53
+   ],
+   [
+    "2026-07-04",
+    42.66
+   ],
+   [
+    "2026-07-05",
+    48.81
+   ],
+   [
+    "2026-07-06",
+    55.17
+   ],
+   [
+    "2026-07-07",
+    61.68
+   ],
+   [
+    "2026-07-08",
+    69.09
+   ],
+   [
+    "2026-07-09",
+    78.39
+   ],
+   [
+    "2026-07-10",
+    76.42
+   ],
+   [
+    "2026-07-11",
+    72.21
+   ],
+   [
+    "2026-07-12",
+    69.13
+   ],
+   [
+    "2026-07-13",
+    68.59
+   ],
+   [
+    "2026-07-14",
+    68.88
+   ],
+   [
+    "2026-07-15",
+    63.06
+   ],
+   [
+    "2026-07-16",
+    54.29
+   ],
+   [
+    "2026-07-17",
+    48.53
+   ],
+   [
+    "2026-07-18",
+    47.74
+   ],
+   [
+    "2026-07-19",
+    47.47
+   ],
+   [
+    "2026-07-20",
+    46.33
+   ],
+   [
+    "2026-07-21",
+    44.14
+   ],
+   [
+    "2026-07-22",
+    44.27
+   ],
+   [
+    "2026-07-23",
+    42.85
+   ],
+   [
+    "2026-07-24",
+    44.83
+   ],
+   [
+    "2026-07-25",
+    45.73
+   ],
+   [
+    "2026-07-26",
+    44.93
+   ],
+   [
+    "2026-07-27",
+    42.83
+   ],
+   [
+    "2026-07-28",
+    40.84
+   ],
+   [
+    "2026-07-29",
+    41.2
+   ],
+   [
+    "2026-07-30",
+    44.78
+   ],
+   [
+    "2026-07-31",
+    42.19
+   ],
+   [
+    "2026-08-01",
+    39.05
+   ],
+   [
+    "2026-08-02",
+    37.55
+   ],
+   [
+    "2026-08-03",
+    38.41
+   ],
+   [
+    "2026-08-04",
+    43.12
+   ],
+   [
+    "2026-08-05",
+    47.79
+   ],
+   [
+    "2026-08-06",
+    48.55
+   ],
+   [
+    "2026-08-07",
+    52.55
+   ],
+   [
+    "2026-08-08",
+    59.01
+   ],
+   [
+    "2026-08-09",
+    71.07
+   ],
+   [
+    "2026-08-10",
+    82.95
+   ],
+   [
+    "2026-08-11",
+    87.24
+   ],
+   [
+    "2026-08-12",
+    85.68
+   ],
+   [
+    "2026-08-13",
+    85.12
+   ],
+   [
+    "2026-08-14",
+    94.17
+   ],
+   [
+    "2026-08-15",
+    99.81
+   ],
+   [
+    "2026-08-16",
+    97.85
+   ],
+   [
+    "2026-08-17",
+    90.84
+   ],
+   [
+    "2026-08-18",
+    86.08
+   ],
+   [
+    "2026-08-19",
+    88.49
+   ],
+   [
+    "2026-08-20",
+    93.68
+   ],
+   [
+    "2026-08-21",
+    90.61
+   ],
+   [
+    "2026-08-22",
+    84.09
+   ],
+   [
+    "2026-08-23",
+    79.45
+   ],
+   [
+    "2026-08-24",
+    77.84
+   ],
+   [
+    "2026-08-25",
+    77.31
+   ],
+   [
+    "2026-08-26",
+    73.4
+   ],
+   [
+    "2026-08-27",
+    70.11
+   ],
+   [
+    "2026-08-28",
+    64.73
+   ],
+   [
+    "2026-08-29",
+    67.43
+   ],
+   [
+    "2026-08-30",
+    71.75
+   ],
+   [
+    "2026-08-31",
+    94.15
+   ],
+   [
+    "2026-09-01",
+    105.84
+   ],
+   [
+    "2026-09-02",
+    113.04
+   ],
+   [
+    "2026-09-03",
+    113.55
+   ],
+   [
+    "2026-09-04",
+    110.66
+   ],
+   [
+    "2026-09-05",
+    115.6
+   ],
+   [
+    "2026-09-06",
+    117.03
+   ],
+   [
+    "2026-09-07",
+    100.4
+   ],
+   [
+    "2026-09-08",
+    94.24
+   ],
+   [
+    "2026-09-09",
+    97.54
+   ],
+   [
+    "2026-09-10",
+    106.83
+   ],
+   [
+    "2026-09-11",
+    112.02
+   ],
+   [
+    "2026-09-12",
+    107.78
+   ],
+   [
+    "2026-09-13",
+    101.65
+   ],
+   [
+    "2026-09-14",
+    99.02
+   ],
+   [
+    "2026-09-15",
+    97.89
+   ],
+   [
+    "2026-09-16",
+    98.14
+   ],
+   [
+    "2026-09-17",
+    85.96
+   ],
+   [
+    "2026-09-18",
+    75.29
+   ],
+   [
+    "2026-09-19",
+    71.52
+   ],
+   [
+    "2026-09-20",
+    72.62
+   ],
+   [
+    "2026-09-21",
+    77.56
+   ],
+   [
+    "2026-09-22",
+    86.35
+   ],
+   [
+    "2026-09-23",
+    83.28
+   ],
+   [
+    "2026-09-24",
+    88.76
+   ]
+  ],
+  "basra_aylik": {
+   "2025-10": 3381.2,
+   "2025-11": 3290.3,
+   "2025-12": 3239.4,
+   "2026-01": 3263.2,
+   "2026-02": 3333.9,
+   "2026-03": 469.7,
+   "2026-04": 152.9,
+   "2026-05": 78.7,
+   "2026-06": 593.3,
+   "2026-08": 2250.2
+  },
+  "radar_once_medyan": 40.5,
+  "basra_radar": [
+   [
+    "2025-08-02",
+    74
+   ],
+   [
+    "2025-08-14",
+    62
+   ],
+   [
+    "2025-08-26",
+    68
+   ],
+   [
+    "2025-09-07",
+    55
+   ],
+   [
+    "2025-09-19",
+    53
+   ],
+   [
+    "2025-10-01",
+    65
+   ],
+   [
+    "2025-10-13",
+    70
+   ],
+   [
+    "2025-10-25",
+    70
+   ],
+   [
+    "2025-11-06",
+    62
+   ],
+   [
+    "2025-11-18",
+    59
+   ],
+   [
+    "2025-11-30",
+    68
+   ],
+   [
+    "2025-12-12",
+    63
+   ],
+   [
+    "2025-12-24",
+    64
+   ],
+   [
+    "2026-01-05",
+    59
+   ],
+   [
+    "2026-01-17",
+    65
+   ],
+   [
+    "2026-01-29",
+    69
+   ],
+   [
+    "2026-02-10",
+    56
+   ],
+   [
+    "2026-02-22",
+    55
+   ],
+   [
+    "2026-03-06",
+    56
+   ],
+   [
+    "2026-03-18",
+    51
+   ],
+   [
+    "2026-03-30",
+    46
+   ],
+   [
+    "2026-04-23",
+    54
+   ],
+   [
+    "2026-05-05",
+    53
+   ],
+   [
+    "2026-05-17",
+    45
+   ],
+   [
+    "2026-05-18",
+    55
+   ],
+   [
+    "2026-05-29",
+    47
+   ],
+   [
+    "2026-05-30",
+    55
+   ],
+   [
+    "2026-06-23",
+    55
+   ],
+   [
+    "2026-06-29",
+    56
+   ],
+   [
+    "2026-07-11",
+    64
+   ],
+   [
+    "2026-07-17",
+    60
+   ],
+   [
+    "2026-07-23",
+    59
+   ],
+   [
+    "2026-07-29",
+    53
+   ],
+   [
+    "2026-08-04",
+    59
+   ],
+   [
+    "2026-08-10",
+    59
+   ],
+   [
+    "2026-08-16",
+    63
+   ],
+   [
+    "2026-08-22",
+    61
+   ],
+   [
+    "2026-08-28",
+    62
+   ],
+   [
+    "2026-09-03",
+    58
+   ],
+   [
+    "2026-09-09",
+    59
+   ],
+   [
+    "2026-09-15",
+    63
+   ],
+   [
+    "2026-09-21",
+    64
+   ]
+  ],
+  "basra_once_medyan": 63.5,
+  "basra_inen_radar": [
+   [
+    "2025-07-24",
+    71
+   ],
+   [
+    "2025-07-29",
+    79
+   ],
+   [
+    "2025-08-05",
+    90
+   ],
+   [
+    "2025-08-10",
+    68
+   ],
+   [
+    "2025-08-17",
+    70
+   ],
+   [
+    "2025-08-22",
+    69
+   ],
+   [
+    "2025-08-29",
+    61
+   ],
+   [
+    "2025-09-03",
+    59
+   ],
+   [
+    "2025-09-10",
+    71
+   ],
+   [
+    "2025-09-15",
+    62
+   ],
+   [
+    "2025-09-22",
+    74
+   ],
+   [
+    "2025-09-27",
+    63
+   ],
+   [
+    "2025-10-04",
+    69
+   ],
+   [
+    "2025-10-09",
+    60
+   ],
+   [
+    "2025-10-16",
+    65
+   ],
+   [
+    "2025-10-21",
+    68
+   ],
+   [
+    "2025-10-28",
+    66
+   ],
+   [
+    "2025-11-02",
+    67
+   ],
+   [
+    "2025-11-09",
+    76
+   ],
+   [
+    "2025-11-14",
+    66
+   ],
+   [
+    "2025-11-21",
+    74
+   ],
+   [
+    "2025-11-26",
+    67
+   ],
+   [
+    "2025-12-03",
+    60
+   ],
+   [
+    "2025-12-08",
+    62
+   ],
+   [
+    "2025-12-15",
+    64
+   ],
+   [
+    "2025-12-20",
+    69
+   ],
+   [
+    "2025-12-27",
+    75
+   ],
+   [
+    "2026-01-01",
+    72
+   ],
+   [
+    "2026-01-08",
+    70
+   ],
+   [
+    "2026-01-13",
+    78
+   ],
+   [
+    "2026-01-20",
+    77
+   ],
+   [
+    "2026-01-25",
+    73
+   ],
+   [
+    "2026-02-01",
+    76
+   ],
+   [
+    "2026-02-06",
+    64
+   ],
+   [
+    "2026-02-13",
+    72
+   ],
+   [
+    "2026-02-18",
+    63
+   ],
+   [
+    "2026-02-25",
+    68
+   ],
+   [
+    "2026-03-02",
+    73
+   ],
+   [
+    "2026-03-09",
+    70
+   ],
+   [
+    "2026-03-14",
+    65
+   ],
+   [
+    "2026-03-21",
+    63
+   ],
+   [
+    "2026-03-26",
+    53
+   ],
+   [
+    "2026-04-02",
+    58
+   ],
+   [
+    "2026-04-14",
+    63
+   ],
+   [
+    "2026-04-19",
+    60
+   ],
+   [
+    "2026-04-26",
+    57
+   ],
+   [
+    "2026-05-01",
+    67
+   ],
+   [
+    "2026-05-08",
+    60
+   ],
+   [
+    "2026-05-13",
+    48
+   ],
+   [
+    "2026-05-14",
+    53
+   ],
+   [
+    "2026-05-20",
+    57
+   ],
+   [
+    "2026-05-21",
+    53
+   ],
+   [
+    "2026-05-25",
+    54
+   ],
+   [
+    "2026-05-26",
+    56
+   ],
+   [
+    "2026-06-01",
+    53
+   ],
+   [
+    "2026-06-02",
+    71
+   ],
+   [
+    "2026-06-07",
+    61
+   ],
+   [
+    "2026-06-14",
+    68
+   ],
+   [
+    "2026-06-19",
+    53
+   ],
+   [
+    "2026-06-25",
+    61
+   ],
+   [
+    "2026-07-01",
+    70
+   ],
+   [
+    "2026-07-02",
+    67
+   ],
+   [
+    "2026-07-07",
+    73
+   ],
+   [
+    "2026-07-13",
+    69
+   ],
+   [
+    "2026-07-14",
+    66
+   ],
+   [
+    "2026-07-19",
+    67
+   ],
+   [
+    "2026-07-25",
+    59
+   ],
+   [
+    "2026-07-26",
+    57
+   ],
+   [
+    "2026-07-31",
+    58
+   ],
+   [
+    "2026-08-06",
+    59
+   ],
+   [
+    "2026-08-07",
+    64
+   ],
+   [
+    "2026-08-12",
+    62
+   ],
+   [
+    "2026-08-18",
+    65
+   ],
+   [
+    "2026-08-19",
+    66
+   ],
+   [
+    "2026-08-24",
+    66
+   ],
+   [
+    "2026-08-30",
+    65
+   ],
+   [
+    "2026-08-31",
+    79
+   ],
+   [
+    "2026-09-05",
+    60
+   ],
+   [
+    "2026-09-11",
+    49
+   ],
+   [
+    "2026-09-12",
+    62
+   ],
+   [
+    "2026-09-17",
+    61
+   ]
+  ],
+  "basra_inen_once_medyan": 69.0
+ }
+}

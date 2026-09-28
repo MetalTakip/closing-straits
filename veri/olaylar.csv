@@ -1,0 +1,40 @@
+kod,t0,olay_tarihi,bogaz,strait,tur,type,yon,direction,aciklama,description,ana_orneklem,kaynak
+B01,2018-07-26,2018-07-25,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Suudi tankerine saldırı,Attack on Saudi tanker,Evet,
+D01,2018-08-06,2018-08-04,Bâbülmendep,Bab el-Mandeb,Gerilim azalma,De-escalation,Azalma,De-escalation,Suudi sevkiyatı yeniden başladı,Saudi shipments resumed,Hayır,
+H01,2019-05-13,2019-05-12,Hürmüz,Hormuz,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Füceyre açıklarında sabotaj,Sabotage off Fujairah,Evet,
+H02,2019-06-13,2019-06-13,Hürmüz,Hormuz,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Umman Körfezi'nde iki tankere saldırı,Two tankers attacked in Gulf of Oman,Evet,
+H03,2019-07-19,2019-07-19,Hürmüz,Hormuz,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Stena Impero'ya el konuldu,Stena Impero seized,Evet,
+X01,2019-09-16,2019-09-14,Hürmüz,Hormuz,Üretim şoku (karşılaştırma),Production shock (comparison),Tırmanma,Escalation,Abqaiq-Khurais saldırısı,Abqaiq-Khurais attack,Hayır,
+H04,2020-01-03,2020-01-03,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,Süleymani'nin öldürülmesi,Soleimani killed,Evet,
+H05,2023-04-27,2023-04-27,Hürmüz,Hormuz,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Advantage Sweet'e el konuldu,Advantage Sweet seized,Evet,
+B02,2023-11-20,2023-11-19,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Galaxy Leader kaçırıldı,Galaxy Leader hijacked,Evet,
+B03,2023-12-04,2023-12-03,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Üç ticari gemiye eşzamanlı saldırı,Three merchant ships attacked at once,Evet,
+B04,2023-12-15,2023-12-15,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Maersk ve Hapag-Lloyd geçişi durdurdu,Maersk and Hapag-Lloyd paused transits,Evet,
+B05,2024-01-12,2024-01-12,Bâbülmendep,Bab el-Mandeb,Askeri tırmanma,Military escalation,Tırmanma,Escalation,ABD-İngiltere'nin ilk saldırısı,First US-UK strikes,Evet,
+B06,2024-01-29,2024-01-26,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Marlin Luanda vuruldu,Marlin Luanda hit,Evet,
+B07,2024-03-04,2024-03-02,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Rubymar battı,Rubymar sank,Evet,
+H06,2024-04-15,2024-04-13,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,MSC Aries; İran'ın İsrail'e saldırısı,MSC Aries; Iranian attack on Israel,Evet,
+B08,2024-08-21,2024-08-21,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Sounion'a saldırı,Attack on Sounion,Evet,
+H07,2024-10-01,2024-10-01,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,İran'ın İsrail'e füze saldırısı,Iranian missile attack on Israel,Evet,
+H08,2024-10-28,2024-10-26,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,İsrail'in İran'ı vurması,Israeli strikes on Iran,Evet,
+D02,2025-01-20,2025-01-19,Bâbülmendep,Bab el-Mandeb,Gerilim azalma,De-escalation,Azalma,De-escalation,Gazze ateşkesi; saldırılar sınırlandı,Gaza ceasefire; attacks scaled back,Hayır,
+B09,2025-03-17,2025-03-15,Bâbülmendep,Bab el-Mandeb,Askeri tırmanma,Military escalation,Tırmanma,Escalation,ABD'nin Husi harekâtı,US campaign against the Houthis,Evet,
+D03,2025-05-06,2025-05-06,Bâbülmendep,Bab el-Mandeb,Gerilim azalma,De-escalation,Azalma,De-escalation,ABD-Husi ateşkesi,US-Houthi ceasefire,Hayır,
+H09,2025-06-13,2025-06-13,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,İsrail-İran savaşı başladı,Israel-Iran war began,Evet,
+D04,2025-06-24,2025-06-23,Hürmüz,Hormuz,Gerilim azalma,De-escalation,Azalma,De-escalation,İsrail-İran ateşkesi,Israel-Iran ceasefire,Hayır,
+B10,2025-07-07,2025-07-06,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Magic Seas ve Eternity C battı,Magic Seas and Eternity C sank,Evet,
+H10,2026-03-02,2026-02-28,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,ABD-İsrail saldırıları; boğaz kapandı,US-Israeli strikes; strait closed,Evet,
+D05,2026-04-08,2026-04-07,Hürmüz,Hormuz,Gerilim azalma,De-escalation,Azalma,De-escalation,İki haftalık ABD-İran ateşkesi,Two-week US-Iran ceasefire,Hayır,
+E01,2026-04-09,,Hürmüz,Hormuz,,,Tırmanma,Escalation,İran boğazı yeniden kapattı,Iran closed the strait again,,eklendi
+E02,2026-04-17,,Hürmüz,Hormuz,,,Azalma,De-escalation,Boğaz yeniden açıldı,Strait reopened,,eklendi
+E03,2026-04-20,,Hürmüz,Hormuz,,,Tırmanma,Escalation,ABD ablukası; yeniden kapanma,US blockade; strait closed again,,eklendi
+D06,2026-06-15,2026-06-14,Hürmüz,Hormuz,Gerilim azalma,De-escalation,Azalma,De-escalation,ABD-İran anlaşması; boğaz açıldı,US-Iran deal; strait reopened,Hayır,
+E04,2026-06-17,,Hürmüz,Hormuz,,,Azalma,De-escalation,Anlaşma imzalandı,Agreement signed,,eklendi
+E05,2026-06-22,,Hürmüz,Hormuz,,,İlan,Announcement,İran'ın kapanma ilanı,Iran announced closure,,eklendi
+H11,2026-07-07,2026-07-07,Hürmüz,Hormuz,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Al Rekayyat ve Wedyan vuruldu,Al Rekayyat and Wedyan hit,Evet,
+E06,2026-07-13,,Hürmüz,Hormuz,,,Tırmanma,Escalation,Boğaz yeni bir duyuruya kadar kapandı,Strait closed until further notice,,eklendi
+B11,2026-07-23,2026-07-22,Bâbülmendep,Bab el-Mandeb,Gemi hedefli,Attack on shipping,Tırmanma,Escalation,Suudi tankerlerine saldırı,Attack on Saudi tankers,Evet,
+D07,2026-08-03,2026-08-02,Hürmüz,Hormuz,Gerilim azalma,De-escalation,Azalma,De-escalation,Planlanan saldırı iptal edildi,Planned strike called off,Hayır,
+H12,2026-09-01,2026-08-30,Hürmüz,Hormuz,Askeri tırmanma,Military escalation,Tırmanma,Escalation,Larak'a ABD saldırısı; çatışma,US strike on Larak; clashes,Evet,
+B12,2026-09-10,2026-09-10,Bâbülmendep,Bab el-Mandeb,Askeri tırmanma,Military escalation,Tırmanma,Escalation,Husiler Muha'yı ele geçirdi,Houthis seized Mokha,Evet,
+E07,2026-09-11,,Bâbülmendep,Bab el-Mandeb,,,Tırmanma,Escalation,Doğu-Batı hattı kapandı,East-West pipeline shut,,eklendi

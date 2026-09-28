@@ -1,0 +1,181 @@
+{
+ "konum": "basra",
+ "kutu_bgdk": [
+  48.7,
+  29.4,
+  49.2,
+  29.85
+ ],
+ "cozunurluk_m": 40.0,
+ "yorunge_secimi": "hepsi",
+ "dosya_eki": "_40m",
+ "epsg": 32638,
+ "sekil_satir_sutun": [
+  1289,
+  1169
+ ],
+ "donusum_affine": [
+  39.999144,
+  0.0,
+  859113.73637,
+  0.0,
+  -40.01262,
+  3309576.98403
+ ],
+ "aday_savas_oncesi_sahne": 181,
+ "ornek_adimi": 7,
+ "kullanilan_sahne": [
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250703T145055_20250703T145120_059921_077175_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251001T144945_20251001T145016_004370_008A93_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251019T145055_20251019T145120_061496_07AD92_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251224T144943_20251224T145013_005595_00B298_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260111T145049_20260111T145114_062721_07DD57_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260210T144941_20260210T145011_006295_00CA71_rtc",
+   "yorunge": "ascending",
+   "goreli_yorunge": 174
+  }
+ ],
+ "atlanan_sahne": [
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250718T023921_20250718T023946_060132_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250730T023856_20250730T023921_060307_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250809T144152_20250809T144217_003597_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250821T144127_20250821T144152_003772_00787B_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250828T024713_20250828T024738_060730_078EE3_rtc",
+   "goreli_yorunge": 108,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20250904T023921_20250904T023946_060832_0792E9_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250914T144153_20250914T144218_004122_008312_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20250922T023801_20250922T023831_004231_008654_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251009T024611_20251009T024640_004479_008DEB_rtc",
+   "goreli_yorunge": 108,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251026T144238_20251026T144303_061598_07B1B6_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251103T023856_20251103T023921_061707_07B5FF_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251113T144127_20251113T144152_004997_009E3E_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251120T024713_20251120T024738_061955_07BFA4_rtc",
+   "goreli_yorunge": 108,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20251127T023920_20251127T023945_062057_07C39D_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251207T144152_20251207T144217_005347_00AA16_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20251215T023800_20251215T023829_005456_00ADD3_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260101T024607_20260101T024637_005704_00B65F_rtc",
+   "goreli_yorunge": 108,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260118T144231_20260118T144256_062823_07E150_rtc",
+   "goreli_yorunge": 101,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1A_IW_GRDH_1SDV_20260126T023914_20260126T023939_062932_07E512_rtc",
+   "goreli_yorunge": 35,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  },
+  {
+   "sahne": "S1C_IW_GRDH_1SDV_20260218T024606_20260218T024635_006404_00CE3E_rtc",
+   "goreli_yorunge": 108,
+   "neden": "ızgara uymuyor (EPSG 32639, 1226x1233)"
+  }
+ ],
+ "parametre": {
+  "medyan_esigi_db": -17.0,
+  "genisletme_adimi": 2,
+  "hedef_ornek": 24,
+  "savas_oncesi": "< 2026-02-28",
+  "kara": "Natural Earth 10m admin 0, 300 m tampon",
+  "kanal": "VH"
+ },
+ "maskelenen_pay": 0.00046,
+ "maske_sha256": "60399b1dcd01f4d5c9c098c17b33008ba41e31a8d6a8da1465eef44cdcbbd7d6",
+ "yeniden_kurulum": {
+  "tarih": "2026-09-27",
+  "diskteki_maskeyle_ayni": true,
+  "farkli_piksel": 0,
+  "kod_sha256": "e3bc0bb46d1a39f5b97fa159667a36ed60f051cc12a8d38ca19e514d7e15d195",
+  "sahne_araligi": [
+   "2025-07-01",
+   "2026-09-22"
+  ]
+ }
+}

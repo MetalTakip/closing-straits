@@ -1,0 +1,25 @@
+{
+ "once": {
+  "sahne": 18,
+  "sahne_basi_tespit": 175.9
+ },
+ "kapanma2": {
+  "sahne": 10,
+  "sahne_basi_tespit": 256.3
+ },
+ "kiyiya_uzaklik": {
+  "1.5-5 km": {
+   "once": 9.0,
+   "kapanma2": 14.2
+  },
+  "5-10 km": {
+   "once": 29.0,
+   "kapanma2": 42.6
+  },
+  "10-30 km": {
+   "once": 107.7,
+   "kapanma2": 156.3
+  }
+ },
+ "olcek_ust": 0.306
+}

@@ -1,0 +1,26 @@
+{
+ "once": {
+  "tarih": "2025-11-30",
+  "sahne": "S1C_IW_GRDH_1SDV_20251130T021407_20251130T021436_005237_00A653_rtc",
+  "gemi": 41,
+  "gemi_csv": 41,
+  "donem_medyan_1c": 40.5,
+  "donem_sahne": 18,
+  "boyut_px": [
+   1749,
+   1238
+  ]
+ },
+ "kapanma2": {
+  "tarih": "2026-09-21",
+  "sahne": "S1C_IW_GRDH_1SDV_20260921T021410_20260921T021440_009539_012FBF_rtc",
+  "gemi": 9,
+  "gemi_csv": 9,
+  "donem_medyan_1c": 10.0,
+  "donem_sahne": 6,
+  "boyut_px": [
+   1749,
+   1238
+  ]
+ }
+}

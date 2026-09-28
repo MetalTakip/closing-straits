@@ -1,0 +1,122 @@
+{
+ "regresyon": [
+  {
+   "bagimli": "r",
+   "donem": "2017-2025",
+   "n": 2027,
+   "r2": 0.002,
+   "tehdit_b": 0.0753,
+   "eylem_b": -0.1004,
+   "ilgi_b": 0.033,
+   "tehdit_t": 1.441,
+   "eylem_t": -1.686,
+   "ilgi_t": 0.687
+  },
+  {
+   "bagimli": "r",
+   "donem": "2026",
+   "n": 172,
+   "r2": 0.06,
+   "tehdit_b": -0.1692,
+   "eylem_b": 0.7445,
+   "ilgi_b": 0.0361,
+   "tehdit_t": -0.511,
+   "eylem_t": 2.015,
+   "ilgi_t": 0.14
+  },
+  {
+   "bagimli": "abs_r",
+   "donem": "2017-2025",
+   "n": 2027,
+   "r2": 0.0,
+   "tehdit_b": 0.0095,
+   "eylem_b": 0.0134,
+   "ilgi_b": -0.0228,
+   "tehdit_t": 0.24,
+   "eylem_t": 0.303,
+   "ilgi_t": -0.502
+  },
+  {
+   "bagimli": "abs_r",
+   "donem": "2026",
+   "n": 172,
+   "r2": 0.092,
+   "tehdit_b": -0.0551,
+   "eylem_b": 0.2527,
+   "ilgi_b": 0.3622,
+   "tehdit_t": -0.211,
+   "eylem_t": 0.92,
+   "ilgi_t": 1.792
+  }
+ ],
+ "sicrama": [
+  {
+   "donem": "2017-2025",
+   "grup": "yalnız tehdit sıçraması",
+   "n": 48,
+   "ort_r": 0.8732,
+   "ort_abs_r": 1.797
+  },
+  {
+   "donem": "2017-2025",
+   "grup": "yalnız eylem sıçraması",
+   "n": 32,
+   "ort_r": -0.0099,
+   "ort_abs_r": 1.4446
+  },
+  {
+   "donem": "2017-2025",
+   "grup": "ikisi birden",
+   "n": 27,
+   "ort_r": -0.2534,
+   "ort_abs_r": 1.8989
+  },
+  {
+   "donem": "2017-2025",
+   "grup": "sakin günler",
+   "n": 1599,
+   "ort_r": 0.0421,
+   "ort_abs_r": 1.6057
+  },
+  {
+   "donem": "2026",
+   "grup": "yalnız tehdit sıçraması",
+   "n": 9,
+   "ort_r": -1.0986,
+   "ort_abs_r": 3.2142
+  },
+  {
+   "donem": "2026",
+   "grup": "yalnız eylem sıçraması",
+   "n": 1,
+   "ort_r": -1.202,
+   "ort_abs_r": 1.202
+  },
+  {
+   "donem": "2026",
+   "grup": "ikisi birden",
+   "n": 28,
+   "ort_r": 1.7418,
+   "ort_abs_r": 4.4537
+  },
+  {
+   "donem": "2026",
+   "grup": "sakin günler",
+   "n": 94,
+   "ort_r": -0.0292,
+   "ort_abs_r": 2.3037
+  }
+ ],
+ "tr_oran": {
+  "2017": 3.67,
+  "2018": 3.19,
+  "2019": 7.84,
+  "2020": 6.61,
+  "2021": 4.37,
+  "2022": 4.42,
+  "2023": 3.52,
+  "2024": 4.91,
+  "2025": 6.09,
+  "2026": 6.22
+ }
+}
