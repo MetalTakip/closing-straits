@@ -1,6 +1,6 @@
 {
  "meta": {
-  "tanim": "Analiz 17: iki kapanmanın farkı. Denizde (radar, AIS) ve karada (alev) göstergeler, ihracat (SOMO) ve fiziki fiyat (Dated Brent - ICE)\niki kapanmada nasıl ayrıştı? Astra'nın değerlendirme notundaki birinci öneri (27 Eylül 2026).\n\n1. Dönem farkı: aynı modelde ikinci ve ilk kapanma katsayılarının farkı, aynı kovaryansla (Wald). Fark = 100 x [exp(b2 - b1) - 1]:\n   ikinci kapanmadaki beklenen düzeyin ilk kapanmadakine göre yüzde farkı. İki ayrı güven aralığına bakılarak karar verilmez.\n   - Radar: analiz7_sar.py'nin ana modeli (Poisson, dönem + uydu kuklaları, HC1), beş konum ve ana yörünge; Hürmüz'de büyük yankılar da.\n   - Alev: analiz15_alev.py'nin ana modeli (PPML, dönem + takvim ayı kuklaları, HAC 14 gözlenen gece), Tablo 3'ün on bölgesi. Güney ve\n     kuzey Irak için bulut denetimli sürümler (analiz16_kapsama.py): Level-2 ölçüsü, kapsama >= %90 olan geceler; hücre sabit etkili PPML.\n2. Eşit uzunlukta başlangıç pencereleri: iki kapanmanın ilk 30 ve ilk 72 günü (ikinci kapanma veri kesiminde 72 gün). Her kapanma\n   \"ilk n gün\" ve \"kalan\" diye iki kuklaya ayrılır; ilk n günlerin farkı aynı modelle sınanır. Radar sahneleri seyrek (yörünge başına\n   yaklaşık 12 günde bir), bu yüzden 30 günlük pencere yalnız alevlerde.\n3. Mekanizma ipuçları (betimsel): Hürmüz koridorunda radarın büyük yankı payı; PortWatch AIS geçişleri (Hürmüz, günlük; toplam ve tanker\n   sayısı, tankerlerin tahmini yükü); SOMO Basra ihracatı (aylık, günlük hız); Dated Brent - ICE ön vade farkı ($/varil).\n4. Şekil verisi: radar sahneleri, güney Irak alevi (7 gecelik ortalama), Basra aylık günlük hızı, Dated-ICE farkı ve AIS tanker geçişi\n   (7 günlük ortalama); sıklıklar korunur, aylık seri günlüğe yayılmaz.\n5. Basra testi: Ağustos'ta Basra'dan yüklenen petrol boğazı nasıl geçti? (a) İki serinin karşılaştırması (betimsel): PortWatch'un\n   Hürmüz'ü geçen bütün tankerler için AIS'ten tahmin ettiği yük (capacity_tanker: su çekiminden tahmin edilen doluluk oranı x DWT,\n   metrik ton; iki yön) ton başına 7,33 varille (Energy Institute ortalaması) ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesiyle\n   (konşimento tarihine göre) karşılaştırılır. Seri DWT toplamı değil, tahmini yüktür: oran taşınabilecek payın üst sınırı ya da görünmeyen\n   petrolün payı değildir (delta denetimi D01). (b) Basra açık deniz terminalleri ve demirleme alanında radar sayımı (sar_gemi_sayimi.py,\n   kutu 48,70-49,20 D, 29,40-29,85 K; iki yörünge ayrı seri, ayrı sabit hedef maskesi; ana seri çıkan yörünge 174). Dönem etkileri radar\n   ana modeliyle; eğilim: gemi ~ gün + uydu (+ göreli yörünge) kuklası, OLS (HC1 ve HC3, t dağılımı), Poisson sağlamlık; bütün ikinci\n   kapanma, yalnız Ağustos ve inen seride göreli yörünge başına. Karşılaştırma ölçeği varsayımsaldır: Ağustos yüklemesinin her yükü kutuya\n   eklenen ayrı ve tespit edilebilir bir gemide kalsaydı sayı 30 günde yükleme kadar (VLCC ya da Suezmax eşdeğeri) artardı; gemi sayısı\n   yük stoku değildir (kutudaki boş kapasite, çıkışlar ve yan yana gemiler bu bağı bozar).\n6. Basra terminalinde AIS görünürlüğü (28 Eylül 2026): PortWatch'un günlük liman verisi (Daily_Ports_Data; portwatch_liman_cek.py) Basra\n   petrol terminalinde tankerlerin yüklediği tahmini yükü (export_tanker, ton; su çekimi değişiminden) veriyor. Aylık ortalama 7,33 varil/ton\n   ile ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesine bölünür: savaştan önce bu oran kamuya açık AIS verisinin yüklemenin ne\n   kadarını gördüğünü, Ağustos 2026'daki değeri ise görünürlüğün ne kadar düştüğünü gösterir. Betimseldir; üst sınır değildir.\nLisanslı fiyat verisi ve PortWatch içeren Excel ya da PortWatch liman dosyası yoksa (herkese açık kod paketi) PortWatch, AIS/Basra, liman ve\nDated-ICE bölümleri atlanır; radar, alev, Basra radarı, SOMO ve küçük akış hesabı aynen üretilir.\nÇıktı: sonuclar/a17_iki_kapanma.json",
+  "tanim": "Analiz 17: iki kapanmanın farkı. Denizde (radar, AIS) ve karada (alev) göstergeler, ihracat (SOMO) ve fiziki fiyat (Dated Brent - ICE)\niki kapanmada nasıl ayrıştı? Astra'nın değerlendirme notundaki birinci öneri (27 Eylül 2026).\n\n1. Dönem farkı: aynı modelde ikinci ve ilk kapanma katsayılarının farkı, aynı kovaryansla (Wald). Fark = 100 x [exp(b2 - b1) - 1]:\n   ikinci kapanmadaki beklenen düzeyin ilk kapanmadakine göre yüzde farkı. İki ayrı güven aralığına bakılarak karar verilmez.\n   - Radar: analiz7_sar.py'nin ana modeli (Poisson, dönem + uydu kuklaları, HC1), beş konum ve ana yörünge; Hürmüz'de büyük yankılar da.\n   - Alev: analiz15_alev.py'nin ana modeli (PPML, dönem + takvim ayı kuklaları, HAC 14 gözlenen gece), Tablo 3'ün on bölgesi. Güney ve\n     kuzey Irak için bulut denetimli sürümler (analiz16_kapsama.py): Level-2 ölçüsü, kapsama >= %90 olan geceler; hücre sabit etkili PPML.\n2. Eşit uzunlukta başlangıç pencereleri: iki kapanmanın ilk 30 ve ilk 72 günü (ikinci kapanma veri kesiminde 72 gün). Her kapanma\n   \"ilk n gün\" ve \"kalan\" diye iki kuklaya ayrılır; ilk n günlerin farkı aynı modelle sınanır. Radar sahneleri seyrek (yörünge başına\n   yaklaşık 12 günde bir), bu yüzden 30 günlük pencere yalnız alevlerde.\n3. Mekanizma ipuçları (betimsel): Hürmüz koridorunda radarın büyük yankı payı; PortWatch AIS geçişleri (Hürmüz, günlük; toplam ve tanker\n   sayısı, tankerlerin tahmini yükü); SOMO Basra ihracatı (aylık, günlük hız); Dated Brent - ICE ön vade farkı ($/varil).\n4. Şekil verisi: radar sahneleri, güney Irak alevi (7 gecelik ortalama), Basra aylık günlük hızı, Dated-ICE farkı ve AIS tanker geçişi\n   (7 günlük ortalama); sıklıklar korunur, aylık seri günlüğe yayılmaz.\n5. Basra testi: Ağustos'ta Basra'dan yüklenen petrol boğazı nasıl geçti? (a) İki serinin karşılaştırması (betimsel): PortWatch'un\n   Hürmüz'ü geçen bütün tankerler için AIS'ten tahmin ettiği yük (capacity_tanker: su çekiminden tahmin edilen doluluk oranı x DWT,\n   metrik ton; iki yön) ton başına 7,33 varille (Energy Institute ortalaması) ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesiyle\n   (konşimento tarihine göre) karşılaştırılır. Seri DWT toplamı değil, tahmini yüktür: oran taşınabilecek payın üst sınırı ya da görünmeyen\n   petrolün payı değildir (delta denetimi D01). (b) Basra açık deniz terminalleri ve demirleme alanında radar sayımı (sar_gemi_sayimi.py,\n   kutu 48,70-49,20 D, 29,40-29,85 K; iki yörünge ayrı seri, ayrı sabit hedef maskesi; ana seri çıkan yörünge 174). Dönem etkileri radar\n   ana modeliyle; eğilim: gemi ~ gün + uydu (+ göreli yörünge) kuklası, OLS (HC1 ve HC3, t dağılımı), Poisson sağlamlık; bütün ikinci\n   kapanma, yalnız Ağustos ve inen seride göreli yörünge başına. Karşılaştırma ölçeği varsayımsaldır: Ağustos yüklemesinin her yükü kutuya\n   eklenen ayrı ve tespit edilebilir bir gemide kalsaydı sayı 30 günde yükleme kadar (VLCC ya da Suezmax eşdeğeri) artardı; gemi sayısı\n   yük stoku değildir (kutudaki boş kapasite, çıkışlar ve yan yana gemiler bu bağı bozar).\n6. Basra terminali için PortWatch yükleme tahmini (28 Eylül 2026): PortWatch'un günlük liman verisi (Daily_Ports_Data; portwatch_liman_cek.py) Basra\n   petrol terminalinde tankerlerin yüklediği tahmini yükü (export_tanker, ton; su çekimi değişiminden) veriyor. Aylık ortalama 7,33 varil/ton\n   ile ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesine bölünür. Oran iki tahminin karşılaştırmasıdır: aynı gemi ve yükler\n   eşleştirilmediği için AIS'te görülen pay ya da doğrulanmış kapsama oranı değildir (savaş öncesi %49-85 de öyle); liman ve boğaz göstergeleri\n   aynı AIS kaynağına dayanır. Ayrışmanın AIS kapsamından, liman ve geçiş tespitinden, yük tahmininden ya da gemilerin yayın davranışından\n   ne kadar geldiği bu toplu verilerle ayrılamaz (kapanış kontrolü E01). Betimseldir; üst sınır değildir.\nLisanslı fiyat verisi ve PortWatch içeren Excel ya da PortWatch liman dosyası yoksa (herkese açık kod paketi) PortWatch, AIS/Basra, liman ve\nDated-ICE bölümleri atlanır; radar, alev, Basra radarı, SOMO ve küçük akış hesabı aynen üretilir.\nÇıktı: sonuclar/a17_iki_kapanma.json",
   "denetim": {
    "radar_en_buyuk_fark": 0.0,
    "alev_en_buyuk_fark": 0.0
@@ -1297,26 +1297,26 @@
     "son": "2026-09-21",
     "gemi": {
      "egim_30_gun": 2.0,
-     "alt": -0.48,
-     "ust": 4.48,
+     "alt": -0.4817,
+     "ust": 4.4817,
      "p": 0.10160930726586379,
-     "alt_hc3": -1.04,
-     "ust_hc3": 5.04,
+     "alt_hc3": -1.0436,
+     "ust_hc3": 5.0436,
      "p_hc3": 0.17130923732504025
     },
     "buyuk_gemi": {
-     "egim_30_gun": 1.68,
-     "alt": -0.76,
-     "ust": 4.12,
+     "egim_30_gun": 1.6786,
+     "alt": -0.7595,
+     "ust": 4.1166,
      "p": 0.15378203173538396,
-     "alt_hc3": -1.14,
-     "ust_hc3": 4.5,
+     "alt_hc3": -1.1442,
+     "ust_hc3": 4.5013,
      "p_hc3": 0.21147133783939745
     },
     "poisson_yuzde_30_gun": {
-     "etki": 3.39,
-     "alt": -0.25,
-     "ust": 7.17,
+     "etki": 3.3899,
+     "alt": -0.2525,
+     "ust": 7.1653,
      "p": 0.06848255859513001
     }
    },
@@ -1327,26 +1327,26 @@
     "son": "2026-08-28",
     "gemi": {
      "egim_30_gun": 4.0,
-     "alt": -4.13,
-     "ust": 12.13,
+     "alt": -4.1322,
+     "ust": 12.1322,
      "p": 0.1685490936335697,
-     "alt_hc3": -15.21,
-     "ust_hc3": 23.21,
+     "alt_hc3": -15.212,
+     "ust_hc3": 23.212,
      "p_hc3": 0.46487995032747326
     },
     "buyuk_gemi": {
      "egim_30_gun": 5.5,
-     "alt": -14.55,
-     "ust": 25.55,
+     "alt": -14.5457,
+     "ust": 25.5457,
      "p": 0.35916893463806737,
-     "alt_hc3": -40.53,
-     "ust_hc3": 51.53,
+     "alt_hc3": -40.5278,
+     "ust_hc3": 51.5278,
      "p_hc3": 0.6583290683028292
     },
     "poisson_yuzde_30_gun": {
-     "etki": 6.77,
-     "alt": 0.45,
-     "ust": 13.49,
+     "etki": 6.7702,
+     "alt": 0.4456,
+     "ust": 13.493,
      "p": 0.03548985427299444
     }
    },
@@ -1438,27 +1438,27 @@
     "ilk": "2026-07-13",
     "son": "2026-09-17",
     "gemi": {
-     "egim_30_gun": -1.14,
-     "alt": -6.23,
-     "ust": 3.95,
+     "egim_30_gun": -1.1429,
+     "alt": -6.2309,
+     "ust": 3.9452,
      "p": 0.6374263605368059,
-     "alt_hc3": -7.19,
-     "ust_hc3": 4.9,
+     "alt_hc3": -7.187,
+     "ust_hc3": 4.9013,
      "p_hc3": 0.6912036989444112
     },
     "buyuk_gemi": {
-     "egim_30_gun": -1.55,
-     "alt": -6.68,
-     "ust": 3.59,
+     "egim_30_gun": -1.5476,
+     "alt": -6.6828,
+     "ust": 3.5876,
      "p": 0.5284872193638358,
-     "alt_hc3": -7.71,
-     "ust_hc3": 4.61,
+     "alt_hc3": -7.7075,
+     "ust_hc3": 4.6122,
      "p_hc3": 0.5984475049799032
     },
     "poisson_yuzde_30_gun": {
-     "etki": -1.8,
-     "alt": -8.83,
-     "ust": 5.77,
+     "etki": -1.7978,
+     "alt": -8.8272,
+     "ust": 5.7736,
      "p": 0.6321264028987534
     }
    },
@@ -1468,27 +1468,27 @@
     "ilk": "2026-08-06",
     "son": "2026-08-31",
     "gemi": {
-     "egim_30_gun": 12.78,
-     "alt": 0.99,
-     "ust": 24.57,
+     "egim_30_gun": 12.7778,
+     "alt": 0.9895,
+     "ust": 24.5661,
      "p": 0.039569962648270965,
-     "alt_hc3": -5.98,
-     "ust_hc3": 31.53,
+     "alt_hc3": -5.9773,
+     "ust_hc3": 31.5328,
      "p_hc3": 0.13150935681119802
     },
     "buyuk_gemi": {
-     "egim_30_gun": 11.11,
-     "alt": -1.91,
-     "ust": 24.14,
+     "egim_30_gun": 11.1111,
+     "alt": -1.9131,
+     "ust": 24.1353,
      "p": 0.07693600205863123,
-     "alt_hc3": -9.61,
-     "ust_hc3": 31.83,
+     "alt_hc3": -9.6102,
+     "ust_hc3": 31.8324,
      "p_hc3": 0.2107773716455574
     },
     "poisson_yuzde_30_gun": {
-     "etki": 21.36,
-     "alt": 8.68,
-     "ust": 35.51,
+     "etki": 21.3572,
+     "alt": 8.6813,
+     "ust": 35.5116,
      "p": 0.0005837147578353368
     }
    },
@@ -1499,27 +1499,27 @@
      "ilk": "2026-07-14",
      "son": "2026-09-12",
      "gemi": {
-      "egim_30_gun": 3.43,
-      "alt": -10.21,
-      "ust": 17.06,
+      "egim_30_gun": 3.4286,
+      "alt": -10.2056,
+      "ust": 17.0628,
       "p": 0.5235191061109431,
-      "alt_hc3": -16.61,
-      "ust_hc3": 23.47,
+      "alt_hc3": -16.6081,
+      "ust_hc3": 23.4652,
       "p_hc3": 0.6595005834482877
      },
      "buyuk_gemi": {
-      "egim_30_gun": 2.64,
-      "alt": -11.39,
-      "ust": 16.68,
+      "egim_30_gun": 2.6429,
+      "alt": -11.3894,
+      "ust": 16.6751,
       "p": 0.6286585241272294,
-      "alt_hc3": -18.9,
-      "ust_hc3": 24.18,
+      "alt_hc3": -18.8985,
+      "ust_hc3": 24.1842,
       "p_hc3": 0.7505165012005263
      },
      "poisson_yuzde_30_gun": {
-      "etki": 5.36,
-      "alt": -8.81,
-      "ust": 21.74,
+      "etki": 5.3614,
+      "alt": -8.8136,
+      "ust": 21.7398,
       "p": 0.47867163348016306
      }
     },
@@ -1529,27 +1529,27 @@
      "ilk": "2026-07-13",
      "son": "2026-09-17",
      "gemi": {
-      "egim_30_gun": -3.43,
-      "alt": -8.87,
-      "ust": 2.01,
+      "egim_30_gun": -3.4286,
+      "alt": -8.8706,
+      "ust": 2.0135,
       "p": 0.18784645003311493,
-      "alt_hc3": -10.36,
-      "ust_hc3": 3.5,
+      "alt_hc3": -10.3558,
+      "ust_hc3": 3.4987,
       "p_hc3": 0.2918584099502249
      },
      "buyuk_gemi": {
-      "egim_30_gun": -3.64,
-      "alt": -9.32,
-      "ust": 2.03,
+      "egim_30_gun": -3.6429,
+      "alt": -9.3155,
+      "ust": 2.0297,
       "p": 0.18025763897938887,
-      "alt_hc3": -11.0,
-      "ust_hc3": 3.72,
+      "alt_hc3": -11.0043,
+      "ust_hc3": 3.7185,
       "p_hc3": 0.2919332279046419
      },
      "poisson_yuzde_30_gun": {
-      "etki": -5.41,
-      "alt": -12.47,
-      "ust": 2.22,
+      "etki": -5.4097,
+      "alt": -12.4732,
+      "ust": 2.2238,
       "p": 0.16015705893341814
      }
     }

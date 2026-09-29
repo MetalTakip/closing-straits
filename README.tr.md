@@ -124,7 +124,7 @@ tespit edilen alev gücü ikinci kapanmada ilkinden %295, iki kapanmanın ilk 30
 tespit edilen alev gücünün. Altıncı radar kutusu Basra açık deniz terminallerini ve demirleme alanını kapsıyor (48,70-49,20 D, 29,40-29,85 K;
 `KONUMLAR` içinde `basra`); iki yörünge yönü ayrı sabit hedef maskeleriyle sayıldı, inen seri 35 ve 108 numaralı göreli yörüngeleri
 (`veri/sar/goreli_yorunge_basra.csv`) göreli yörünge kuklasıyla birleştiriyor. Bütün ikinci kapanmada doğrusal eğilim çıkan yörüngede 30 günde
-+2,0 gemi [−0,5, +4,5], inen yörüngede −1,1 [−6,2, +4,0]. Yalnız Ağustos'ta inen yörüngede
++2,0 gemi [−0,5, +4,5], inen yörüngede −1,1 [−6,2, +3,9]. Yalnız Ağustos'ta inen yörüngede
 eğilim 30 günde +12,8 gemi (HC3 aralığı −6,0 ile +31,5); geçici bir birikme dışlanamıyor. `birikim`,
 `birikim_agustos` ve `birikim_goreli` alanlarında OLS (HC1, HC3) ve Poisson eğilimleri var. Gemi sayısı yük stoku değildir. Ölçek için: SOMO'nun
 Ağustos 2026 Basra yüklemesinin her 2 milyon varili ayrı bir VLCC olarak kutuda kalsaydı sayı 30 günde yaklaşık 34 artardı. Çalışma
@@ -237,6 +237,9 @@ yeniden üretti, Claude (Anthropic) her bulguyu veriyle sınadı, Ebru Özpolat 
 bulut ve kapsama denetimi (1.3.0) bu turlardan sonra eklendi. 1.4.0 üzerindeki dördüncü, dar kapsamlı tur iki kapanmanın karşılaştırmasını ve
 Basra testini kapsadı: ChatGPT tahminleri yeniden üretti, Claude bulguları veriyle sınadı. Düzeltmeleri 1.4.1'de: PortWatch'un tanker alanı DWT
 değil tahmini yük olarak okunuyor, Basra eğilimi Ağustos için ve HC3 ile Poisson'la da veriliyor, Basra maskelerinin kurulum künyesi var.
+1.4.1'in yayın öncesi derlemesi üzerindeki kapanış kontrolü bu düzeltmeleri, çalışma notu ve rapordaki Basra karşılaştırmasının yorumu dışında
+uygulanmış buldu; o yorum yayından önce yeniden yazıldı, eğilim tahminleri de tabloların tek kez yuvarlanması için dört ondalıkla saklanıyor. Bu
+tur ham radar sayımını bağımsız olarak yeniden üretmedi; PortWatch liman verisi ve Basra'ya ilişkin haberler (bu pakette yok) ondan sonra eklendi.
 Analizleri başka bir ortamda çalıştırmak p değerlerinin son basamaklarını (10⁻¹³ düzeyinde) değiştirebilir; tahminler ve aralıklar değişmez.
 
 Bilgilendirme amaçlıdır; yatırım tavsiyesi değildir.

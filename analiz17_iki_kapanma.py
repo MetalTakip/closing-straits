@@ -23,10 +23,12 @@ iki kapanmada nasıl ayrıştı? Astra'nın değerlendirme notundaki birinci ön
    kapanma, yalnız Ağustos ve inen seride göreli yörünge başına. Karşılaştırma ölçeği varsayımsaldır: Ağustos yüklemesinin her yükü kutuya
    eklenen ayrı ve tespit edilebilir bir gemide kalsaydı sayı 30 günde yükleme kadar (VLCC ya da Suezmax eşdeğeri) artardı; gemi sayısı
    yük stoku değildir (kutudaki boş kapasite, çıkışlar ve yan yana gemiler bu bağı bozar).
-6. Basra terminalinde AIS görünürlüğü (28 Eylül 2026): PortWatch'un günlük liman verisi (Daily_Ports_Data; portwatch_liman_cek.py) Basra
+6. Basra terminali için PortWatch yükleme tahmini (28 Eylül 2026): PortWatch'un günlük liman verisi (Daily_Ports_Data; portwatch_liman_cek.py) Basra
    petrol terminalinde tankerlerin yüklediği tahmini yükü (export_tanker, ton; su çekimi değişiminden) veriyor. Aylık ortalama 7,33 varil/ton
-   ile ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesine bölünür: savaştan önce bu oran kamuya açık AIS verisinin yüklemenin ne
-   kadarını gördüğünü, Ağustos 2026'daki değeri ise görünürlüğün ne kadar düştüğünü gösterir. Betimseldir; üst sınır değildir.
+   ile ham petrol eşdeğerine çevrilir ve SOMO'nun Basra yüklemesine bölünür. Oran iki tahminin karşılaştırmasıdır: aynı gemi ve yükler
+   eşleştirilmediği için AIS'te görülen pay ya da doğrulanmış kapsama oranı değildir (savaş öncesi %49-85 de öyle); liman ve boğaz göstergeleri
+   aynı AIS kaynağına dayanır. Ayrışmanın AIS kapsamından, liman ve geçiş tespitinden, yük tahmininden ya da gemilerin yayın davranışından
+   ne kadar geldiği bu toplu verilerle ayrılamaz (kapanış kontrolü E01). Betimseldir; üst sınır değildir.
 Lisanslı fiyat verisi ve PortWatch içeren Excel ya da PortWatch liman dosyası yoksa (herkese açık kod paketi) PortWatch, AIS/Basra, liman ve
 Dated-ICE bölümleri atlanır; radar, alev, Basra radarı, SOMO ve küçük akış hesabı aynen üretilir.
 Çıktı: sonuclar/a17_iki_kapanma.json
@@ -163,15 +165,15 @@ def birikim(S: pd.DataFrame, a: str = DON_R[K2][0], b: str = DON_R[K2][1]) -> di
             m = sm.OLS(g[sutun].astype(float), X).fit(cov_type=cov)
             e, s, tq = 30 * m.params["gun"], 30 * m.bse["gun"], stats.t.ppf(0.975, m.df_resid)
             if not ek:
-                r["egim_30_gun"] = round(float(e), 2)
-            r.update({f"alt{ek}": round(float(e - tq * s), 2), f"ust{ek}": round(float(e + tq * s), 2),
+                r["egim_30_gun"] = round(float(e), 4)  # 4 ondalık: gösterimde tek kez yuvarlanır (kapanış kontrolü E04)
+            r.update({f"alt{ek}": round(float(e - tq * s), 4), f"ust{ek}": round(float(e + tq * s), 4),
                       f"p{ek}": float(2 * stats.t.sf(abs(e / s), m.df_resid))})
         out[sutun] = r
     m = sm.GLM(g["gemi"].astype(float), X, family=sm.families.Poisson()).fit(cov_type="HC0")
     V = m.cov_params() * m.nobs / (m.nobs - len(m.params))
     bb, ss = float(m.params["gun"]), float(np.sqrt(V.loc["gun", "gun"]))
-    out["poisson_yuzde_30_gun"] = {"etki": round(100 * (np.exp(30 * bb) - 1), 2), "alt": round(100 * (np.exp(30 * (bb - 1.96 * ss)) - 1), 2),
-                                   "ust": round(100 * (np.exp(30 * (bb + 1.96 * ss)) - 1), 2), "p": float(2 * stats.norm.sf(abs(bb / ss)))}
+    out["poisson_yuzde_30_gun"] = {"etki": round(100 * (np.exp(30 * bb) - 1), 4), "alt": round(100 * (np.exp(30 * (bb - 1.96 * ss)) - 1), 4),
+                                   "ust": round(100 * (np.exp(30 * (bb + 1.96 * ss)) - 1), 4), "p": float(2 * stats.norm.sf(abs(bb / ss)))}
     return out
 
 

@@ -128,7 +128,7 @@ Detected flare power in southern Iraq was 295% higher in the second closure than
 of each; this compares detected flaring, not output. A sixth radar box covers the Basra offshore terminals and their anchorage
 (48.70-49.20°E, 29.40-29.85°N; `basra` in `KONUMLAR`), counted on both orbit directions with separate fixed-target masks; the descending series
 combines relative orbits 35 and 108 (`veri/sar/goreli_yorunge_basra.csv`) with a relative-orbit dummy. Over the whole second closure the linear
-trend is +2.0 ships per 30 days [−0.5, +4.5] on the ascending orbit and −1.1 [−6.2, +4.0] on the
+trend is +2.0 ships per 30 days [−0.5, +4.5] on the ascending orbit and −1.1 [−6.2, +3.9] on the
 descending orbit. Within August alone the descending trend was +12.8 ships per 30 days (HC3 interval −6.0 to +31.5),
 so a temporary build-up is not ruled out; `birikim`, `birikim_agustos` and `birikim_goreli` hold the OLS (HC1, HC3) and Poisson trends. Ship
 counts are not cargo inventories. For scale, had every 2 million barrels of SOMO's August 2026 Basra loadings stayed in the box on a separate
@@ -266,7 +266,11 @@ reproduced them from the code and data, Claude (Anthropic) checked each finding 
 The full cloud and coverage check (1.3.0), which follows a protocol proposed in the third round, was added after these rounds. A fourth,
 narrower round on 1.4.0 covered the comparison of the two closures and the Basra test: ChatGPT reproduced the estimates and Claude checked
 the findings against the data. Its corrections are in 1.4.1: PortWatch's tanker field is read as a cargo estimate rather than deadweight,
-the Basra trend is also reported for August and with HC3 and Poisson, and the Basra masks have build records. Rerunning the analyses in
+the Basra trend is also reported for August and with HC3 and Poisson, and the Basra masks have build records. A closing check on a
+pre-release build of 1.4.1 found these corrections applied except in the interpretation of the Basra comparison in the working paper and
+the report, which was rewritten before release; the trend estimates are now stored with four decimals so that tables round only once. That
+round did not re-run the raw radar counts independently, and the PortWatch port data and news reports on Basra, which are not in this
+package, were added after it. Rerunning the analyses in
 another environment can change p-values in the last digits (about 10⁻¹³); estimates and intervals are unaffected.
 
 For information only; not investment advice.
